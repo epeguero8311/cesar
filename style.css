@@ -17,24 +17,22 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);overflow-x:hidden}
+body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--text-body);overflow-x:hidden}
 a{text-decoration:none}
 
 /* NAV */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:200;
   display:flex;align-items:center;justify-content:space-between;
-  padding:1.1rem 4rem;
+  padding:0 4rem;
+  height:68px;
+  overflow:hidden;
   background:rgba(31,31,31,0.97);
   backdrop-filter:blur(16px);
   border-bottom:1px solid rgba(201,162,39,0.13);
 }
-.nav-brand{display:flex;align-items:center;gap:0.75rem}
-.nav-emblem{width:34px;height:34px;flex-shrink:0}
-.nav-emblem svg{width:100%;height:100%}
-.nav-logo-img{height:36px;width:auto;object-fit:contain}
-.nav-logo-text{font-family:'Playfair Display',serif;font-size:1.42rem;font-weight:700;color:var(--white);letter-spacing:0.03em}
-.nav-logo-text span{color:var(--gold)}
+.nav-brand{display:flex;align-items:center;height:100%}
+.nav-logo-img{height:52px;width:auto;object-fit:contain;display:block}
 .nav-links{display:flex;gap:2.2rem;list-style:none;align-items:center}
 .nav-links a{color:rgba(255,255,255,0.52);font-size:0.74rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;transition:color 0.22s}
 .nav-links a:hover{color:var(--gold)}
@@ -69,9 +67,10 @@ nav{
 }
 .hero-eyebrow::before,.hero-eyebrow::after{content:'';width:36px;height:1px;background:var(--gold);opacity:0.38}
 .hero-title{
-  font-family:'Playfair Display',serif;
+  font-family:'Bebas Neue',sans-serif;
   font-size:clamp(3.2rem,7.5vw,7rem);
-  font-weight:700;color:var(--white);line-height:1.02;max-width:920px;
+  font-weight:400;color:var(--white);line-height:1.02;max-width:920px;
+  letter-spacing:0.04em;
 }
 .hero-title em{font-style:italic;color:var(--gold)}
 .hero-rule{width:68px;height:2px;background:linear-gradient(90deg,var(--burgundy),var(--gold));margin:2.2rem auto;border-radius:2px}
@@ -101,7 +100,7 @@ nav{
   gap:3.5rem;flex-wrap:wrap;
 }
 .stat{display:flex;align-items:center;gap:0.72rem;font-size:0.73rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.62)}
-.stat strong{font-family:'Playfair Display',serif;font-size:1.28rem;font-weight:700;color:var(--gold-light);letter-spacing:0}
+.stat strong{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;font-weight:400;color:var(--gold-light);letter-spacing:0.05em}
 .stat-sep{width:1px;height:26px;background:rgba(255,255,255,0.15)}
 
 /* SECTION ATOMS */
@@ -112,13 +111,13 @@ nav{
   display:flex;align-items:center;gap:0.8rem;
 }
 .section-label::after{content:'';width:30px;height:1px;background:var(--gold);opacity:0.45}
-.section-title{font-family:'Playfair Display',serif;font-size:clamp(2.1rem,3.8vw,3.3rem);font-weight:700;color:var(--charcoal);line-height:1.1}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,4.5vw,4.2rem);font-weight:400;color:var(--charcoal);line-height:1.05;letter-spacing:0.03em}
 .section-title.on-dark{color:var(--white)}
 
 /* MISSION */
 #mission{background:var(--cream);padding:7.5rem 0}
 .mission-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:5.5rem;align-items:start;margin-top:3.8rem}
-.mission-statement{font-family:'Libre Baskerville',serif;font-size:1.1rem;line-height:1.95;color:var(--charcoal);margin-top:1.4rem}
+.mission-statement{font-family:'Poppins',sans-serif;font-size:1rem;line-height:1.9;color:var(--charcoal);margin-top:1.4rem}
 .beta-badge{
   margin-top:2rem;display:inline-flex;align-items:center;gap:0.75rem;
   background:rgba(139,30,47,0.06);border:1px solid rgba(139,30,47,0.2);
@@ -134,8 +133,8 @@ nav{
   transition:border-color 0.25s,box-shadow 0.25s,transform 0.25s;
 }
 .pillar:hover{border-color:var(--gold);box-shadow:0 6px 28px rgba(0,0,0,0.075);transform:translateX(3px)}
-.pillar h3{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:var(--burgundy);margin-bottom:0.6rem}
-.pillar p{font-size:0.92rem;line-height:1.78;color:var(--text-body)}
+.pillar h3{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;font-weight:400;letter-spacing:0.06em;color:var(--burgundy);margin-bottom:0.6rem}
+.pillar p{font-size:0.9rem;line-height:1.78;color:var(--text-body)}
 .ornament{display:flex;align-items:center;gap:1.2rem;margin:3.2rem 0 0}
 .ornament::before,.ornament::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(139,30,47,0.18),transparent)}
 .ornament-diamond{width:6px;height:6px;background:var(--burgundy);transform:rotate(45deg);opacity:0.5}
@@ -160,10 +159,10 @@ nav{
 }
 .team-photo-ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem}
 .team-headshot{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
-.team-initials{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--gold);opacity:0.38}
+.team-initials{font-family:'Bebas Neue',sans-serif;font-size:3rem;font-weight:400;color:var(--gold);opacity:0.38;letter-spacing:0.1em}
 .photo-hint{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.15)}
 .team-info{padding:2rem 2.2rem}
-.team-name{font-family:'Playfair Display',serif;font-size:1.28rem;font-weight:600;color:var(--white);margin-bottom:0.18rem}
+.team-name{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;font-weight:400;color:var(--white);margin-bottom:0.18rem;letter-spacing:0.05em}
 .team-role{font-size:0.68rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.22rem}
 .team-school{font-size:0.77rem;color:rgba(255,255,255,0.32);font-style:italic;margin-bottom:0.95rem}
 .team-bio{font-size:0.86rem;line-height:1.75;color:rgba(255,255,255,0.48)}
@@ -177,7 +176,8 @@ nav{
   border-radius:2px;font-size:0.87rem;color:var(--burgundy-deep);line-height:1.8;font-style:italic;
 }
 .axis-heading{
-  font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:600;color:var(--charcoal);
+  font-family:'Bebas Neue',sans-serif;font-size:1.8rem;font-weight:400;color:var(--charcoal);
+  letter-spacing:0.05em;
   margin:4rem 0 0.6rem;display:flex;align-items:center;gap:1.2rem;
 }
 .axis-heading::after{content:'';flex:1;height:1px;background:var(--bdr-gold)}
@@ -197,7 +197,8 @@ nav{
   padding:0.28rem 0.8rem;border-radius:0 0 3px 3px;
 }
 .pkg-name{
-  font-family:'Playfair Display',serif;font-size:1.28rem;font-weight:700;color:var(--charcoal);
+  font-family:'Bebas Neue',sans-serif;font-size:1.5rem;font-weight:400;color:var(--charcoal);
+  letter-spacing:0.05em;
   margin-bottom:1.1rem;padding-bottom:1rem;border-bottom:1px solid var(--bdr-stone);
 }
 .pkg.featured .pkg-name{color:var(--gold-light);border-color:rgba(255,255,255,0.08)}
@@ -213,11 +214,12 @@ nav{
 .pkg.featured .consult-note{background:rgba(201,162,39,0.06);color:rgba(255,255,255,0.4);border-color:rgba(201,162,39,0.35)}
 .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
 .rev-card{background:var(--white);border:1px solid var(--bdr-stone);border-radius:3px;padding:2rem 2rem 2.2rem}
-.rev-card-title{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:600;color:var(--charcoal);margin-bottom:0.35rem}
-.rev-price{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:700;color:var(--burgundy);margin-bottom:1.2rem}
+.rev-card-title{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;font-weight:400;letter-spacing:0.05em;color:var(--charcoal);margin-bottom:0.35rem}
+.rev-price{font-family:'Bebas Neue',sans-serif;font-size:2rem;font-weight:400;letter-spacing:0.05em;color:var(--burgundy);margin-bottom:1.2rem}
 .rev-feats{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
 .rev-feat{font-size:0.875rem;color:var(--text-body);line-height:1.55;padding-left:1.4rem;position:relative}
 .rev-feat::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:0.8rem}
+.rev-or{text-align:center;font-size:0.8rem;font-style:italic;color:var(--text-muted);list-style:none;padding:0.2rem 0}
 .rev-addons{margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--bdr-gold);display:flex;flex-direction:column;gap:0.38rem}
 .addon{font-size:0.8rem;color:var(--text-muted);display:flex;gap:0.5rem;align-items:baseline}
 .addon strong{color:var(--charcoal);font-weight:600}
@@ -230,7 +232,7 @@ nav{
   pointer-events:none;
 }
 .apply-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative}
-.apply-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:700;color:var(--white);line-height:1.12;margin-top:0.9rem}
+.apply-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,4vw,3.8rem);font-weight:400;letter-spacing:0.04em;color:var(--white);line-height:1.05;margin-top:0.9rem}
 .apply-title em{font-style:italic;color:var(--gold)}
 .apply-sub{margin-top:1.1rem;font-size:0.94rem;color:rgba(255,255,255,0.5);line-height:1.82;max-width:400px}
 .consult-callout{
@@ -250,7 +252,7 @@ nav{
   display:flex;align-items:center;justify-content:center;
 }
 .apply-icon svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.apply-box h3{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:600;color:var(--white)}
+.apply-box h3{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;font-weight:400;letter-spacing:0.05em;color:var(--white)}
 .apply-box p{font-size:0.87rem;color:rgba(255,255,255,0.45);line-height:1.72;max-width:270px}
 .btn-apply{
   display:block;width:100%;text-align:center;
@@ -269,7 +271,7 @@ footer{
   display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;
   border-top:1px solid rgba(139,30,47,0.2);
 }
-.ft-logo{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--white)}
+.ft-logo{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;font-weight:400;letter-spacing:0.08em;color:var(--white)}
 .ft-logo span{color:var(--gold)}
 .ft-note{font-size:0.77rem;color:rgba(255,255,255,0.22);max-width:380px;line-height:1.65;text-align:center}
 .ft-copy{font-size:0.76rem;color:rgba(255,255,255,0.2)}
@@ -281,7 +283,7 @@ footer{
 
 /* RESPONSIVE */
 @media(max-width:960px){
-  nav{padding:1rem 1.5rem}.nav-links{display:none}
+  nav{padding:0 1.5rem}.nav-links{display:none}
   .mission-grid{grid-template-columns:1fr;gap:2.8rem}
   .rev-grid{grid-template-columns:1fr}
   .apply-grid{grid-template-columns:1fr;gap:3rem}
@@ -296,15 +298,4 @@ footer{
   #mission,#team,#pricing,#apply{padding:5rem 0}
   .team-card{grid-template-columns:1fr}
   .team-photo{min-height:240px}
-}
-
-.nav-logo-img{height:75px;width:auto;object-fit:contain}
-
-.rev-or{
-  text-align:center;
-  font-size:0.8rem;
-  font-style:italic;
-  color:var(--text-muted);
-  list-style:none;
-  padding:0.2rem 0;
 }
