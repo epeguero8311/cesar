@@ -298,13 +298,4 @@ footer{
   .team-photo{min-height:240px}
 }
 
-.nav-logo-img{height:75px;width:auto;object-fit:contain}
-
-.rev-or{
-  text-align:center;
-  font-size:0.8rem;
-  font-style:italic;
-  color:var(--text-muted);
-  list-style:none;
-  padding:0.2rem 0;
-}
+.nav-logo-img{height:52px;width:auto;object-fit:contain}
