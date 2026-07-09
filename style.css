@@ -327,6 +327,167 @@ footer{
 .reveal.in{opacity:1;transform:none}
 .d1{transition-delay:0.1s}.d2{transition-delay:0.2s}.d3{transition-delay:0.3s}.d4{transition-delay:0.4s}
 
+/* ─── SUBPAGE HERO (Blueprint / Guides / Kill Board) ───── */
+.sub-hero{
+  min-height:56vh;background:var(--red);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:9.5rem 2rem 4rem;
+  position:relative;overflow:hidden;
+}
+.sub-hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 55% at 50% -10%,rgba(0,0,0,0.35) 0%,transparent 60%);
+  pointer-events:none;
+}
+.sub-hero-inner{position:relative;z-index:1;max-width:760px}
+.sub-hero .hero-eyebrow{justify-content:center}
+.sub-hero-title{
+  font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,6vw,5rem);
+  font-weight:400;color:var(--white);line-height:1.05;letter-spacing:0.03em;margin-top:0.4rem;
+}
+.sub-hero-title em{font-style:italic;color:var(--silver-light)}
+.sub-hero-sub{margin-top:1.6rem;font-size:1rem;font-weight:300;color:rgba(255,255,255,0.6);line-height:1.85;max-width:600px;margin-left:auto;margin-right:auto}
+.breadcrumb{
+  position:relative;z-index:1;margin-bottom:1rem;
+  font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;
+  color:rgba(255,255,255,0.5);
+}
+.breadcrumb a{color:rgba(255,255,255,0.85);transition:color 0.2s}
+.breadcrumb a:hover{color:var(--white)}
+
+/* ─── TRANSFER BLUEPRINT PAGE ──────────────────── */
+.tb-section{background:var(--white);padding:6rem 0}
+.tb-section.alt{background:var(--offwhite)}
+.tb-lede{font-size:1.02rem;line-height:1.9;color:var(--charcoal);max-width:760px;margin-top:1.4rem}
+.tb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:3rem}
+.tb-card{
+  background:var(--offwhite);border-left:3px solid var(--red);
+  padding:1.8rem 1.9rem;box-shadow:0 2px 18px rgba(0,0,0,0.04);
+  transition:transform 0.25s,box-shadow 0.25s;
+}
+.tb-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,0.08)}
+.tb-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.25rem;font-weight:400;color:var(--red-deep);letter-spacing:0.04em;margin-bottom:0.55rem}
+.tb-card p{font-size:0.87rem;line-height:1.7;color:var(--text-body)}
+.tb-compare{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:3rem}
+.tb-compare-card{background:var(--white);border:1px solid var(--bdr-stone);border-radius:3px;padding:2rem 2.2rem}
+.tb-compare-card.dark{background:var(--charcoal)}
+.tb-compare-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;font-weight:400;letter-spacing:0.04em;color:var(--charcoal);margin-bottom:1rem}
+.tb-compare-card.dark h3{color:var(--silver-light)}
+.tb-compare-card ul{list-style:none;display:flex;flex-direction:column;gap:0.7rem}
+.tb-compare-card li{font-size:0.87rem;line-height:1.6;color:var(--text-body);padding-left:1.4rem;position:relative}
+.tb-compare-card.dark li{color:rgba(255,255,255,0.62)}
+.tb-compare-card li::before{content:'→';position:absolute;left:0;color:var(--red);font-size:0.8rem}
+.tb-compare-card.dark li::before{color:var(--silver)}
+.tb-quote{
+  margin-top:3rem;padding:1.6rem 2rem;border-left:3px solid var(--red);
+  background:rgba(139,26,26,0.05);font-size:0.98rem;font-style:italic;
+  color:var(--red-deep);line-height:1.8;max-width:760px;
+}
+
+/* ─── COLLEGE GUIDES HUB ───────────────────────── */
+.guides-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:3rem}
+.guides-count{font-size:0.8rem;color:var(--text-muted)}
+.guides-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;margin-top:1.6rem}
+.guide-card{
+  display:block;background:var(--white);border:1px solid var(--bdr-stone);border-radius:3px;
+  padding:1.9rem 1.9rem 2.1rem;transition:border-color 0.22s,box-shadow 0.22s,transform 0.22s;
+}
+.guide-card:hover{border-color:var(--red);box-shadow:0 10px 30px rgba(139,26,26,0.08);transform:translateY(-3px)}
+.guide-crest{
+  width:46px;height:46px;border-radius:50%;
+  background:var(--charcoal);color:var(--silver-light);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:0.03em;
+  margin-bottom:1.2rem;
+}
+.guide-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;font-weight:400;color:var(--charcoal);letter-spacing:0.03em;margin-bottom:0.5rem}
+.guide-stat-row{display:flex;gap:1.4rem;margin-bottom:0.9rem}
+.guide-stat{font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted)}
+.guide-stat strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:0.03em;color:var(--red);margin-top:0.15rem}
+.guide-card p{font-size:0.83rem;line-height:1.6;color:var(--text-muted)}
+.guide-card-more{
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  border:1px dashed var(--bdr-red);color:var(--red-deep);font-size:0.85rem;line-height:1.7;
+}
+
+/* ─── COLLEGE GUIDE DETAIL PAGE ─────────────────── */
+.guide-detail{background:var(--white);padding:5.5rem 0 6.5rem}
+.guide-stat-bar{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr-stone);
+  margin-top:2.6rem;border:1px solid var(--bdr-stone);border-radius:3px;overflow:hidden;
+}
+.guide-stat-tile{background:var(--white);padding:1.4rem 1.2rem;text-align:center}
+.guide-stat-tile .label{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted)}
+.guide-stat-tile .value{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--red);letter-spacing:0.03em;margin-top:0.3rem}
+.guide-body{max-width:760px;margin-top:3.2rem}
+.guide-body h2{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;font-weight:400;color:var(--charcoal);letter-spacing:0.03em;margin:2.6rem 0 1rem}
+.guide-body h2:first-child{margin-top:0}
+.guide-body p{font-size:0.93rem;line-height:1.85;color:var(--text-body);margin-bottom:1rem}
+.guide-body ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin:1rem 0}
+.guide-body li{font-size:0.9rem;line-height:1.65;color:var(--text-body);padding-left:1.4rem;position:relative}
+.guide-body li::before{content:'→';position:absolute;left:0;color:var(--red);font-size:0.8rem}
+.mentor-tie-in{
+  margin-top:2.6rem;padding:1.5rem 1.8rem;background:var(--charcoal);border-radius:3px;
+  display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;
+}
+.mentor-tie-in p{color:rgba(255,255,255,0.65);font-size:0.88rem;line-height:1.6;margin:0;flex:1;min-width:220px}
+.mentor-tie-in strong{color:var(--silver-light)}
+.data-note{margin-top:3rem;font-size:0.75rem;color:var(--text-muted);font-style:italic;border-top:1px solid var(--bdr-stone);padding-top:1.2rem}
+
+/* ─── KILL BOARD ───────────────────────────────── */
+.kb-section{background:var(--charcoal);padding:5.5rem 0 7rem;position:relative;overflow:hidden}
+.kb-section::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 70% 40% at 50% 0%,rgba(139,26,26,0.14) 0%,transparent 55%);
+  pointer-events:none;
+}
+.kb-legend{position:relative;z-index:1;display:flex;gap:2rem;flex-wrap:wrap;margin-top:2.2rem;margin-bottom:0.5rem}
+.kb-legend-item{display:flex;align-items:center;gap:0.6rem;font-size:0.75rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em}
+.kb-swatch{width:14px;height:14px;border-radius:3px}
+.kb-swatch.locked{background:rgba(255,255,255,0.12)}
+.kb-swatch.lit{background:var(--red);box-shadow:0 0 10px rgba(139,26,26,0.8)}
+.kb-grid{
+  position:relative;z-index:1;display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1.1rem;margin-top:2.4rem;
+}
+.kb-tile{
+  position:relative;aspect-ratio:1/1;border-radius:6px;
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.4rem;
+  cursor:pointer;transition:transform 0.22s,border-color 0.22s,background 0.22s;
+}
+.kb-tile:hover{transform:translateY(-4px)}
+.kb-crest{
+  width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Bebas Neue',sans-serif;font-size:0.95rem;letter-spacing:0.02em;
+  background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.25);
+  filter:grayscale(1);transition:filter 0.3s,background 0.3s,color 0.3s,box-shadow 0.3s;
+}
+.kb-name{font-size:0.66rem;letter-spacing:0.05em;text-transform:uppercase;color:rgba(255,255,255,0.25);text-align:center;padding:0 0.4rem;transition:color 0.3s}
+.kb-tile.lit{border-color:rgba(139,26,26,0.55);background:rgba(139,26,26,0.08)}
+.kb-tile.lit .kb-crest{filter:grayscale(0);background:var(--red);color:var(--white);box-shadow:0 0 18px rgba(139,26,26,0.55)}
+.kb-tile.lit .kb-name{color:var(--silver-light)}
+.kb-tooltip{
+  position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(6px);
+  background:var(--white);color:var(--charcoal);border-radius:3px;
+  padding:0.7rem 0.95rem;font-size:0.72rem;line-height:1.55;white-space:nowrap;
+  box-shadow:0 8px 26px rgba(0,0,0,0.35);opacity:0;pointer-events:none;
+  transition:opacity 0.18s,transform 0.18s;z-index:5;
+}
+.kb-tile:hover .kb-tooltip{opacity:1;transform:translateX(-50%) translateY(0)}
+.kb-tooltip strong{color:var(--red-deep)}
+.kb-tooltip::after{
+  content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);
+  border:6px solid transparent;border-top-color:var(--white);
+}
+.kb-stats-strip{
+  position:relative;z-index:1;display:flex;gap:2.5rem;flex-wrap:wrap;
+  margin-top:3.4rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);
+}
+.kb-stat{font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.45)}
+.kb-stat strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:1.9rem;color:var(--silver-light);letter-spacing:0.03em;margin-top:0.2rem}
+
 /* ─── RESPONSIVE ───────────────────────────────── */
 @media(max-width:960px){
   nav{padding:0 1.5rem}.nav-links{display:none}
@@ -336,6 +497,9 @@ footer{
   .pkg-grid{grid-template-columns:1fr 1fr}
   .stats-ribbon{gap:2rem;padding:1.2rem 2rem}
   .team-card{grid-template-columns:200px 1fr}
+  .tb-grid{grid-template-columns:1fr 1fr}
+  .tb-compare{grid-template-columns:1fr}
+  .guide-stat-bar{grid-template-columns:1fr 1fr}
 }
 @media(max-width:580px){
   .pkg-grid{grid-template-columns:1fr}
@@ -345,4 +509,9 @@ footer{
   #mission,#team,#pricing,#apply{padding:5rem 0}
   .team-card{grid-template-columns:1fr}
   .team-photo{min-height:240px}
+  .tb-grid{grid-template-columns:1fr}
+  .guide-stat-bar{grid-template-columns:1fr 1fr}
+  .sub-hero{padding:8rem 1.5rem 3rem}
+  .kb-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:0.7rem}
+  .kb-crest{width:36px;height:36px;font-size:0.8rem}
 }
