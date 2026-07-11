@@ -141,5 +141,43 @@
       "text": "Full Axis works with BU-bound applicants on program selection and application strategy, since acceptance odds vary significantly between BU's schools and colleges."
     },
     "dataNote": "Acceptance rates and deadlines shift year to year and vary by school within BU. Figures above reflect recent published cycles as a general guide — confirm current numbers on Boston University's official admissions site before finalizing your application strategy."
+  },
+
+  "harvard": {
+    "slug": "harvard",
+    "name": "Harvard College",
+    "crest": "HU",
+    "eyebrow": "Cambridge, Massachusetts",
+    "blurb": "One of the most selective transfer programs in the country, admitting only a very small number of students each year.",
+    "stats": {
+      "rate": "~0.8–1.5%",
+      "deadline": "Mar 1",
+      "decisionsReleased": "Mid–Late May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Harvard College maintains one of the nation's smallest and most selective transfer programs. In recent admission cycles, the university has typically admitted between 10 and 20 transfer students from applicant pools of roughly 1,300 to 1,600, resulting in an admit rate around 1%.",
+      "Harvard accepts transfer applications for fall enrollment only. Applicants submit materials by March 1, and admissions decisions are generally released in mid- to late May. Because so few students are admitted, successful applicants usually demonstrate exceptional academic achievement, a compelling reason to transfer, and a strong record of impact beyond the classroom."
+    ],
+    "lookingFor": [
+      "Outstanding academic performance in a rigorous college curriculum, typically with grades near the top of the applicant's class",
+      "Evidence that transferring to Harvard is essential for the applicant's academic and intellectual goals, rather than simply seeking a more prestigious institution",
+      "Strong engagement outside the classroom through leadership, research, service, entrepreneurship, or other meaningful contributions",
+      "Positive academic and disciplinary standing at the current institution, supported by the required College Report",
+      "Thoughtful application essays that clearly explain the applicant's educational journey, reasons for transferring, and fit with Harvard's academic community"
+    ],
+    "requirements": [
+      "Common Application for Transfer, including Harvard's transfer supplement, due March 1",
+      "Official transcripts from all colleges attended, along with a final high school transcript",
+      "College Report completed by the applicant's current institution and an Academic Evaluation from college instructors",
+      "Standardized test scores are optional under Harvard's current testing policy, though applicants should verify the policy for their application year",
+      "Admission decisions released in mid- to late May for fall enrollment"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Harvard transfer mentor. Our advising team nevertheless works with applicants to develop competitive transfer strategies tailored to Harvard's uniquely selective admissions process."
+    },
+    "dataNote": "Harvard's transfer admission numbers are exceptionally small and may fluctuate from year to year. Acceptance rates, testing policies, and application requirements can change with each admissions cycle. Always confirm current information on Harvard's official transfer admissions website before applying."
   }
 }
+
