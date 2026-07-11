@@ -1,0 +1,180 @@
+{
+  "cornell": {
+    "slug": "cornell",
+    "name": "Cornell University",
+    "crest": "CU",
+    "eyebrow": "Ithaca, New York",
+    "blurb": "The most transfer-friendly Ivy — but rates have tightened fast in recent cycles. See what changed.",
+    "stats": {
+      "rate": "~9–13%",
+      "deadline": "Mar 15",
+      "decisionsReleased": "Late Apr – Jun",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Cornell admits transfer students at a noticeably higher rate than its single-digit first-year admit rate, but that gap has been closing. Recent cycles have swung between roughly 9% and 14%, with about 670–830 students admitted each year out of applicant pools ranging from 6,500 to 7,200.",
+      "Cornell currently accepts transfer applicants for fall entry only — spring transfer has been paused in recent cycles, so applicants should plan around the fall pathway. Decisions are released on a rolling basis rather than all at once, typically starting in late April and continuing into June."
+    ],
+    "lookingFor": [
+      "At least 12 completed semester credit hours in college coursework at the time of application",
+      "Strong, consistent grades in college-level coursework — competitive applicants are well above Cornell's minimums",
+      "Coursework that aligns with the specific college and major within Cornell the applicant is targeting (requirements vary meaningfully by school — Engineering, AAP, and Human Ecology all have distinct prerequisites)",
+      "A College Report and Mid-Term Report from the applicant's current institution confirming academic and disciplinary standing",
+      "A compelling personal statement explaining why transferring to Cornell specifically supports the applicant's academic goals"
+    ],
+    "requirements": [
+      "Common Application for Transfer, with Cornell's college-specific supplement, due March 15 for fall entry",
+      "Official transcripts from every college attended, plus a final high school transcript",
+      "College Report and Mid-Term Report completed by an official at the applicant's current school",
+      "Program-specific materials where required — e.g., a portfolio for Architecture, Art, and Planning applicants, or a design challenge for some Human Ecology applicants",
+      "Decisions released on a rolling basis from late April through June"
+    ],
+    "mentor": {
+      "names": "Andrew Wei and Kellen Bell",
+      "text": "Full Axis has two mentors who transferred into Cornell. Andrew Wei and Kellen Bell both work directly with Cornell-bound applicants on building a college-specific strategy, since requirements shift dramatically between Cornell's schools."
+    },
+    "dataNote": "Acceptance rates and deadlines shift year to year and can vary by college within Cornell. Figures above reflect recent published cycles as a general guide — confirm current numbers on Cornell's official admissions site before finalizing your application strategy."
+  },
+
+  "uc-berkeley": {
+    "slug": "uc-berkeley",
+    "name": "UC Berkeley",
+    "crest": "UCB",
+    "eyebrow": "Berkeley, California",
+    "blurb": "Nearly double the freshman admit rate, dominated by California community college applicants.",
+    "stats": {
+      "rate": "~25%",
+      "deadline": "Nov 30",
+      "decisionsReleased": "Mid–Late Apr",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "UC Berkeley admits roughly a quarter of its transfer applicant pool most years, which is meaningfully higher than its single-digit first-year acceptance rate. Recent cycles have hovered in the 24–27% range, with Berkeley extending offers to somewhere between 4,000 and 5,500 transfer students annually out of applicant pools in the 19,000–21,500 range. The overwhelming majority of admits — over 90% in recent years — come from California community colleges, reflecting the UC system's priority on the community college transfer pathway.",
+      "Berkeley only accepts transfer applicants for fall entry, and does not use letters of recommendation or official transcripts during initial review — the personal insight questions and reported coursework carry the weight."
+    ],
+    "lookingFor": [
+      "Completion of all lower-division prerequisite coursework for the intended major before enrolling — major preparation matters more here than at most schools",
+      "A strong GPA in UC-transferable coursework, with competitive applicants often well above the stated 3.0 minimum",
+      "Completion of the required English composition and quantitative reasoning coursework",
+      "Compelling responses to the required major-readiness essay plus a set of personal insight questions"
+    ],
+    "requirements": [
+      "University of California application, opening August 1 and due by November 30 for fall entry",
+      "Minimum 60 UC-transferable semester units (90 quarter units) completed by the end of spring term prior to enrollment",
+      "Transfer Academic Update (TAU) submitted by January 31, reporting fall grades and planned spring coursework",
+      "Decisions typically arrive in mid-to-late April, released directly through the applicant's UC portal"
+    ],
+    "mentor": {
+      "names": "Alec Sarkissian",
+      "text": "Full Axis has a UC transfer mentor. Alec Sarkissian transferred from Sacramento City College into UC Berkeley's College of Letters and Science and was admitted to every UC campus he applied to — he works directly with UC-bound applicants on TAG strategy and course planning."
+    },
+    "dataNote": "Acceptance rates and deadlines shift year to year. Figures above reflect recent published cycles as a general guide — confirm current numbers on UC Berkeley's official admissions site before finalizing your application strategy."
+  },
+
+  "vanderbilt": {
+    "slug": "vanderbilt",
+    "name": "Vanderbilt University",
+    "crest": "VU",
+    "eyebrow": "Nashville, Tennessee",
+    "blurb": "A rare elite private school where transferring can be a smarter path in than first-year admission.",
+    "stats": {
+      "rate": "~18–22%",
+      "deadline": "Feb 15 (priority)",
+      "decisionsReleased": "Late Apr (rolling)",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Vanderbilt's freshman acceptance rate has fallen into the low single digits, but its transfer pathway remains far more accessible — recent cycles have landed in the high-teens to low-20s, with roughly 550–700 students admitted out of applicant pools between 2,900 and 3,200.",
+      "Vanderbilt only offers a fall transfer option. Applicants are strongly encouraged to meet the February 15 priority deadline, though the university continues reviewing applications on a rolling basis until May 1. Decisions go out on a rolling basis too, beginning in late April, so there's no single notification date for every applicant."
+    ],
+    "lookingFor": [
+      "At least 12 completed semester credit hours, with strong and consistent academic performance",
+      "A clear, specific reason for transferring — Vanderbilt places real weight on why the applicant believes Vanderbilt (and their intended school within it) is the right next step",
+      "Demonstrated engagement outside the classroom, not just a strong transcript",
+      "For Peabody College applicants, a declared major and fit for that specific program; for Blair School of Music, a required audition"
+    ],
+    "requirements": [
+      "Coalition Application for Transfer or Common Application for Transfer, with the February 15 priority deadline (rolling review continues through May 1)",
+      "Final high school transcript, including date of graduation",
+      "Official transcripts from every college attended",
+      "One letter of recommendation, ideally from a college instructor",
+      "Program-specific materials where required — an audition for Blair School of Music, a stated major for Peabody College"
+    ],
+    "mentor": {
+      "names": "Azmain Harun",
+      "text": "Full Axis has a mentor with direct Vanderbilt admissions experience. Azmain Harun, admitted to Vanderbilt, works with applicants on positioning their transfer narrative and choosing the right school within the university."
+    },
+    "dataNote": "Acceptance rates and deadlines shift year to year. Figures above reflect recent published cycles as a general guide — confirm current numbers on Vanderbilt's official admissions site before finalizing your application strategy."
+  },
+
+  "boston-university": {
+    "slug": "boston-university",
+    "name": "Boston University",
+    "crest": "BU",
+    "eyebrow": "Boston, Massachusetts",
+    "blurb": "One of the most transfer-friendly major research universities, with two intake cycles per year.",
+    "stats": {
+      "rate": "~27–35%",
+      "deadline": "Feb 1 (Fall) / Oct 1 (Spring)",
+      "decisionsReleased": "Apr–Jun (rolling)",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Boston University is one of the more transfer-friendly major research universities in the country. Recent cycles have put the transfer acceptance rate roughly in the high-20s to mid-30s — well above BU's freshman acceptance rate, which has fallen into the single digits for Regular Decision. BU typically admits somewhere in the 2,000–2,300 range out of applicant pools of 4,500–6,700.",
+      "Unlike most highly selective schools, BU accepts transfers for both fall and spring entry, though not every major or college is open to spring admission. Fall carries the larger intake and more program options. Decisions are released on a rolling basis, generally between April and June for fall applicants."
+    ],
+    "lookingFor": [
+      "At least 12 completed college credits (12+ credit applicants apply as transfers; fewer, and the first-year path applies instead)",
+      "A strong, consistent college GPA — the single most heavily weighted factor, with admitted students often at 3.5 or higher",
+      "A declared major within one of BU's degree-granting schools or colleges — transfer applicants cannot apply undeclared",
+      "Fit with the specific program applied to — Questrom School of Business, the College of Engineering, and Sargent College tend to be the most competitive for transfers"
+    ],
+    "requirements": [
+      "Common Application (Transfer version), due February 1 for fall entry or October 1 for spring entry",
+      "Official transcripts from every college attended, plus a high school transcript if fewer than 30 college credits are completed",
+      "One letter of recommendation from a college instructor familiar with the applicant's work",
+      "No SAT/ACT scores required for transfer admission",
+      "Decisions released on a rolling basis, generally April through June for fall applicants"
+    ],
+    "mentor": {
+      "names": "The Full Axis team",
+      "text": "Full Axis works with BU-bound applicants on program selection and application strategy, since acceptance odds vary significantly between BU's schools and colleges."
+    },
+    "dataNote": "Acceptance rates and deadlines shift year to year and vary by school within BU. Figures above reflect recent published cycles as a general guide — confirm current numbers on Boston University's official admissions site before finalizing your application strategy."
+  },
+    "somethign else": {
+    "slug": "boston-university",
+    "name": "Boston University",
+    "crest": "BU",
+    "eyebrow": "Boston, Massachusetts",
+    "blurb": "One of the most transfer-friendly major research universities, with two intake cycles per year.",
+    "stats": {
+      "rate": "~27–35%",
+      "deadline": "Feb 1 (Fall) / Oct 1 (Spring)",
+      "decisionsReleased": "Apr–Jun (rolling)",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Boston University is one of the more transfer-friendly major research universities in the country. Recent cycles have put the transfer acceptance rate roughly in the high-20s to mid-30s — well above BU's freshman acceptance rate, which has fallen into the single digits for Regular Decision. BU typically admits somewhere in the 2,000–2,300 range out of applicant pools of 4,500–6,700.",
+      "Unlike most highly selective schools, BU accepts transfers for both fall and spring entry, though not every major or college is open to spring admission. Fall carries the larger intake and more program options. Decisions are released on a rolling basis, generally between April and June for fall applicants."
+    ],
+    "lookingFor": [
+      "At least 12 completed college credits (12+ credit applicants apply as transfers; fewer, and the first-year path applies instead)",
+      "A strong, consistent college GPA — the single most heavily weighted factor, with admitted students often at 3.5 or higher",
+      "A declared major within one of BU's degree-granting schools or colleges — transfer applicants cannot apply undeclared",
+      "Fit with the specific program applied to — Questrom School of Business, the College of Engineering, and Sargent College tend to be the most competitive for transfers"
+    ],
+    "requirements": [
+      "Common Application (Transfer version), due February 1 for fall entry or October 1 for spring entry",
+      "Official transcripts from every college attended, plus a high school transcript if fewer than 30 college credits are completed",
+      "One letter of recommendation from a college instructor familiar with the applicant's work",
+      "No SAT/ACT scores required for transfer admission",
+      "Decisions released on a rolling basis, generally April through June for fall applicants"
+    ],
+    "mentor": {
+      "names": "The Full Axis team",
+      "text": "Full Axis works with BU-bound applicants on program selection and application strategy, since acceptance odds vary significantly between BU's schools and colleges."
+    },
+    "dataNote": "Acceptance rates and deadlines shift year to year and vary by school within BU. Figures above reflect recent published cycles as a general guide — confirm current numbers on Boston University's official admissions site before finalizing your application strategy."
+  }
+}

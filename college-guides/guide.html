@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="../Untitled_design__1_-removebg-preview.png" />
+<title id="page-title">College Transfer Guide | Full Axis College Consulting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <a href="../index.html"><img src="../IMG_4736-removebg-preview.png" alt="Full Axis" class="nav-logo-img" /></a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../index.html#mission">About</a></li>
+    <li><a href="../index.html#team">Team</a></li>
+    <li><a href="../index.html#pricing">Packages</a></li>
+    <li><a href="../transfer-blueprint/index.html">Mission</a></li>
+    <li><a href="../college-guides/index.html">College Guides</a></li>
+    <li><a href="../kill-board/index.html">Axis Board</a></li>
+    <li><a href="../index.html#apply" class="nav-cta">Apply Now</a></li>
+  </ul>
+</nav>
+
+<!-- SUB HERO -->
+<section class="sub-hero">
+  <div class="sub-hero-inner">
+    <div class="hero-eyebrow" id="guide-eyebrow">&nbsp;</div>
+    <h1 class="sub-hero-title" id="guide-title">&nbsp;</h1>
+    <div class="hero-rule"></div>
+    <p class="sub-hero-sub">Decision dates, requirements, and what the admissions committee actually prioritizes for transfer applicants.</p>
+  </div>
+</section>
+
+<section class="guide-detail">
+  <div class="section-inner">
+
+    <div class="guide-stat-bar reveal" id="guide-stat-bar">
+      <!-- filled by JS -->
+    </div>
+
+    <div class="guide-body" id="guide-body">
+      <!-- filled by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="apply">
+  <div class="section-inner">
+    <div class="apply-grid reveal">
+      <div>
+        <div class="section-label">Get Started</div>
+        <h2 class="apply-title" id="cta-title">Ready to <em>apply?</em></h2>
+        <p class="apply-sub" id="cta-sub">Work directly with a mentor who's been through the process. Submit your application and a member of our team will reach out within 48 hours.</p>
+      </div>
+      <div class="apply-box">
+        <div class="apply-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3>Apply Now</h3>
+        <p>Complete our short intake form. Every application is reviewed personally by our team.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFQlOemhVGL9cHiw1zWZMkfWvCgZNxgydIc3T4HkZGuN4dA/viewform?usp=header"
+        target="_blank" rel="noopener noreferrer" class="btn-apply">Begin Your Application →</a>
+        <p class="apply-fine">Beta Cycle — 2026–2027 Admissions Year</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-logo"> <span></span></div>
+  <div class="ft-note">Full Axis is currently operating in its beta cycle for the 2026–2027 admissions year. Prestige-focused, major-specific admissions advisory.</div>
+  <div class="ft-right">
+    <div class="ft-social">
+      <a href="https://www.instagram.com/fullaxisconsulting?igsh=MTVjaGZybGl2OHJxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" stroke="white" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.5" fill="white" stroke="none"/>
+        </svg>
+      </a>
+      <a href="https://www.tiktok.com/@fullaxiscc?_r=1&_t=ZP-95ywb3mjwBK" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="white" stroke="none">
+          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.24 8.24 0 004.84 1.56V6.81a4.85 4.85 0 01-1.07-.12z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="ft-copy">© 2026 Full Axis</div>
+  </div>
+</footer>
+<style>
+.ft-right{display:flex;flex-direction:column;align-items:flex-end;gap:0.75rem}
+@media(max-width:580px){.ft-right{align-items:center}}
+.guide-not-found{padding:4rem 0;text-align:center}
+</style>
+
+<script src="../main.js"></script>
+<script>
+(async function () {
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get('school');
+
+  const body = document.getElementById('guide-body');
+  const statBar = document.getElementById('guide-stat-bar');
+
+  try {
+    const res = await fetch('guides-data.json');
+    const data = await res.json();
+    const school = slug ? data[slug] : null;
+
+    if (!school) {
+      document.getElementById('guide-title').textContent = 'Guide Not Found';
+      document.getElementById('guide-eyebrow').textContent = '';
+      body.innerHTML = '<div class="guide-not-found"><p>We couldn\'t find a guide for that school. <a href="index.html">Browse all college guides →</a></p></div>';
+      return;
+    }
+
+    // Title / meta
+    document.title = school.name + ' Transfer Acceptance Rate, Decision Date & What They Look For | Full Axis';
+    document.getElementById('page-title').textContent = document.title;
+    document.getElementById('guide-eyebrow').textContent = school.eyebrow;
+    document.getElementById('guide-title').innerHTML = school.name + ' Transfer <em>Acceptance Rate</em>';
+
+    // Stat bar
+    statBar.innerHTML = `
+      <div class="guide-stat-tile"><div class="label">Recent Rate</div><div class="value">${school.stats.rate}</div></div>
+      <div class="guide-stat-tile"><div class="label">Application Deadline</div><div class="value">${school.stats.deadline}</div></div>
+      <div class="guide-stat-tile"><div class="label">Decisions Released</div><div class="value">${school.stats.decisionsReleased}</div></div>
+      <div class="guide-stat-tile"><div class="label">Terms Offered</div><div class="value">${school.stats.terms}</div></div>
+    `;
+
+    // Body
+    const overviewHtml = school.overview.map(p => `<p>${p}</p>`).join('');
+    const lookingForHtml = school.lookingFor.map(li => `<li>${li}</li>`).join('');
+    const requirementsHtml = school.requirements.map(li => `<li>${li}</li>`).join('');
+
+    body.innerHTML = `
+      <h2>Overview</h2>
+      ${overviewHtml}
+
+      <h2>What ${school.name.split(' ')[0]} Looks For</h2>
+      <ul>${lookingForHtml}</ul>
+
+      <h2>Requirements &amp; Deadlines</h2>
+      <ul>${requirementsHtml}</ul>
+
+      <div class="mentor-tie-in">
+        <p><strong>Full Axis has a mentor for this school.</strong> ${school.mentor.text}</p>
+      </div>
+
+      <p class="data-note">${school.dataNote}</p>
+    `;
+
+    document.getElementById('cta-title').innerHTML = `Targeting <em>${school.name.split(' ')[0]}?</em>`;
+
+  } catch (err) {
+    console.error('Failed to load guide data:', err);
+    body.innerHTML = '<p>Something went wrong loading this guide. Please try again shortly.</p>';
+  }
+})();
+</script>
+</body>
+</html>
