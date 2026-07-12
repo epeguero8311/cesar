@@ -178,6 +178,296 @@
       "text": "Full Axis currently does not have a Harvard transfer mentor. Our advising team nevertheless works with applicants to develop competitive transfer strategies tailored to Harvard's uniquely selective admissions process."
     },
     "dataNote": "Harvard's transfer admission numbers are exceptionally small and may fluctuate from year to year. Acceptance rates, testing policies, and application requirements can change with each admissions cycle. Always confirm current information on Harvard's official transfer admissions website before applying."
+  },
+  {
+  "stanford": {
+    "slug": "stanford",
+    "name": "Stanford University",
+    "crest": "STAN",
+    "eyebrow": "Stanford, California",
+    "blurb": "Stanford enrolls only a handful of transfer students each year, making it one of the country's most selective transfer destinations.",
+    "stats": {
+      "rate": "~1–2%",
+      "deadline": "Mar 15",
+      "decisionsReleased": "Mid May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Stanford's transfer admission process is among the most competitive in higher education. In recent years, the university has admitted roughly 30 to 60 transfer students from applicant pools exceeding 2,000 applicants, with admit rates typically around 1–2%.",
+      "Transfer applicants may apply only for fall enrollment. Admissions decisions are generally released in mid-May, and successful applicants demonstrate exceptional college achievement, significant personal impact, and a compelling academic reason for transferring."
+    ],
+    "lookingFor": [
+      "Outstanding academic performance in a rigorous college curriculum",
+      "Evidence of exceptional intellectual curiosity, initiative, and meaningful contributions outside the classroom",
+      "A clear explanation of why Stanford uniquely supports the applicant's academic and personal goals",
+      "Strong faculty recommendations that speak to college-level achievement",
+      "Continued academic and disciplinary good standing at the current institution"
+    ],
+    "requirements": [
+      "Common Application for Transfer due March 15",
+      "Official transcripts from every college attended and final high school transcript",
+      "College Report and instructor evaluations",
+      "Transfer essays explaining academic interests and reasons for transferring",
+      "Admission decisions released in mid-May"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Stanford transfer mentor. Our advisors help applicants develop transfer strategies tailored to Stanford's highly selective admissions process."
+    },
+    "dataNote": "Stanford's transfer class is intentionally very small. Admission rates and application requirements may change each year, so applicants should verify current information through Stanford's official transfer admissions website."
+  },
+  "yale": {
+    "slug": "yale",
+    "name": "Yale College",
+    "crest": "YALE",
+    "eyebrow": "New Haven, Connecticut",
+    "blurb": "Yale enrolls a small transfer class each fall through one of the nation's most selective transfer admissions processes.",
+    "stats": {
+      "rate": "~2–3%",
+      "deadline": "Mar 1",
+      "decisionsReleased": "Mid May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Yale typically admits only a few dozen transfer students each year from more than 1,500 applicants. Recent transfer admit rates have generally remained between 2% and 3%.",
+      "Transfer admission is available only for fall enrollment. Successful applicants present exceptional college records, thoughtful reasons for transferring, and evidence that Yale's academic environment uniquely aligns with their educational goals."
+    ],
+    "lookingFor": [
+      "Excellent college grades in a demanding academic program",
+      "Clear academic purpose for transferring specifically to Yale",
+      "Strong evidence of leadership, service, research, or other meaningful accomplishments",
+      "Positive academic and disciplinary standing",
+      "Insightful essays demonstrating intellectual curiosity and fit with Yale"
+    ],
+    "requirements": [
+      "Common Application for Transfer due March 1",
+      "Official college and high school transcripts",
+      "College Report and instructor recommendations",
+      "Mid-Term Report when applicable",
+      "Admission decisions released in mid-May"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Yale transfer mentor. Our advising team works with applicants to build competitive transfer applications tailored to Yale's holistic review process."
+    },
+    "dataNote": "Yale's transfer admission statistics and requirements vary modestly from year to year. Applicants should confirm all deadlines and policies on Yale's official admissions website."
+  },
+  "mit": {
+    "slug": "mit",
+    "name": "Massachusetts Institute of Technology",
+    "crest": "MIT",
+    "eyebrow": "Cambridge, Massachusetts",
+    "blurb": "MIT admits only a very small number of transfer students, with an emphasis on exceptional STEM achievement.",
+    "stats": {
+      "rate": "~1–2%",
+      "deadline": "Mar 15",
+      "decisionsReleased": "Late May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "MIT receives well over 500 transfer applications annually and typically enrolls only around 20 to 35 students. Admission rates generally remain between 1% and 2%.",
+      "Applicants are evaluated primarily on outstanding academic preparation in mathematics, science, and engineering, along with evidence that MIT offers opportunities unavailable at their current institution."
+    ],
+    "lookingFor": [
+      "Exceptional college performance in rigorous STEM coursework",
+      "Strong preparation in calculus, physics, and other technical subjects",
+      "Meaningful research, innovation, or engineering experience",
+      "Faculty recommendations demonstrating academic excellence",
+      "A compelling academic rationale for transferring to MIT"
+    ],
+    "requirements": [
+      "MIT Transfer Application due March 15",
+      "Official college and high school transcripts",
+      "College instructor evaluations",
+      "Required coursework in mathematics and science appropriate to intended major",
+      "Admission decisions released in late May"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have an MIT transfer mentor. Our advisors help STEM applicants build competitive transfer applications aligned with MIT's expectations."
+    },
+    "dataNote": "MIT's transfer class remains extremely small and competitive. Applicants should review the institute's current prerequisite coursework and admissions policies before applying."
+  },
+  "princeton": {
+    "slug": "princeton",
+    "name": "Princeton University",
+    "crest": "PRIN",
+    "eyebrow": "Princeton, New Jersey",
+    "blurb": "Princeton's transfer program was reinstated in recent years and remains among the nation's most selective.",
+    "stats": {
+      "rate": "~2–4%",
+      "deadline": "Mar 1",
+      "decisionsReleased": "Mid May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Since reinstating transfer admissions, Princeton has enrolled relatively small transfer classes while maintaining an extremely selective process. Applicants are evaluated holistically with particular attention to academic achievement and personal background.",
+      "Princeton seeks students whose educational experiences and perspectives will enrich the campus community while demonstrating strong potential for success within its rigorous academic environment."
+    ],
+    "lookingFor": [
+      "Outstanding academic performance in college",
+      "Strong alignment with Princeton's liberal arts curriculum",
+      "Meaningful leadership, service, or personal achievement",
+      "Thoughtful explanation of why Princeton is the right transfer destination",
+      "Excellent faculty recommendations"
+    ],
+    "requirements": [
+      "Common Application for Transfer due March 1",
+      "Official college and high school transcripts",
+      "College Report and academic recommendations",
+      "Mid-Term Report",
+      "Admission decisions released in mid-May"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Princeton transfer mentor. Our advisors help applicants navigate Princeton's uniquely holistic transfer review."
+    },
+    "dataNote": "Princeton's transfer program continues to evolve following its reinstatement. Applicants should confirm current eligibility requirements and deadlines on Princeton's admissions website."
+  },
+  "penn": {
+    "slug": "penn",
+    "name": "University of Pennsylvania",
+    "crest": "PENN",
+    "eyebrow": "Philadelphia, Pennsylvania",
+    "blurb": "Penn enrolls a modest transfer class each year with admission standards that vary by undergraduate school.",
+    "stats": {
+      "rate": "~4–8%",
+      "deadline": "Mar 15",
+      "decisionsReleased": "Mid May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "The University of Pennsylvania admits a limited number of transfer students each year, with competitiveness varying across the College of Arts and Sciences, Engineering, Nursing, and Wharton.",
+      "Successful applicants combine excellent college academics with a clear explanation of why Penn's specific academic resources fit their long-term goals."
+    ],
+    "lookingFor": [
+      "Excellent college grades in a challenging curriculum",
+      "Coursework aligned with the intended Penn school",
+      "Compelling academic reasons for transferring",
+      "Strong faculty recommendations",
+      "Evidence of leadership and campus engagement"
+    ],
+    "requirements": [
+      "Common Application for Transfer due March 15",
+      "Official transcripts from all colleges attended",
+      "College Report and instructor recommendations",
+      "Mid-Term Report",
+      "Admission decisions released in mid-May"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Penn transfer mentor. Our advisors help applicants develop school-specific transfer strategies across Penn's undergraduate programs."
+    },
+    "dataNote": "Transfer admission rates differ across Penn's undergraduate schools. Applicants should review school-specific prerequisites and current admissions policies before applying."
+  },
+  "columbia": {
+    "slug": "columbia",
+    "name": "Columbia College",
+    "crest": "CC",
+    "eyebrow": "New York, New York",
+    "blurb": "Columbia maintains one of the Ivy League's more established transfer programs while remaining highly selective.",
+    "stats": {
+      "rate": "~10–15%",
+      "deadline": "Mar 1",
+      "decisionsReleased": "Mid May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Columbia College consistently enrolls a meaningful transfer class each year, though admission remains highly competitive. Recent transfer admit rates have generally fallen between 10% and 15%.",
+      "Applicants are evaluated based on academic excellence, preparation for Columbia's Core Curriculum, and a clear academic rationale for transferring."
+    ],
+    "lookingFor": [
+      "Excellent college academic performance",
+      "Preparation for Columbia's Core Curriculum",
+      "Strong writing and analytical ability",
+      "Clear educational reasons for transferring",
+      "Positive academic and disciplinary standing"
+    ],
+    "requirements": [
+      "Coalition Application or Common Application for Transfer due March 1",
+      "Official college and high school transcripts",
+      "College Report and faculty recommendations",
+      "Mid-Term Report",
+      "Admission decisions released in mid-May"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Columbia transfer mentor. Our advisors work with applicants to build competitive applications tailored to Columbia's distinctive academic environment."
+    },
+    "dataNote": "Admission statistics vary somewhat by year, and Columbia also maintains separate transfer processes for Columbia College and Columbia Engineering. Applicants should verify current requirements before applying."
+  },
+  "brown": {
+    "slug": "brown",
+    "name": "Brown University",
+    "crest": "BRO",
+    "eyebrow": "Providence, Rhode Island",
+    "blurb": "Brown's highly selective transfer process emphasizes academic excellence and fit with its Open Curriculum.",
+    "stats": {
+      "rate": "~4–6%",
+      "deadline": "Mar 1",
+      "decisionsReleased": "Mid May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Brown admits only a small transfer class each year. Successful applicants demonstrate exceptional college achievement along with a thoughtful understanding of how Brown's Open Curriculum supports their academic interests.",
+      "Transfer applicants are reviewed holistically, with significant weight placed on college performance, recommendations, and personal essays."
+    ],
+    "lookingFor": [
+      "Outstanding college academic record",
+      "Evidence of intellectual independence and curiosity",
+      "Clear fit with Brown's Open Curriculum",
+      "Strong faculty recommendations",
+      "Meaningful extracurricular or community involvement"
+    ],
+    "requirements": [
+      "Common Application for Transfer due March 1",
+      "Official college and high school transcripts",
+      "College Report and instructor recommendations",
+      "Mid-Term Report",
+      "Admission decisions released in mid-May"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Brown transfer mentor. Our advising team helps applicants demonstrate fit with Brown's distinctive academic philosophy."
+    },
+    "dataNote": "Brown's transfer class remains relatively small. Admission policies and application requirements may change between cycles, so applicants should consult Brown's official admissions website."
+  },
+  "duke": {
+    "slug": "duke",
+    "name": "Duke University",
+    "crest": "DUKE",
+    "eyebrow": "Durham, North Carolina",
+    "blurb": "Duke enrolls a small but consistent transfer class through a highly competitive admissions process.",
+    "stats": {
+      "rate": "~4–7%",
+      "deadline": "Mar 15",
+      "decisionsReleased": "Mid May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Duke admits a limited number of transfer students each year from a highly competitive applicant pool. Recent transfer admit rates have generally ranged from 4% to 7%.",
+      "The university seeks applicants with outstanding college achievement, compelling reasons for transferring, and evidence of leadership, service, and intellectual engagement."
+    ],
+    "lookingFor": [
+      "Excellent college grades in a rigorous academic program",
+      "Strong involvement in leadership, research, service, or campus life",
+      "Clear explanation of why Duke is the right academic fit",
+      "Positive recommendations from college faculty",
+      "Continued academic and disciplinary good standing"
+    ],
+    "requirements": [
+      "Common Application for Transfer due March 15",
+      "Official college and high school transcripts",
+      "College Report, Mid-Term Report, and faculty recommendations",
+      "Supplemental essays",
+      "Admission decisions released in mid-May"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Duke transfer mentor. Our advisors work with applicants to develop competitive transfer applications tailored to Duke's admissions process."
+    },
+    "dataNote": "Transfer admission statistics and requirements may change from year to year. Applicants should verify current deadlines and policies through Duke's official admissions website."
   }
+}
 }
 
