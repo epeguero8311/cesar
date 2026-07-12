@@ -179,7 +179,6 @@
     },
     "dataNote": "Harvard's transfer admission numbers are exceptionally small and may fluctuate from year to year. Acceptance rates, testing policies, and application requirements can change with each admissions cycle. Always confirm current information on Harvard's official transfer admissions website before applying."
   },
-  {
   "stanford": {
     "slug": "stanford",
     "name": "Stanford University",
@@ -468,6 +467,5 @@
     },
     "dataNote": "Transfer admission statistics and requirements may change from year to year. Applicants should verify current deadlines and policies through Duke's official admissions website."
   }
-}
 }
 
