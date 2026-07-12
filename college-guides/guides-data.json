@@ -35,7 +35,6 @@
     },
     "dataNote": "Acceptance rates and deadlines shift year to year and can vary by college within Cornell. Figures above reflect recent published cycles as a general guide — confirm current numbers on Cornell's official admissions site before finalizing your application strategy."
   },
-
   "uc-berkeley": {
     "slug": "uc-berkeley",
     "name": "UC Berkeley",
@@ -70,7 +69,6 @@
     },
     "dataNote": "Acceptance rates and deadlines shift year to year. Figures above reflect recent published cycles as a general guide — confirm current numbers on UC Berkeley's official admissions site before finalizing your application strategy."
   },
-
   "vanderbilt": {
     "slug": "vanderbilt",
     "name": "Vanderbilt University",
@@ -106,7 +104,6 @@
     },
     "dataNote": "Acceptance rates and deadlines shift year to year. Figures above reflect recent published cycles as a general guide — confirm current numbers on Vanderbilt's official admissions site before finalizing your application strategy."
   },
-
   "boston-university": {
     "slug": "boston-university",
     "name": "Boston University",
@@ -142,7 +139,6 @@
     },
     "dataNote": "Acceptance rates and deadlines shift year to year and vary by school within BU. Figures above reflect recent published cycles as a general guide — confirm current numbers on Boston University's official admissions site before finalizing your application strategy."
   },
-
   "harvard": {
     "slug": "harvard",
     "name": "Harvard College",
@@ -466,7 +462,7 @@
       "text": "Full Axis currently does not have a Duke transfer mentor. Our advisors work with applicants to develop competitive transfer applications tailored to Duke's admissions process."
     },
     "dataNote": "Transfer admission statistics and requirements may change from year to year. Applicants should verify current deadlines and policies through Duke's official admissions website."
-    },
+  },
   "caltech": {
     "slug": "caltech",
     "name": "California Institute of Technology",
@@ -790,7 +786,7 @@
       "text": "Full Axis currently does not have a USC transfer mentor. Our advisors help applicants — especially those coming from California community colleges — build a strong case using USC's articulation agreements and general education planning tools."
     },
     "dataNote": "USC's transfer acceptance rate has fluctuated in recent cycles and is meaningfully higher for California community college applicants. Applicants should confirm current rates and program-specific deadlines on USC's official admissions site before applying."
-    },
+  },
   "cmu": {
     "slug": "cmu",
     "name": "Carnegie Mellon University",
@@ -1366,5 +1362,905 @@
       "text": "Full Axis currently does not have a Purdue transfer mentor. Our advisors help applicants check program availability and build a case tailored to their specific college within Purdue, since requirements and closures vary widely by major."
     },
     "dataNote": "Purdue's transfer acceptance rate and program availability can shift from term to term. Applicants should confirm current figures and check for closed programs on Purdue's official admissions site before applying."
+  },
+  "williams": {
+    "slug": "williams",
+    "name": "Williams College",
+    "crest": "WIL",
+    "eyebrow": "Williamstown, Massachusetts",
+    "blurb": "One of the very hardest transfer admits in the country — a tiny handful of seats each year.",
+    "stats": {
+      "rate": "~3%",
+      "deadline": "Mar 2–3",
+      "decisionsReleased": "Apr 15",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Williams runs one of the most selective transfer programs in the country. Recent cycles have seen 400-575 transfer applicants competing for only 11-17 spots, putting the admit rate in the 3% range — well below even Williams's own single-digit freshman acceptance rate.",
+      "Williams accepts transfer applicants for fall entry only. Students with at least one year of full-time college coursework completed or in progress should apply as transfers; those with less should apply as first-years. Decisions are released by April 15, with admitted students given until June 1 to reply."
+    ],
+    "lookingFor": [
+      "At least one year of full-time college coursework completed or in progress, with no maximum credit cutoff",
+      "Outstanding, near-top-of-class grades in a rigorous college curriculum — competitive applicants are well above a 3.8 GPA",
+      "A genuine, well-articulated reason for choosing Williams specifically, including its distinctive tutorial classes",
+      "Two faculty letters of recommendation and a Transfer College Report confirming standing at the current institution",
+      "Meaningful engagement outside the classroom that speaks to fit with Williams's small, residential community"
+    ],
+    "requirements": [
+      "Common Application for Transfer, due March 2–3 for fall entry",
+      "Official transcripts from every college attended, plus a final high school transcript",
+      "Transfer College Report and two faculty letters of recommendation",
+      "Test-optional; self-reported or official SAT/ACT scores accepted",
+      "Decisions released by April 15, with a June 1 reply deadline"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Williams transfer mentor. Our advisors help applicants build an exceptionally strong academic case given how few seats open up in Williams's transfer class each year."
+    },
+    "dataNote": "Williams's transfer acceptance rate is among the lowest in the country and can shift year to year based on how much space opens up. Applicants should confirm current figures and deadlines on Williams's official admissions site before applying."
+  },
+  "amherst": {
+    "slug": "amherst",
+    "name": "Amherst College",
+    "crest": "AMH",
+    "eyebrow": "Amherst, Massachusetts",
+    "blurb": "A highly selective Open Curriculum college that has recently admitted a bit more generously than in past cycles.",
+    "stats": {
+      "rate": "~6–9%",
+      "deadline": "Mar 2 (Fall) / Nov 3 (Spring)",
+      "decisionsReleased": "Mid Apr (Fall)",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Amherst's transfer acceptance rate has moved up somewhat in the most recent cycles, landing around 6-9% after running closer to 5% in earlier years. For fall 2024, Amherst received 638 transfer applications and admitted 55 students, an 8.6% rate.",
+      "Amherst accepts transfer applicants for both fall and spring entry, with fall carrying the much larger intake. Applicants need at least 32 semester hours of transferable liberal arts coursework, and competitive applicants typically present an A- average or better."
+    ],
+    "lookingFor": [
+      "At least 32 semester hours of transferable liberal arts coursework, with a competitive GPA around an A- average or higher",
+      "Coursework concentrated in the liberal arts — pre-professional, technical, and vocational courses generally don't transfer",
+      "A thoughtful essay on the applicant's educational journey and reasons for choosing Amherst's Open Curriculum specifically",
+      "Two college instructor evaluations (not academic advisors) who have taught the applicant directly",
+      "A second essay reflecting on personal experiences and circumstances that have shaped the applicant"
+    ],
+    "requirements": [
+      "Common Application for Transfer or Coalition Application, due March 2 for fall entry or November 3 for spring entry",
+      "Official transcripts from every college attended, plus a secondary school transcript",
+      "College Report and Mid-Term Report (if currently enrolled)",
+      "Two college instructor evaluations",
+      "Decisions released in mid-April for fall entry; no deferral option for admitted transfers"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have an Amherst transfer mentor. Our advisors help applicants build a strong academic case for one of the most selective liberal arts transfer programs in the country."
+    },
+    "dataNote": "Amherst's transfer acceptance rate has ticked upward in the most recent cycles but remains highly selective. Applicants should confirm current figures on Amherst's official admissions site before applying."
+  },
+  "pomona": {
+    "slug": "pomona",
+    "name": "Pomona College",
+    "crest": "POM",
+    "eyebrow": "Claremont, California",
+    "blurb": "One of the most selective liberal arts colleges in the country, admitting only a small transfer class each fall.",
+    "stats": {
+      "rate": "~8%",
+      "deadline": "Feb 15",
+      "decisionsReleased": "Early Apr",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Pomona admits a small, highly competitive transfer class each year — recent cycles have seen roughly 48 transfer students admitted, about 35 of them from community colleges, out of applicant pools in the low hundreds.",
+      "Pomona accepts transfer applicants for fall entry only, admitting students as sophomores or juniors who must spend at least four full-time semesters in residence. The college is permanently test-optional and does not consider demonstrated interest."
+    ],
+    "lookingFor": [
+      "At least one year of full-time college coursework completed by the time of enrollment",
+      "Strong, consistent grades in a rigorous curriculum — competitive applicants present GPAs well above a 3.0 minimum",
+      "A College Report and two academic evaluations from current college instructors",
+      "A compelling case for how Pomona's small, collaborative academic environment fits the applicant's goals",
+      "Program-specific materials where applicable, since transfer credit evaluations vary by department"
+    ],
+    "requirements": [
+      "Common Application for Transfer, due February 15 for fall entry",
+      "Official transcripts from every college attended, plus a final high school transcript",
+      "College/Transfer Report completed by a current registrar or transfer adviser",
+      "Two academic evaluations from college course instructors",
+      "Decisions released in early April, with a June 1 reply deadline"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Pomona transfer mentor. Our advisors help applicants build a strong, well-rounded case for one of the most selective transfer programs in the Claremont Colleges consortium."
+    },
+    "dataNote": "Pomona's transfer class remains very small and competitive. Applicants should confirm current acceptance figures and deadlines on Pomona's official admissions site before applying."
+  },
+  "swarthmore": {
+    "slug": "swarthmore",
+    "name": "Swarthmore College",
+    "crest": "SWAR",
+    "eyebrow": "Swarthmore, Pennsylvania",
+    "blurb": "A relatively more accessible Ivy-caliber liberal arts transfer program, admitting a meaningful share of applicants.",
+    "stats": {
+      "rate": "~15–20%",
+      "deadline": "Apr 1",
+      "decisionsReleased": "Mid May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Swarthmore's transfer acceptance rate tends to run noticeably higher than many peer liberal arts colleges, generally landing in the 15-20% range in recent cycles — a byproduct of the roughly 30 transfer seats the college fills each year relative to its applicant pool.",
+      "Swarthmore admits transfer students for fall enrollment only. Applicants need the equivalent of two or more completed semesters of college coursework, and the college discourages applications from students who have completed six or more semesters."
+    ],
+    "lookingFor": [
+      "At least two completed semesters of college or university-level coursework by the end of the current academic year",
+      "Strong, well-rounded academic performance, since Swarthmore does not publish a minimum GPA but reviews holistically",
+      "Two academic evaluations, with at least one from a recent college instructor",
+      "An official statement of good standing from the applicant's current or most recent institution",
+      "A genuine fit with Swarthmore's Quaker-founded, collaborative academic culture"
+    ],
+    "requirements": [
+      "Common Application or Coalition on Scoir Application, due April 1 for fall entry",
+      "Official college transcripts from all institutions attended, plus secondary school transcripts",
+      "Two academic evaluations, including at least one from a recent college instructor",
+      "Test-optional; self-reported or official SAT/ACT scores accepted",
+      "Decisions released online in mid-May"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Swarthmore transfer mentor. Our advisors help applicants build a strong, well-rounded case for one of the more transfer-accessible top liberal arts colleges."
+    },
+    "dataNote": "Swarthmore's transfer acceptance rate is relatively favorable compared to peer schools but still competitive and can shift year to year. Applicants should confirm current figures on Swarthmore's official admissions site before applying."
+  },
+  "wellesley": {
+    "slug": "wellesley",
+    "name": "Wellesley College",
+    "crest": "WELL",
+    "eyebrow": "Wellesley, Massachusetts",
+    "blurb": "A women's college with a transfer rate that has tightened in the most recent cycle but remains a real pathway in.",
+    "stats": {
+      "rate": "~10%",
+      "deadline": "Mar 1",
+      "decisionsReleased": "Early May",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Wellesley's transfer acceptance rate has declined in the most recent confirmed cycle, down to around 9.6% for fall 2024 after running closer to 15-18% in prior years — a reflection of a shrinking number of available transfer spots relative to demand.",
+      "Wellesley accepts transfer applicants for fall entry only, with a small number of Davis Degree Program spots also available for older or returning students. The Office of Admission expects to see at least two full semesters of coursework completed elsewhere."
+    ],
+    "lookingFor": [
+      "At least two full semesters of college coursework completed at another accredited institution",
+      "Strong academic performance in transferable coursework, since Wellesley reviews holistically rather than against a published GPA floor",
+      "A College Report completed by the applicant's academic advisor or dean",
+      "Individual course descriptions for all courses taken or in progress",
+      "A genuine fit with Wellesley's academic environment and its all-women's community"
+    ],
+    "requirements": [
+      "Common Application for Transfer, due March 1 for fall entry",
+      "Official transcripts from all post-secondary institutions attended, plus a high school transcript or GED",
+      "College Report and Mid-Term Report (if currently enrolled)",
+      "Test-optional; standardized test scores not required",
+      "Decisions released by early May"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Wellesley transfer mentor. Our advisors help applicants put together a strong case as Wellesley's transfer pool has grown more competitive in recent cycles."
+    },
+    "dataNote": "Wellesley's transfer acceptance rate has tightened notably in the most recent cycle. Applicants should confirm current figures on Wellesley's official admissions site before applying."
+  },
+  "bowdoin": {
+    "slug": "bowdoin",
+    "name": "Bowdoin College",
+    "crest": "BOWD",
+    "eyebrow": "Brunswick, Maine",
+    "blurb": "An extremely small transfer program where admission depends heavily on how much space opens up each year.",
+    "stats": {
+      "rate": "~2–10% (volatile)",
+      "deadline": "Mar 3",
+      "decisionsReleased": "Rolling",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Bowdoin's transfer acceptance rate swings dramatically year to year based on available space — recent cycles have ranged from as low as 1-3% up to nearly 12%, with the college typically receiving 150-260 applications and admitting only 5-25 students.",
+      "Bowdoin does not offer a spring entry term for transfers. Any student who has been enrolled in a degree-granting program elsewhere must apply as a transfer, and admission is considered extremely competitive given the tiny number of available seats."
+    ],
+    "lookingFor": [
+      "Honors-quality college work, generally B-level (3.0) or better, though there is no formal GPA cutoff",
+      "Both high school and college transcripts, since Bowdoin reviews academic history holistically",
+      "Two academic evaluations from instructors who have taught the applicant in college-level courses",
+      "A compelling personal statement explaining the reason for transferring specifically to Bowdoin",
+      "A record of engagement outside the classroom, since space is so limited that fit matters enormously"
+    ],
+    "requirements": [
+      "Common Application for Transfer, due March 3 for fall entry",
+      "Official transcripts from every college attended, plus a final high school transcript",
+      "Two academic evaluations and a College Report from the current institution",
+      "Test-optional; self-reported or official SAT/ACT scores accepted",
+      "Decisions released on a rolling basis; no spring transfer term offered"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Bowdoin transfer mentor. Our advisors help applicants build a standout case given how unpredictably small Bowdoin's transfer class can be from year to year."
+    },
+    "dataNote": "Bowdoin's transfer acceptance rate is highly volatile and depends on how much space opens up each cycle. Applicants should confirm current figures and deadlines on Bowdoin's official admissions site before applying."
+  },
+  "claremont-mckenna": {
+    "slug": "claremont-mckenna",
+    "name": "Claremont McKenna College",
+    "crest": "CMC",
+    "eyebrow": "Claremont, California",
+    "blurb": "A leadership-focused Claremont Colleges member whose transfer rate has tightened as applications have grown.",
+    "stats": {
+      "rate": "~6%",
+      "deadline": "Mar 15",
+      "decisionsReleased": "Rolling (Spring or Fall)",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Claremont McKenna's transfer acceptance rate has fallen in recent cycles as applications have climbed, landing around 5.6-6% for the most recent confirmed year — down from double digits just a few cycles earlier.",
+      "CMC reviews transfer applicants for both spring and fall admission, though most applicants apply for the larger fall intake. The college is test-optional for transfer applicants and does not charge a transfer application fee."
+    ],
+    "lookingFor": [
+      "Strong college-level grades, with competitive applicants typically well above a 3.3 GPA",
+      "A College Report (Transfer Report) completed by the current institution's dean, academic affairs official, or registrar",
+      "One academic recommendation, ideally from a professor in a course related to the applicant's intended major",
+      "A clear articulation of fit with CMC's mission around leadership and its Open Academy commitments",
+      "Genuine engagement with collaborative dialogue and constructive engagement with differing viewpoints"
+    ],
+    "requirements": [
+      "Common Application for Transfer, due March 15 for fall entry",
+      "Official transcripts from every college attended, plus a final high school or equivalency transcript",
+      "College Report (Transfer Report) and one academic recommendation",
+      "Test-optional; standardized test scores not required",
+      "Decisions released on a rolling basis for spring or fall entry"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Claremont McKenna transfer mentor. Our advisors help applicants build a competitive case as CMC's transfer admissions have tightened in recent cycles."
+    },
+    "dataNote": "Claremont McKenna's transfer acceptance rate has declined in recent cycles as its applicant pool has grown. Applicants should confirm current figures on CMC's official admissions site before applying."
+  },
+  "middlebury": {
+    "slug": "middlebury",
+    "name": "Middlebury College",
+    "crest": "MIDD",
+    "eyebrow": "Middlebury, Vermont",
+    "blurb": "A well-regarded liberal arts college with a transfer rate that runs meaningfully above its freshman acceptance rate.",
+    "stats": {
+      "rate": "~15–20%",
+      "deadline": "Mar 1 (Fall) / Nov 1 (Spring)",
+      "decisionsReleased": "Late Mar",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Middlebury's transfer acceptance rate has generally run in the mid-to-high teens, meaningfully above the college's roughly 11-14% freshman acceptance rate, though it can vary depending on the cycle.",
+      "Middlebury accepts transfer applicants for both fall (September) and spring (February 'Feb' admission) entry. Transfer students must complete at least two full academic years (18 units) of coursework at Middlebury to graduate."
+    ],
+    "lookingFor": [
+      "Strong, consistent college grades — competitive applicants generally present GPAs comparable to Middlebury's own high-achieving student body",
+      "A College Instructor Recommendation and a College Official Letter confirming standing at the current institution",
+      "A thoughtful personal statement or essay addressing reasons for transferring",
+      "Coursework compatible with a minimum of two years' additional study at Middlebury",
+      "Openness to Middlebury's distinctive February entry option for a portion of the incoming transfer class"
+    ],
+    "requirements": [
+      "Common Application or Coalition Application, due March 1 for fall entry or November 1 for spring entry",
+      "Official transcripts from every college attended, plus a final high school transcript",
+      "College Instructor Recommendation and College Official Letter",
+      "Test-optional; self-reported or official SAT/ACT scores accepted",
+      "Decisions released in late March, following the same timeline as first-year Regular Decision"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Middlebury transfer mentor. Our advisors help applicants build a strong case for one of the more transfer-friendly elite liberal arts colleges in New England."
+    },
+    "dataNote": "Middlebury's transfer acceptance rate can shift meaningfully year to year. Applicants should confirm current figures on Middlebury's official admissions site before applying."
+  },
+  "barnard": {
+    "slug": "barnard",
+    "name": "Barnard College",
+    "crest": "BARN",
+    "eyebrow": "New York, New York",
+    "blurb": "A Columbia-affiliated women's college that's genuinely transfer-friendly, admitting a fifth of applicants most years.",
+    "stats": {
+      "rate": "~20%",
+      "deadline": "Mar 1 (Fall) / Nov 1 (Spring)",
+      "decisionsReleased": "Late Mar (Fall) / After Dec 1 (Spring)",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Barnard stands out among highly selective women's colleges for being genuinely transfer-friendly. Recent cycles have landed the transfer acceptance rate around 20%, well above Barnard's roughly 9% freshman acceptance rate — for fall 2024, 252 of 1,261 applicants were admitted.",
+      "Barnard accepts transfer applicants for both fall and spring terms, with fall carrying the much larger applicant pool. There's historically been no meaningful advantage to applying for one term over the other in terms of acceptance rate."
+    ],
+    "lookingFor": [
+      "Between 24 and 60 completed transferable semester credits by the time of enrollment",
+      "Strong, exceptional grades at a community college or four-year institution in relevant, transferable coursework",
+      "A College Report and one letter of recommendation from a college-level faculty member who has taught the applicant",
+      "A required personal statement explaining reasons for transferring and objectives for attending Barnard",
+      "Three required short-answer/essay responses exploring fit with Barnard's community and curriculum"
+    ],
+    "requirements": [
+      "Common Application for Transfer, due March 1 for fall entry or November 1 for spring entry",
+      "Official final high school transcript, plus college transcripts from every institution attended",
+      "College Report and a letter of recommendation from a college instructor",
+      "Test-optional through 2027; SAT/ACT accepted if submitted",
+      "Fall decisions released after review beginning December 1; spring decisions rolling after December 1"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Barnard transfer mentor. Our advisors help applicants take advantage of Barnard's relatively favorable transfer odds and choose between the fall and spring entry terms."
+    },
+    "dataNote": "Barnard's transfer acceptance rate has held fairly steady in recent cycles. Applicants should confirm current figures on Barnard's official admissions site before applying."
+  },
+  "wesleyan": {
+    "slug": "wesleyan",
+    "name": "Wesleyan University",
+    "crest": "WESL",
+    "eyebrow": "Middletown, Connecticut",
+    "blurb": "A NESCAC university whose transfer acceptance rate runs well above its increasingly selective freshman rate.",
+    "stats": {
+      "rate": "~20–24%",
+      "deadline": "Mar 15",
+      "decisionsReleased": "Apr",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Wesleyan's transfer acceptance rate has generally landed in the 20-24% range in recent cycles — for the Class of 2028, the university admitted 131 of 543 transfer applicants, a 24.1% rate, notably higher than its roughly 16% freshman acceptance rate.",
+      "Wesleyan enrolls approximately 60 transfer students each fall and around 15 in the spring, though the college's formal application deadline structure centers on the fall term. Wesleyan does not require SAT or ACT scores from transfer applicants."
+    ],
+    "lookingFor": [
+      "Strong, consistent college grades in a range of coursework, since Wesleyan reviews holistically without a published GPA minimum",
+      "Two instructor evaluations from college teachers of academic courses (graduate TA evaluations are accepted)",
+      "A College Report, plus a Mid-Term Report if currently enrolled",
+      "A genuine fit with Wesleyan's interdisciplinary, scholar-teacher culture",
+      "Optional but encouraged interviews, offered virtually to strengthen the application"
+    ],
+    "requirements": [
+      "Common Application for Transfer, due March 15 for fall entry",
+      "Official transcripts of all college work, plus a final high school transcript or GED",
+      "Two instructor evaluations and a College Report",
+      "Standardized test scores not required, though applicants may choose to submit them",
+      "Decisions released in April, with admitted students confirming enrollment by May 1"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Wesleyan transfer mentor. Our advisors help applicants build on Wesleyan's relatively favorable transfer odds compared to its freshman admissions rate."
+    },
+    "dataNote": "Wesleyan's transfer acceptance rate has run meaningfully above its freshman rate in recent cycles. Applicants should confirm current figures on Wesleyan's official admissions site before applying."
+  },
+  "carleton": {
+    "slug": "carleton",
+    "name": "Carleton College",
+    "crest": "CARL",
+    "eyebrow": "Northfield, Minnesota",
+    "blurb": "A top Midwestern liberal arts college with a modest, holistically-reviewed transfer program and no application fee.",
+    "stats": {
+      "rate": "~9–11%",
+      "deadline": "Mar 31",
+      "decisionsReleased": "May 15",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Carleton's transfer acceptance rate has generally run in the 9-11% range in recent cycles, admitting a modest number of transfer students each year out of applicant pools in the low-to-mid 200s.",
+      "Carleton only admits transfer students for the fall term, and all students — transfer or first-year — begin in the fall. There is no application fee to apply, and credit evaluations are provided along with the offer of admission."
+    ],
+    "lookingFor": [
+      "Any completed college coursework after high school graduation, evaluated holistically without a strict minimum",
+      "Strong, consistent grades in regionally accredited coursework, with grades of C- or higher required for transfer credit",
+      "Recent recommendations, ideally including at least one from a college professor if more than a year of coursework is complete",
+      "A personal essay explaining reasons for transferring and specific fit with Carleton",
+      "Openness to Carleton's residential community, since housing is guaranteed for all full-time transfer students"
+    ],
+    "requirements": [
+      "Carleton's transfer application (no fee), due March 31 for fall entry",
+      "Official transcripts from every college attended, plus a final high school transcript",
+      "Recommendations from recent instructors, ideally a college professor for students with more than one year of coursework",
+      "SAT or ACT scores expected for transfer applicants",
+      "Decisions released by May 15, with enrollment due by June 1"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Carleton transfer mentor. Our advisors help applicants build a strong, well-rounded case for this highly regarded Midwestern liberal arts college."
+    },
+    "dataNote": "Carleton's transfer acceptance rate can shift somewhat year to year. Applicants should confirm current figures on Carleton's official admissions site before applying."
+  },
+  "wake-forest": {
+    "slug": "wake-forest",
+    "name": "Wake Forest University",
+    "crest": "WF",
+    "eyebrow": "Winston-Salem, North Carolina",
+    "blurb": "A Southern research university whose transfer rate runs notably higher than its increasingly selective freshman rate.",
+    "stats": {
+      "rate": "~30–36%",
+      "deadline": "Mar 15",
+      "decisionsReleased": "Mid-May",
+      "terms": "Fall & limited Spring"
+    },
+    "overview": [
+      "Wake Forest has become considerably more transfer-friendly in recent cycles — for the Class of 2028, the university admitted 151 of 421 transfer applicants, a 35.9% rate, notably higher than its roughly 22% freshman acceptance rate.",
+      "Wake Forest accepts transfer applications for both fall and spring semesters, though more students are typically admitted in the fall. The university does not offer interviews to transfer applicants and requires only a minimum overall C average in prior college coursework."
+    ],
+    "lookingFor": [
+      "A minimum overall C average across all college-level work attempted, though competitive applicants present much stronger records",
+      "A Dean's Statement for Transfer Students from each college previously attended",
+      "Coursework that reflects genuine engagement with Wake Forest's liberal arts tradition",
+      "TOEFL/IELTS/Duolingo scores for international applicants where applicable",
+      "A clear, specific personal essay on reasons for transferring to Wake Forest"
+    ],
+    "requirements": [
+      "Common Application for Transfer, due March 15 for fall entry",
+      "Official transcripts from every college attended, plus a final high school transcript",
+      "Dean's Statement for Transfer Students (or the Common Application Transfer College Report)",
+      "Test-optional; SAT/ACT scores not required",
+      "Decisions released by mid-May for fall entry"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Wake Forest transfer mentor. Our advisors help applicants take advantage of Wake Forest's increasingly favorable transfer admissions odds."
+    },
+    "dataNote": "Wake Forest's transfer acceptance rate has risen notably in the most recent cycle. Applicants should confirm current figures on Wake Forest's official admissions site before applying."
+  },
+  "davidson": {
+    "slug": "davidson",
+    "name": "Davidson College",
+    "crest": "DAV",
+    "eyebrow": "Davidson, North Carolina",
+    "blurb": "A top Southern liberal arts college whose transfer rate runs meaningfully above its increasingly selective freshman rate.",
+    "stats": {
+      "rate": "~17%",
+      "deadline": "Apr 1 (Fall) / Nov 1 (Spring)",
+      "decisionsReleased": "Early Jun (Fall) / Late Nov (Spring)",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Davidson's transfer acceptance rate has generally landed around 17% in the most recent confirmed cycle, well above its roughly 13% freshman acceptance rate, out of applicant pools in the 150-160 range.",
+      "Davidson accepts transfer applicants for both fall and spring semesters and requires at least one full year of acceptable college coursework by the time of enrollment. Students must plan to be enrolled at Davidson for at least two academic years."
+    ],
+    "lookingFor": [
+      "At least one full year of college-level coursework completed, with grades typically at the B+ level or higher",
+      "Two recommendations from college faculty, plus an optional peer recommendation",
+      "A personal statement and a Davidson-specific supplemental essay",
+      "Character, integrity, and potential contribution to the Davidson community",
+      "Strong high school records paired with continued strong college performance"
+    ],
+    "requirements": [
+      "Common Application or Coalition Application, due April 1 for fall entry or November 1 for spring entry",
+      "Official transcripts from every college attended, plus a final high school transcript",
+      "Two college faculty recommendations",
+      "Test-optional; SAT/ACT scores accepted if submitted",
+      "Decisions released by early June for fall entry, or late November for spring entry"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Davidson transfer mentor. Our advisors help applicants build a strong case for one of the top liberal arts colleges in the South."
+    },
+    "dataNote": "Davidson's transfer acceptance rate can shift year to year. Applicants should confirm current figures on Davidson's official admissions site before applying."
+  },
+  "washington-and-lee": {
+    "slug": "washington-and-lee",
+    "name": "Washington and Lee University",
+    "crest": "W&L",
+    "eyebrow": "Lexington, Virginia",
+    "blurb": "A small, highly selective Southern university where transfer admission has tightened alongside its freshman rate.",
+    "stats": {
+      "rate": "~5–6%",
+      "deadline": "Mar 16 (priority) / Apr 16 (final)",
+      "decisionsReleased": "Rolling",
+      "terms": "Fall Only"
+    },
+    "overview": [
+      "Washington and Lee's transfer acceptance rate has fallen sharply in recent cycles alongside its freshman rate, landing around 5.6% for the most recent confirmed year — down from double digits just a few years earlier.",
+      "W&L reviews transfer applications on a rolling basis with a priority deadline and a later final deadline; there's no advantage to applying by the priority date beyond faster processing. Funding for transfer students is very limited."
+    ],
+    "lookingFor": [
+      "Strong college grades at the B (3.0) level or higher, alongside a strong prior high school record",
+      "SAT or ACT scores, unless the applicant didn't take them for their current program or sitting for them would be a hardship",
+      "Official transcripts from every college attended, evaluated for a maximum of 60 transferable credits",
+      "A genuine fit with W&L's Honor Code and small residential community",
+      "Awareness that merit scholarships are not available to transfer students, and need-based funding is limited"
+    ],
+    "requirements": [
+      "W&L's own application (not the Common App), with a March 16 priority deadline and an April 16 final deadline",
+      "Official transcripts from all colleges attended",
+      "SAT or ACT scores in most cases",
+      "A personal statement addressing reasons for transferring",
+      "Decisions released on a rolling basis as applications are completed"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Washington and Lee transfer mentor. Our advisors help applicants build a strong case given how selective W&L's transfer admissions have become."
+    },
+    "dataNote": "Washington and Lee's transfer acceptance rate has declined notably in recent cycles. Applicants should confirm current figures on W&L's official admissions site before applying."
+  },
+  "william-and-mary": {
+    "slug": "william-and-mary",
+    "name": "William & Mary",
+    "crest": "W&M",
+    "eyebrow": "Williamsburg, Virginia",
+    "blurb": "A top public university that's genuinely transfer-friendly, admitting about half of all applicants most years.",
+    "stats": {
+      "rate": "~50%",
+      "deadline": "Mar 1 (Fall) / Oct 2 (Spring)",
+      "decisionsReleased": "Rolling, by May 1 (Fall)",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "William & Mary stands out as a genuinely accessible transfer destination among top public universities, admitting roughly 50% of transfer applicants on average — a stark contrast to its increasingly competitive freshman admissions process.",
+      "W&M accepts transfer applicants for both fall and spring semesters. The admissions committee generally prefers to see recent academic achievement at the 3.5 GPA level or higher in a strong transfer-oriented curriculum."
+    ],
+    "lookingFor": [
+      "Good standing and eligibility to return to the applicant's most recent institution of full-time attendance",
+      "A strong, recent college GPA — the admissions committee generally prefers 3.5 or higher",
+      "Official transcripts from every college and university attended, plus a high school transcript if fewer than 24 credits are completed",
+      "An essay or personal statement, plus a College Report and Mid-Term Report",
+      "Consideration for one of William & Mary's three merit-based transfer scholarship programs"
+    ],
+    "requirements": [
+      "Common Application for Transfer, due March 1 for fall entry or October 2 for spring entry",
+      "Official transcripts from all colleges attended",
+      "College Report, Mid-Term Report, and a statement of good standing",
+      "SAT/ACT scores optional but considered if submitted",
+      "Decisions released on a rolling basis, generally by May 1 for fall entry"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a William & Mary transfer mentor. Our advisors help applicants take advantage of W&M's genuinely favorable transfer admissions odds among elite public universities."
+    },
+    "dataNote": "William & Mary's transfer acceptance rate has held fairly steady in recent cycles. Applicants should confirm current figures on William & Mary's official admissions site before applying."
+  },
+  "grinnell": {
+    "slug": "grinnell",
+    "name": "Grinnell College",
+    "crest": "GRIN",
+    "eyebrow": "Grinnell, Iowa",
+    "blurb": "A highly selective Midwestern liberal arts college with an extremely small, individually-advised transfer program.",
+    "stats": {
+      "rate": "~3–5%",
+      "deadline": "Mar 1",
+      "decisionsReleased": "Mid May",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Grinnell's transfer program is very small relative to its applicant pool, with historical acceptance rates in the low single digits given the limited number of seats available each cycle.",
+      "Grinnell invites applications from students who have completed at least one year of college coursework and offers transfer entry for both fall and spring terms, though fall carries the larger intake."
+    ],
+    "lookingFor": [
+      "At least one year of completed college coursework, with strong, consistent academic performance",
+      "Two written academic evaluations from current or former college professors",
+      "Official final secondary transcript plus transcripts from every college attended",
+      "Genuine intellectual curiosity and fit with Grinnell's individually-advised curriculum",
+      "SAT or ACT scores, unless already reflected on the high school transcript"
+    ],
+    "requirements": [
+      "Common Application for Transfer, due March 1 for fall entry",
+      "Official transcripts from every college attended, plus a final high school transcript or GED",
+      "Two written academic evaluations",
+      "SAT or ACT scores",
+      "Decisions released by mid-May, on a rolling basis in some cycles"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Grinnell transfer mentor. Our advisors help applicants build a strong academic case for this small, highly selective Iowa liberal arts college."
+    },
+    "dataNote": "Grinnell's transfer class is extremely small, so acceptance rates can shift meaningfully year to year. Applicants should confirm current figures on Grinnell's official admissions site before applying."
+  },
+  "hamilton": {
+    "slug": "hamilton",
+    "name": "Hamilton College",
+    "crest": "HAMI",
+    "eyebrow": "Clinton, New York",
+    "blurb": "A selective New York liberal arts college offering a relatively rare fall-and-spring transfer pathway.",
+    "stats": {
+      "rate": "~12%",
+      "deadline": "Mar 16 (Fall) / Nov 1 (Spring)",
+      "decisionsReleased": "Rolling",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Hamilton's transfer acceptance rate has trended upward somewhat in recent cycles, landing around 12% for the most recent confirmed year after running closer to 5-8% just a couple years earlier.",
+      "Hamilton is one of the relatively few highly selective liberal arts colleges to offer both fall and spring transfer entry, enrolling about 10-20 students in the fall and 5-10 in the spring each year."
+    ],
+    "lookingFor": [
+      "Strong recent college coursework, since Hamilton weighs the most recent academic work most heavily",
+      "Standardized SAT or ACT scores, which are required for all transfer applicants",
+      "A College Instructor Evaluation and a College Official's Report",
+      "A personal essay addressing reasons for transferring and fit with Hamilton's open curriculum",
+      "Optional but strongly encouraged interviews, typically offered virtually"
+    ],
+    "requirements": [
+      "Common Application or Coalition Application, due March 16 for fall entry or November 1 for spring entry",
+      "Official transcripts from every college attended, plus a final high school transcript",
+      "College Instructor Evaluation, College Official's Report, and standardized test scores",
+      "A personal essay",
+      "Decisions released on a rolling basis as applications are completed"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Hamilton transfer mentor. Our advisors help applicants build a strong case for one of the few elite liberal arts colleges offering a spring transfer option."
+    },
+    "dataNote": "Hamilton's transfer acceptance rate has shifted meaningfully across recent cycles. Applicants should confirm current figures on Hamilton's official admissions site before applying."
+  },
+  "colby": {
+    "slug": "colby",
+    "name": "Colby College",
+    "crest": "COLB",
+    "eyebrow": "Waterville, Maine",
+    "blurb": "A highly selective Maine liberal arts college admitting only a very small transfer class each year.",
+    "stats": {
+      "rate": "~10–15%",
+      "deadline": "Mar 1 (Fall) / Nov 1 (Spring)",
+      "decisionsReleased": "Rolling",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Colby generally admits somewhere around 10-15% of transfer applicants each year, filling only about 10-15 spots out of applicant pools in the 100-320 range — a highly selective process even by Colby's own competitive standards.",
+      "Colby accepts transfer applicants for both fall and spring terms, with fall carrying the larger intake. The college is test-optional and gives priority in admissions to incoming first-year students, with transfer spots filled as space allows."
+    ],
+    "lookingFor": [
+      "Strong academic and personal records from an accredited college or university",
+      "An academic evaluation from a full-time professor who has recently instructed the applicant",
+      "A Transfer College Report completed by the registrar or a similar campus administrator",
+      "TOEFL, IELTS, or Duolingo scores if English is not the applicant's first or current language of instruction",
+      "A specific, well-articulated reason for choosing Colby's academic environment"
+    ],
+    "requirements": [
+      "Common Application, due March 1 for fall entry or November 1 for spring entry",
+      "Official transcripts from every college attended, plus a current college transcript",
+      "Academic evaluation and Transfer College Report",
+      "Test-optional; self-reported SAT/ACT scores accepted",
+      "Decisions released on a rolling basis"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Colby transfer mentor. Our advisors help applicants build a strong case for one of the most selective liberal arts colleges in New England."
+    },
+    "dataNote": "Colby's transfer class is very small, so acceptance rates can shift meaningfully year to year. Applicants should confirm current figures on Colby's official admissions site before applying."
+  },
+  "smith": {
+    "slug": "smith",
+    "name": "Smith College",
+    "crest": "SMIT",
+    "eyebrow": "Northampton, Massachusetts",
+    "blurb": "A women's college that has long reserved dedicated transfer spots, though the process has grown more competitive recently.",
+    "stats": {
+      "rate": "~9–20%",
+      "deadline": "Mar 1 (Fall) / Nov 15 (Spring)",
+      "decisionsReleased": "Rolling",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Smith has historically been one of the more transfer-friendly elite women's colleges, with rates that ran in the 20-33% range in past cycles, though the most recent confirmed data shows a considerably tighter 9.3% for fall 2025 as applicant volume nearly doubled.",
+      "Smith accepts transfer applicants for both fall and spring entry and states explicitly that it reserves a number of places especially for transfers, believing they enrich the campus community."
+    ],
+    "lookingFor": [
+      "At least one semester completed at an accredited institution, including community colleges and international schools",
+      "Strong academic performance, since Smith does not publish a minimum GPA but reviews holistically",
+      "The Transfer Common Application Supplement and a Mid-term Report",
+      "Course descriptions for all completed and in-progress college coursework",
+      "A genuine fit with Smith's open curriculum and all-women's community"
+    ],
+    "requirements": [
+      "Common Application for Transfer (no application fee), due March 1 for fall entry or November 15 for spring entry",
+      "Official transcripts from all post-secondary institutions attended",
+      "Transfer Common Application Supplement and Mid-term Report",
+      "SAT/ACT scores optional",
+      "Decisions released on a rolling basis"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Smith transfer mentor. Our advisors help applicants navigate Smith's transfer process as competition has increased in the most recent admissions cycle."
+    },
+    "dataNote": "Smith's transfer acceptance rate has become considerably more competitive in the most recent cycle after historically running higher. Applicants should confirm current figures on Smith's official admissions site before applying."
+  },
+  "bates": {
+    "slug": "bates",
+    "name": "Bates College",
+    "crest": "BATE",
+    "eyebrow": "Lewiston, Maine",
+    "blurb": "A selective Maine liberal arts college with a modest, holistically-reviewed transfer program.",
+    "stats": {
+      "rate": "~10–15%",
+      "deadline": "Mar 1 (Fall) / Nov 1 (Spring)",
+      "decisionsReleased": "By May 15",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Bates admits a modest number of transfer students each year, with acceptance rates that have varied but generally sit below the college's own roughly 13% freshman acceptance rate given the college's limited number of transfer seats.",
+      "Bates accepts transfer applicants for both fall and spring (winter) terms. Applicants must have completed at least one semester at an accredited college or university by the deadline, and both high school and college transcripts are always considered."
+    ],
+    "lookingFor": [
+      "At least one semester of completed college coursework, with a college GPA generally in the 3.3 range or higher",
+      "A College Report and Mid-term Report (if currently enrolled)",
+      "Both secondary school and college transcripts, since Bates weighs the full academic record",
+      "No minimum GPA is formally required, but competitive applicants present a strong, consistent transcript",
+      "Guaranteed campus housing and eligibility for need-based financial aid as a transfer student"
+    ],
+    "requirements": [
+      "Common Application for Transfer Students, due March 1 for fall entry or November 1 for spring (winter) entry",
+      "Official transcripts from every college attended, plus a secondary school transcript",
+      "College Report and Mid-term Report",
+      "Test-optional; standardized test scores not required",
+      "Decisions released no later than May 15 for fall entry"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Bates transfer mentor. Our advisors help applicants build a strong, well-rounded case for this selective Maine liberal arts college."
+    },
+    "dataNote": "Bates's transfer acceptance rate can shift meaningfully year to year given the college's small number of transfer seats. Applicants should confirm current figures on Bates's official admissions site before applying."
+  },
+  "university-of-florida": {
+    "slug": "university-of-florida",
+    "name": "University of Florida",
+    "crest": "UF",
+    "eyebrow": "Gainesville, Florida",
+    "blurb": "A major public flagship where transferring in — especially from a Florida community college — is dramatically easier than freshman admission.",
+    "stats": {
+      "rate": "~47%",
+      "deadline": "Mar 1 (Fall priority) / Sep 15 (Spring)",
+      "decisionsReleased": "Jun 15 (Fall, rolling)",
+      "terms": "Fall, Spring & Summer"
+    },
+    "overview": [
+      "UF's transfer acceptance rate has held remarkably steady around 47% in recent cycles, a stark contrast to a freshman acceptance rate that has fallen below 25%. The university admits 2,000-3,000 qualified transfer applicants most years.",
+      "UF prioritizes applicants from the Florida College System, with roughly two-thirds of admitted transfers coming directly from a community college and about 72% having already completed an associate's degree. The university offers fall, spring, and summer transfer terms."
+    ],
+    "lookingFor": [
+      "At least 60 credit hours completed (UF strongly prioritizes incoming juniors) with a minimum 2.0 overall GPA and 2.0 in the last institution attended",
+      "Completion of the required prerequisite coursework for the applicant's intended major and college",
+      "Demonstrated foreign language competency, typically via two years of high school coursework or equivalent",
+      "A single major declared on the application, since changing majors after transfer admission is extremely limited",
+      "Particularly strong preparation for competitive programs like Business Administration, Nursing, and Engineering"
+    ],
+    "requirements": [
+      "UF's online transfer application and $30 fee, submitted six to nine months before the intended term",
+      "Transcripts from every institution attended, regardless of credit earned",
+      "SAT/ACT with Writing scores required for freshman/sophomore-level transfers and certain certification programs",
+      "Foreign language proficiency documentation",
+      "Decisions released around June 15 for fall entry, November 15 for spring, and April 1 for summer, all on a rolling basis"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a University of Florida transfer mentor. Our advisors help applicants — especially those coming from Florida community colleges — build a strong, prerequisite-aligned case for UF's competitive programs."
+    },
+    "dataNote": "UF's transfer acceptance rate is strongly favorable toward in-state community college applicants and can vary meaningfully by major. Applicants should confirm current figures on UF's official admissions site before applying."
+  },
+  "university-of-washington": {
+    "slug": "university-of-washington",
+    "name": "University of Washington",
+    "crest": "UW",
+    "eyebrow": "Seattle, Washington",
+    "blurb": "A major public research university with a transfer rate that closely tracks its overall freshman acceptance rate.",
+    "stats": {
+      "rate": "~42%",
+      "deadline": "Feb 15 (Fall/Summer)",
+      "decisionsReleased": "Mar 1–15",
+      "terms": "Fall, Winter, Spring & Summer"
+    },
+    "overview": [
+      "The University of Washington's transfer acceptance rate has run around 42% in the most recent confirmed cycle, closely tracking its roughly 42% overall freshman acceptance rate — an unusually consistent pattern compared to most selective research universities.",
+      "UW offers transfer admission across all four quarters, though most degree-seeking students apply for autumn quarter. Winter quarter is open to U.S. applicants only, and spring quarter is limited to specific engineering and computer science departments."
+    ],
+    "lookingFor": [
+      "Completion of at least 40 quarter credit hours, or completion of the College Academic Distribution Requirements if fewer credits are complete",
+      "A minimum 2.5 GPA to be considered, though the competitive mid-50% range for admitted transfers has run from 3.24 to 3.85",
+      "Strong grades in the applicant's intended major's specific course requirements",
+      "A well-articulated statement addressing academic and career goals and how UW supports them",
+      "For out-of-state applicants, a notably stronger GPA — often 3.75 or better — to be competitive"
+    ],
+    "requirements": [
+      "UW's own transfer application, due February 15 for fall and summer quarter entry (other quarters have separate deadlines)",
+      "Official transcripts from every college attended",
+      "TOEFL or IELTS scores for international applicants",
+      "Coursework in UW's College Academic Distribution Requirements if fewer than 40 transferable credits are complete",
+      "Decisions released in a notification window between March 1 and March 15 for fall/summer applicants"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a University of Washington transfer mentor. Our advisors help applicants plan prerequisite coursework and build a strong case for UW's competitive majors."
+    },
+    "dataNote": "UW's transfer acceptance rate has tracked closely with its freshman rate in recent cycles. Applicants should confirm current figures on UW's official admissions site before applying."
+  },
+  "tulane": {
+    "slug": "tulane",
+    "name": "Tulane University",
+    "crest": "TUL",
+    "eyebrow": "New Orleans, Louisiana",
+    "blurb": "A private research university that has become dramatically more transfer-friendly in the most recent cycle.",
+    "stats": {
+      "rate": "~50–60%",
+      "deadline": "Feb 1 (priority) / Apr 15 (regular, Fall) / Oct 15 (Spring)",
+      "decisionsReleased": "Mid Mar (priority) / Rolling by Jun 15",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Tulane's transfer acceptance rate has swung dramatically in recent years — from as low as 18% to over 60% in the most recent Common Data Set, which reported 510 of 849 transfer applicants admitted for a 60.1% rate.",
+      "Tulane offers both a priority and regular fall deadline, plus a separate spring deadline. The university welcomes more than 150 transfer students most years and strongly encourages applying by the priority deadline for faster review."
+    ],
+    "lookingFor": [
+      "At least a 3.0 cumulative GPA, with coursework in English Composition, higher-level mathematics, and ideally a foreign language",
+      "Attendance at a regionally accredited institution and good standing at the most recent school",
+      "An optional-but-recommended 250-word essay on reasons for transferring to Tulane",
+      "A record of engagement outside the classroom that speaks to fit with Tulane's civic-minded campus culture",
+      "For applicants without an SAT/ACT score, additional context supporting academic readiness"
+    ],
+    "requirements": [
+      "Common Application, with a February 1 priority deadline or April 15 regular deadline for fall entry, and October 15 for spring entry",
+      "Official high school and college transcripts",
+      "A counselor recommendation (teacher recommendations optional but welcomed)",
+      "Test-optional; SAT or ACT may be submitted in place of TOEFL/IELTS for international applicants",
+      "Decisions released by March 15 for priority applicants, or by June 15 on a rolling basis for regular applicants"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Tulane transfer mentor. Our advisors help applicants take advantage of Tulane's increasingly transfer-friendly admissions process and its priority deadline advantage."
+    },
+    "dataNote": "Tulane's transfer acceptance rate has fluctuated significantly across recent cycles. Applicants should confirm current figures on Tulane's official admissions site before applying."
+  },
+  "university-of-miami": {
+    "slug": "university-of-miami",
+    "name": "University of Miami",
+    "crest": "UM",
+    "eyebrow": "Coral Gables, Florida",
+    "blurb": "A private research university where the transfer rate runs more than double its increasingly selective freshman rate.",
+    "stats": {
+      "rate": "~40–53%",
+      "deadline": "Apr 1 (Fall priority) / Nov 1 (Spring priority)",
+      "decisionsReleased": "Mid Apr (Fall) / Mid Nov (Spring)",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "The University of Miami admits transfer students at a notably higher rate than its increasingly selective freshman pool — recent cycles have generally landed between 40% and 53%, with roughly 1,000-1,500 transfer applicants admitted most years.",
+      "UM accepts transfer applicants for both fall and spring semesters, with applications continuing to be accepted until the transfer class is full even after the priority deadline. Certain programs, like the Frost School of Music and Theatre Arts BFA, have their own earlier deadlines and audition requirements."
+    ],
+    "lookingFor": [
+      "A minimum 2.0 GPA to be eligible for review, though the average incoming transfer GPA runs closer to 3.4-3.5",
+      "For applicants with 24 or more transferable credits, an admissions decision based exclusively on college-level academic record",
+      "A required 650-word essay addressing reasons for wanting to transfer to UM",
+      "For Miami Herbert Business School applicants, a B or better in an approved college calculus course",
+      "A College Report from every U.S. postsecondary institution attended as a degree-seeking student"
+    ],
+    "requirements": [
+      "Common Application, with priority deadlines of April 1 for fall entry and November 1 for spring entry (applications accepted until the class fills)",
+      "Official transcripts from every college attended, plus a final high school transcript if fewer than 24 credits are complete",
+      "College Report and a required transfer essay",
+      "Test-optional for applicants with 30+ postsecondary credits; required below that threshold",
+      "Decisions released starting mid-April for fall priority applicants, or mid-November for spring priority applicants"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a University of Miami transfer mentor. Our advisors help applicants build a strong case for UM's competitive programs, including the Miami Herbert Business School's calculus prerequisite."
+    },
+    "dataNote": "University of Miami's transfer acceptance rate has fluctuated across recent cycles. Applicants should confirm current figures on UM's official admissions site before applying."
+  },
+  "reed": {
+    "slug": "reed",
+    "name": "Reed College",
+    "crest": "REED",
+    "eyebrow": "Portland, Oregon",
+    "blurb": "A distinctive, academically intense liberal arts college whose transfer rate runs somewhat below its freshman rate.",
+    "stats": {
+      "rate": "~15–23%",
+      "deadline": "Mar 1 (priority) / May 1 (regular)",
+      "decisionsReleased": "Up to 8 weeks after deadline",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Reed's transfer acceptance rate has generally run somewhat below its roughly 27-35% freshman acceptance rate, landing in the 15-23% range in recent estimates, with the college admitting around 50-60 transfer students each fall from a pool of 200-250 applicants.",
+      "Reed accepts transfer applicants for both fall and spring terms, with a non-binding priority deadline in early March and a later regular deadline for fall entry. Transferring in as a junior is notably harder given Reed's junior qualifying exam requirement."
+    ],
+    "lookingFor": [
+      "Strong intellectual engagement and academic performance, reflecting Reed's rigorous, discussion-based curriculum",
+      "The 'Paideia Essay' writing supplement and one new academic evaluation from a college instructor",
+      "A Registrar's Report from the most recently attended college",
+      "Preparation to complete Humanities 110 or its equivalent unless transfer credit is granted",
+      "For junior-standing applicants, awareness that an additional semester may be needed before the junior qualifying exam"
+    ],
+    "requirements": [
+      "Common Application, with a March 1 priority deadline or May 1 regular deadline for fall entry",
+      "Official transcripts from every college attended, plus a final high school transcript",
+      "Registrar's Report and one new academic evaluation from a college instructor",
+      "Reed College Common Application Writing Supplement ('Paideia Essay')",
+      "Decisions typically released within up to eight weeks of a complete application"
+    ],
+    "mentor": {
+      "names": "",
+      "text": "Full Axis currently does not have a Reed transfer mentor. Our advisors help applicants build a strong, intellectually engaged case for this distinctive liberal arts college."
+    },
+    "dataNote": "Reed's transfer acceptance rate estimates vary by source and can shift year to year. Applicants should confirm current figures on Reed's official admissions site before applying."
   }
 }
