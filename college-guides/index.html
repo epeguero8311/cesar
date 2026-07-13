@@ -123,11 +123,6 @@
       </a>
     `).join('');
 
-    grid.innerHTML = cardsHtml + `
-      <div class="guide-card-more">
-        More guides — Stanford, Swarthmore, Amherst, Williams, Georgia Tech, and the full UC system — are on deck. Ask your mentor for the school-specific breakdown in the meantime.
-      </div>
-    `;
   } catch (err) {
     console.error('Failed to load guides data:', err);
     grid.innerHTML = '<p>Guides are temporarily unavailable — please check back shortly.</p>';
