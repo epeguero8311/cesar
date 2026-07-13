@@ -896,6 +896,41 @@
     },
     "dataNote": "UCLA's transfer acceptance rate varies significantly by major and school, and figures shift from year to year. Applicants should confirm current rates and major-specific requirements on UCLA's official admissions site before applying."
   },
+ "boston-university": {
+    "slug": "boston-university",
+    "name": "Boston University",
+    "crest": "BU",
+    "eyebrow": "Boston, Massachusetts",
+    "blurb": "One of the most transfer-friendly major research universities, with two intake cycles per year.",
+    "stats": {
+      "rate": "~27–35%",
+      "deadline": "Feb 1 (Fall) / Oct 1 (Spring)",
+      "decisionsReleased": "Apr–Jun (rolling)",
+      "terms": "Fall & Spring"
+    },
+    "overview": [
+      "Boston University is one of the more transfer-friendly major research universities in the country. Recent cycles have put the transfer acceptance rate roughly in the high-20s to mid-30s — well above BU's freshman acceptance rate, which has fallen into the single digits for Regular Decision. BU typically admits somewhere in the 2,000–2,300 range out of applicant pools of 4,500–6,700.",
+      "Unlike most highly selective schools, BU accepts transfers for both fall and spring entry, though not every major or college is open to spring admission. Fall carries the larger intake and more program options. Decisions are released on a rolling basis, generally between April and June for fall applicants."
+    ],
+    "lookingFor": [
+      "At least 12 completed college credits (12+ credit applicants apply as transfers; fewer, and the first-year path applies instead)",
+      "A strong, consistent college GPA — the single most heavily weighted factor, with admitted students often at 3.5 or higher",
+      "A declared major within one of BU's degree-granting schools or colleges — transfer applicants cannot apply undeclared",
+      "Fit with the specific program applied to — Questrom School of Business, the College of Engineering, and Sargent College tend to be the most competitive for transfers"
+    ],
+    "requirements": [
+      "Common Application (Transfer version), due February 1 for fall entry or October 1 for spring entry",
+      "Official transcripts from every college attended, plus a high school transcript if fewer than 30 college credits are completed",
+      "One letter of recommendation from a college instructor familiar with the applicant's work",
+      "No SAT/ACT scores required for transfer admission",
+      "Decisions released on a rolling basis, generally April through June for fall applicants"
+    ],
+    "mentor": {
+      "names": "The Full Axis team",
+      "text": "Full Axis works with BU-bound applicants on program selection and application strategy, since acceptance odds vary significantly between BU's schools and colleges."
+    },
+    "dataNote": "Acceptance rates and deadlines shift year to year and vary by school within BU. Figures above reflect recent published cycles as a general guide — confirm current numbers on Boston University's official admissions site before finalizing your application strategy."
+  }, 
   "emory": {
     "slug": "emory",
     "name": "Emory University",
