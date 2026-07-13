@@ -122,7 +122,7 @@
         <p>${school.blurb}</p>
       </a>
     `).join('');
-
+grid.innerHTML = cardsHtml;
   } catch (err) {
     console.error('Failed to load guides data:', err);
     grid.innerHTML = '<p>Guides are temporarily unavailable — please check back shortly.</p>';
