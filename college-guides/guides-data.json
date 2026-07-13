@@ -2,9 +2,9 @@
   "harvard": {
     "slug": "harvard",
     "name": "Harvard College",
-    "crest": "HU",
+    "crest": "HARV",
     "eyebrow": "Cambridge, Massachusetts",
-    "blurb": "One of the most selective transfer programs in the country, admitting only a very small number of students each year.",
+    "blurb": "The most selective school to transfer in the country, admitting only a very small number of students each year.",
     "stats": {
       "rate": "~0.8–1.5%",
       "deadline": "Mar 1",
