@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/png" href="../Untitled_design__1_-removebg-preview.png" />
-<title>College Transfer Guides | Full Axis College Consulting</title>
+<title>College Admission Guides | Full Axis College Consulting</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -32,9 +32,9 @@
 <section class="sub-hero">
   <div class="sub-hero-inner">
     <div class="hero-eyebrow">The Axis Research Desk</div>
-    <h1 class="sub-hero-title">College Transfer Guides</h1>
+    <h1 class="sub-hero-title">College Admission Guides</h1>
     <div class="hero-rule"></div>
-    <p class="sub-hero-sub">Acceptance rates, decision timelines, and exactly what each admissions committee is looking for — for both first-year and transfer applicants — broken down school by school, written by mentors who transferred in themselves.</p>
+    <p class="sub-hero-sub">Acceptance rates, decision timelines, and exactly what each admissions committee is looking for — for both first-year and transfer applicants — broken down school by school, written by Cesar himself.</p>
   </div>
 </section>
 
@@ -44,7 +44,7 @@
     <h2 class="section-title">Know the school<br />before you apply.</h2>
 
     <div class="guides-toolbar">
-      <p class="guides-count">Featured guides below — new schools added every cycle.</p>
+      <p class="guides-count">Featured projections for 2025-2026 Admissions Cycle below (new data uploaded each cycle).</p>
     </div>
 
     <div class="guides-grid reveal" id="guides-grid">
@@ -127,12 +127,7 @@
         <p>${school.blurb}</p>
       </a>
     `).join('');
-
-    grid.innerHTML = cardsHtml + `
-      <div class="guide-card-more">
-        More guides — new schools not yet listed above are on deck. Ask your mentor for the school-specific breakdown in the meantime.
-      </div>
-    `;
+grid.innerHTML = cardsHtml;
   } catch (err) {
     console.error('Failed to load guides data:', err);
     grid.innerHTML = '<p>Guides are temporarily unavailable — please check back shortly.</p>';

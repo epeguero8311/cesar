@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/png" href="../Untitled_design__1_-removebg-preview.png" />
-<title id="page-title">College Admissions Guide | Full Axis College Consulting</title>
+<title id="page-title">College Transfer Guide | Full Axis College Consulting</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -34,12 +34,17 @@
     <div class="hero-eyebrow" id="guide-eyebrow">&nbsp;</div>
     <h1 class="sub-hero-title" id="guide-title">&nbsp;</h1>
     <div class="hero-rule"></div>
-    <p class="sub-hero-sub">Decision dates, requirements, and what the admissions committee actually prioritizes — for both first-year and transfer applicants.</p>
+    <p class="sub-hero-sub">Decision dates, requirements, and what the admissions committee actually prioritizes for transfer applicants.</p>
   </div>
 </section>
 
 <section class="guide-detail">
   <div class="section-inner">
+
+    <div class="guide-stat-bar reveal" id="guide-stat-bar">
+      <!-- filled by JS -->
+    </div>
+
     <div class="guide-body" id="guide-body">
       <!-- filled by JS -->
     </div>
@@ -95,9 +100,6 @@
 .ft-right{display:flex;flex-direction:column;align-items:flex-end;gap:0.75rem}
 @media(max-width:580px){.ft-right{align-items:center}}
 .guide-not-found{padding:4rem 0;text-align:center}
-.guide-section-heading{margin-top:3rem}
-.guide-section-heading:first-child{margin-top:0}
-.guide-section-divider{border:none;border-top:1px solid rgba(255,255,255,0.12);margin:3rem 0}
 </style>
 
 <script src="../main.js"></script>
@@ -107,35 +109,7 @@
   const slug = params.get('school');
 
   const body = document.getElementById('guide-body');
-
-  function buildSection(label, s, schoolName) {
-    const overviewHtml = s.overview.map(p => `<p>${p}</p>`).join('');
-    const lookingForHtml = s.lookingFor.map(li => `<li>${li}</li>`).join('');
-    const requirementsHtml = s.requirements.map(li => `<li>${li}</li>`).join('');
-    return `
-      <div class="guide-stat-bar reveal">
-        <div class="guide-stat-tile"><div class="label">${label} Acceptance Rate</div><div class="value">${s.rate}</div></div>
-        <div class="guide-stat-tile"><div class="label">Application Deadline</div><div class="value">${s.deadline}</div></div>
-        <div class="guide-stat-tile"><div class="label">Decisions Released</div><div class="value">${s.decisionsReleased}</div></div>
-        <div class="guide-stat-tile"><div class="label">Terms Offered</div><div class="value">${s.terms}</div></div>
-      </div>
-
-      <h2>Overview</h2>
-      ${overviewHtml}
-
-      <h2>What ${schoolName.split(' ')[0]} Looks For</h2>
-      <ul>${lookingForHtml}</ul>
-
-      <h2>Requirements &amp; Deadlines</h2>
-      <ul>${requirementsHtml}</ul>
-
-      <div class="mentor-tie-in">
-        <p><strong>Full Axis has a mentor for this school.</strong> ${s.mentor.text}</p>
-      </div>
-
-      <p class="data-note">${s.dataNote}</p>
-    `;
-  }
+  const statBar = document.getElementById('guide-stat-bar');
 
   try {
     const res = await fetch('guides-data.json');
@@ -150,19 +124,39 @@
     }
 
     // Title / meta
-    document.title = school.name + ' First-Year & Transfer Acceptance Rate | Full Axis';
+    document.title = school.name + ' Transfer Acceptance Rate, Decision Date & What They Look For | Full Axis';
     document.getElementById('page-title').textContent = document.title;
     document.getElementById('guide-eyebrow').textContent = school.eyebrow;
-    document.getElementById('guide-title').innerHTML = school.name + ' <em>Admissions Guide</em>';
+    document.getElementById('guide-title').innerHTML = school.name + ' Transfer <em>Acceptance Rate</em>';
+
+    // Stat bar
+    statBar.innerHTML = `
+      <div class="guide-stat-tile"><div class="label">Acceptance Rate</div><div class="value">${school.stats.rate}</div></div>
+      <div class="guide-stat-tile"><div class="label">Application Deadline</div><div class="value">${school.stats.deadline}</div></div>
+      <div class="guide-stat-tile"><div class="label">Decisions Released</div><div class="value">${school.stats.decisionsReleased}</div></div>
+      <div class="guide-stat-tile"><div class="label">Terms Offered</div><div class="value">${school.stats.terms}</div></div>
+    `;
+
+    // Body
+    const overviewHtml = school.overview.map(p => `<p>${p}</p>`).join('');
+    const lookingForHtml = school.lookingFor.map(li => `<li>${li}</li>`).join('');
+    const requirementsHtml = school.requirements.map(li => `<li>${li}</li>`).join('');
 
     body.innerHTML = `
-      <div class="section-label guide-section-heading">First-Year Admissions</div>
-      ${buildSection('First-Year', school.firstYear, school.name)}
+      <h2>Overview</h2>
+      ${overviewHtml}
 
-      <hr class="guide-section-divider" />
+      <h2>What ${school.name.split(' ')[0]} Looks For</h2>
+      <ul>${lookingForHtml}</ul>
 
-      <div class="section-label guide-section-heading">Transfer Admissions</div>
-      ${buildSection('Transfer', school.transfer, school.name)}
+      <h2>Requirements &amp; Deadlines</h2>
+      <ul>${requirementsHtml}</ul>
+
+      <div class="mentor-tie-in">
+        <p><strong>Full Axis has a mentor for this school.</strong> ${school.mentor.text}</p>
+      </div>
+
+      <p class="data-note">${school.dataNote}</p>
     `;
 
     document.getElementById('cta-title').innerHTML = `Targeting <em>${school.name.split(' ')[0]}?</em>`;

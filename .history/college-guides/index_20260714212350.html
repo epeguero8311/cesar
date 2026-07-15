@@ -34,7 +34,7 @@
     <div class="hero-eyebrow">The Axis Research Desk</div>
     <h1 class="sub-hero-title">College Transfer Guides</h1>
     <div class="hero-rule"></div>
-    <p class="sub-hero-sub">Acceptance rates, decision timelines, and exactly what each admissions committee is looking for — for both first-year and transfer applicants — broken down school by school, written by mentors who transferred in themselves.</p>
+    <p class="sub-hero-sub">Acceptance rates, decision timelines, and exactly what each admissions committee is looking for — broken down school by school, written by mentors who transferred in themselves.</p>
   </div>
 </section>
 
@@ -101,7 +101,6 @@
 <style>
 .ft-right{display:flex;flex-direction:column;align-items:flex-end;gap:0.75rem}
 @media(max-width:580px){.ft-right{align-items:center}}
-.guide-card .guide-stat-row + .guide-stat-row{margin-top:0.4rem}
 </style>
 
 <script src="../main.js"></script>
@@ -117,12 +116,8 @@
         <div class="guide-crest">${school.crest}</div>
         <h3>${school.name}</h3>
         <div class="guide-stat-row">
-          <div class="guide-stat">First-Year Rate<strong>${school.firstYear.rate}</strong></div>
-          <div class="guide-stat">FY Decision<strong>${school.firstYear.decisionsReleased}</strong></div>
-        </div>
-        <div class="guide-stat-row">
-          <div class="guide-stat">Transfer Rate<strong>${school.transfer.rate}</strong></div>
-          <div class="guide-stat">Transfer Decision<strong>${school.transfer.decisionsReleased}</strong></div>
+          <div class="guide-stat">Acceptance Rate<strong>${school.stats.rate}</strong></div>
+          <div class="guide-stat">Decision<strong>${school.stats.decisionsReleased}</strong></div>
         </div>
         <p>${school.blurb}</p>
       </a>
@@ -130,7 +125,7 @@
 
     grid.innerHTML = cardsHtml + `
       <div class="guide-card-more">
-        More guides — new schools not yet listed above are on deck. Ask your mentor for the school-specific breakdown in the meantime.
+        More guides — Stanford, Swarthmore, Amherst, Williams, Georgia Tech, and the full UC system — are on deck. Ask your mentor for the school-specific breakdown in the meantime.
       </div>
     `;
   } catch (err) {
