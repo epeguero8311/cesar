@@ -524,7 +524,7 @@ footer{
   .nav-links .nav-cta{margin-top:0.6rem;padding:0.7rem 1.4rem!important}
   .nav-overlay{
     display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);
-    z-index:190;
+    z-index:204;
   }
   .nav-overlay.active{display:block}
   .mission-grid{grid-template-columns:1fr;gap:2.8rem}
