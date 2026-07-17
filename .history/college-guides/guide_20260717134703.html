@@ -183,8 +183,6 @@
 
     document.getElementById('cta-title').innerHTML = `Targeting <em>${school.name.split(' ')[0]}?</em>`;
 
-    body.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
-
   } catch (err) {
     console.error('Failed to load guide data:', err);
     body.innerHTML = '<p>Something went wrong loading this guide. Please try again shortly.</p>';

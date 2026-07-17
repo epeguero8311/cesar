@@ -183,6 +183,8 @@
 
     document.getElementById('cta-title').innerHTML = `Targeting <em>${school.name.split(' ')[0]}?</em>`;
 
+    // Content is injected after main.js's scroll-reveal observer already ran,
+    // so these .reveal blocks never get seen/triggered — show them immediately.
     body.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
 
   } catch (err) {
