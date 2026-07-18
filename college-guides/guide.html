@@ -142,15 +142,6 @@
     `;
   }
 
-  function buildIntro(school) {
-    return `
-      <div class="guide-intro reveal">
-        <div class="guide-intro-crest">${school.crest}</div>
-        <p class="guide-intro-blurb">${school.blurb}</p>
-      </div>
-    `;
-  }
-
   try {
     const res = await fetch('guides-data.json');
     const data = await res.json();
@@ -170,8 +161,6 @@
     document.getElementById('guide-title').innerHTML = school.name + ' <em>Admissions Guide</em>';
 
     body.innerHTML = `
-      ${buildIntro(school)}
-
       <div class="section-label guide-section-heading">First-Year Admissions</div>
       ${buildSection('First-Year', school.firstYear, school.name)}
 
