@@ -138,6 +138,7 @@
         More guides — new schools not yet listed above are on deck. Ask your mentor for the school-specific breakdown in the meantime.
       </div>
     `;
+    grid.classList.add('in');
   } catch (err) {
     console.error('Failed to load guides data:', err);
     grid.innerHTML = '<p>Guides are temporarily unavailable — please check back shortly.</p>';
