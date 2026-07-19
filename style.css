@@ -453,7 +453,7 @@ footer{
 .guide-stat-tile{background:var(--white);padding:1.4rem 1.2rem;text-align:center}
 .guide-stat-tile .label{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted)}
 .guide-stat-tile .value{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--red);letter-spacing:0.03em;margin-top:0.3rem}
-.guide-body{max-width:760px;margin-top:3.2rem}
+.guide-body{max-width:760px;margin:3.2rem auto 0}
 .guide-body h2{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;font-weight:400;color:var(--charcoal);letter-spacing:0.03em;margin:2.6rem 0 1rem}
 .guide-body h2:first-child{margin-top:0}
 .guide-body p{font-size:0.93rem;line-height:1.85;color:var(--text-body);margin-bottom:1rem}
