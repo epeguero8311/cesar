@@ -84,6 +84,11 @@
     "crest": "STAN",
     "eyebrow": "Stanford, California",
     "blurb": "Stanford enrolls only a handful of transfer students each year, making it one of the country's most selective transfer destinations.",
+     "why": [
+  "Paragraph one about the school...",
+  "Paragraph two...",
+  "Paragraph three..."
+  ],
     "firstYear": {
       "rate": "~3.6%",
       "deadline": "Jan 2 (RD) / Nov 1 (REA)",
