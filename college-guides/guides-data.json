@@ -5,6 +5,11 @@
     "crest": "HARV",
     "eyebrow": "Cambridge, Massachusetts",
     "blurb": "The most selective school to transfer in the country, admitting only a select few each year.",
+    "why": [
+  "Paragraph one about the school...",
+  "Paragraph two...",
+  "Paragraph three..."
+  ],
     "firstYear": {
       "rate": "~3.5%",
       "deadline": "Jan 1 (RD)",
