@@ -160,7 +160,15 @@
     document.getElementById('guide-eyebrow').textContent = school.eyebrow;
     document.getElementById('guide-title').innerHTML = school.name + ' <em>Admissions Guide</em>';
 
+     const firstName = school.name.split(' ')[0];
+    const whySection = (school.why && school.why.length) ? `
+      <div class="section-label guide-section-heading">Why Consider ${firstName}</div>
+      ${school.why.map(p => `<p>${p}</p>`).join('')}
+      <hr class="guide-section-divider" />
+    ` : '';
+
     body.innerHTML = `
+      ${whySection}
       <div class="section-label guide-section-heading">First-Year Admissions</div>
       ${buildSection('First-Year', school.firstYear, school.name)}
 
