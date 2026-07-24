@@ -209,6 +209,8 @@ nav{
 .team-role{font-size:0.68rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver);margin-bottom:0.22rem}
 .team-school{font-size:0.77rem;color:rgba(255,255,255,0.28);font-style:italic;margin-bottom:0.95rem}
 .team-bio{font-size:0.86rem;line-height:1.75;color:rgba(255,255,255,0.45)}
+.team-bio p{margin-bottom:1.1rem}
+.team-bio p:last-child{margin-bottom:0}
 
 /* ─── PRICING ──────────────────────────────────── */
 #pricing{background:var(--offwhite);padding:7.5rem 0}
@@ -376,6 +378,8 @@ footer{
 .tb-section{background:var(--white);padding:6rem 0}
 .tb-section.alt{background:var(--offwhite)}
 .tb-lede{font-size:1.02rem;line-height:1.9;color:var(--charcoal);max-width:760px;margin-top:1.4rem}
+.tb-lede p{margin-bottom:1.25rem}
+.tb-lede p:last-child{margin-bottom:0}
 .tb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:3rem}
 .tb-card{
   background:var(--offwhite);border-left:3px solid var(--red);
