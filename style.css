@@ -209,8 +209,8 @@ nav{
 .team-role{font-size:0.68rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver);margin-bottom:0.22rem}
 .team-school{font-size:0.77rem;color:rgba(255,255,255,0.28);font-style:italic;margin-bottom:0.95rem}
 .team-bio{font-size:0.86rem;line-height:1.75;color:rgba(255,255,255,0.45)}
-.team-bio p{margin-bottom:1.1rem}
-.team-bio p:last-child{margin-bottom:0}
+.team-bio{margin-bottom:1.1rem}
+.team-bio:last-child{margin-bottom:0}
 
 /* ─── PRICING ──────────────────────────────────── */
 #pricing{background:var(--offwhite);padding:7.5rem 0}
