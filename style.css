@@ -464,6 +464,16 @@ footer{
 .guide-body ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin:1rem 0}
 .guide-body li{font-size:0.9rem;line-height:1.65;color:var(--text-body);padding-left:1.4rem;position:relative}
 .guide-body li::before{content:'→';position:absolute;left:0;color:var(--red);font-size:0.8rem}
+
+/* Fix: "Why Consider X" (and any section-heading) paragraphs sat too close
+   to their heading because .guide-body p has no margin-top, while
+   .guide-stat-bar (which follows "First-Year/Transfer Admissions") has its
+   own margin-top:2.6rem. This gives the same breathing room to headings
+   that are followed directly by a paragraph instead of a stat bar. */
+.guide-section-heading + p{
+  margin-top:2rem;
+}
+
 .mentor-tie-in{
   margin-top:2.6rem;padding:1.5rem 1.8rem;background:var(--charcoal);border-radius:3px;
   display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;
