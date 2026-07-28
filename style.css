@@ -253,6 +253,36 @@ nav{
 .pkg.featured .pkg-feat{color:rgba(255,255,255,0.58)}
 .pkg-feat::before{content:'→';position:absolute;left:0;color:var(--red);font-size:0.8rem}
 .pkg.featured .pkg-feat::before{color:var(--silver)}
+
+/* Sub-bullets for "Help with EC development" — de-emphasized detail list,
+   styled like a Tab-indented sub-bullet in Google Docs/Word. Uses the same
+   --text-muted grey already used elsewhere on the page (e.g. .axis-desc)
+   for consistency, and a dimmer arrow (--silver-dim) so it reads as
+   secondary to the bold red arrows on the main feature list. */
+.pkg-subfeats{
+  list-style:none;
+  margin-top:0.55rem;
+  display:flex;
+  flex-direction:column;
+  gap:0.4rem;
+}
+.pkg-subfeat{
+  font-size:0.78rem;
+  color:var(--text-muted);
+  line-height:1.55;
+  padding-left:1.1rem;
+  position:relative;
+}
+.pkg-subfeat::before{
+  content:'→';
+  position:absolute;
+  left:0;
+  color:var(--silver-dim);
+  font-size:0.72rem;
+}
+.pkg.featured .pkg-subfeat{color:rgba(255,255,255,0.38)}
+.pkg.featured .pkg-subfeat::before{color:rgba(255,255,255,0.25)}
+
 .consult-note{
   margin-top:1.4rem;padding:0.7rem 0.9rem;
   background:rgba(139,26,26,0.05);border-left:2px solid var(--red);
