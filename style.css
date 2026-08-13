@@ -586,16 +586,18 @@ footer{
   nav{padding:0 1.5rem}
   .nav-burger{display:flex}
   .nav-links{
-    position:fixed;top:0;right:-100%;
+    position:fixed;top:0;right:0;
     height:100vh;width:min(72%,320px);
     background:var(--charcoal);
     display:flex;flex-direction:column;align-items:flex-start;
     gap:1.6rem;padding:6rem 2.2rem 2rem;
     box-shadow:-8px 0 30px rgba(0,0,0,0.35);
-    transition:right 0.32s ease;
+    transform:translateX(100%);
+    visibility:hidden;
+    transition:transform 0.32s ease,visibility 0.32s ease;
     z-index:205;
   }
-  .nav-links.active{right:0}
+  .nav-links.active{transform:translateX(0);visibility:visible}
   .nav-links a{font-size:0.85rem}
   .nav-links .nav-cta{margin-top:0.6rem;padding:0.7rem 1.4rem!important}
   .nav-overlay{
