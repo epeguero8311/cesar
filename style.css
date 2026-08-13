@@ -20,6 +20,20 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+
+/* ── OVERFLOW GUARD ─────────────────────────────
+   Fixes the "black walls" / condensed-layout bug.
+   No visual changes on their own — they just stop
+   the page from ever growing wider than the viewport,
+   which is what exposes unpainted (dark) canvas on
+   the sides and squeezes the real content inward. */
+html,body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+img,svg,video{max-width:100%;height:auto}
+/* ─────────────────────────────────────────────── */
+
 body{font-family:'Poppins',sans-serif;background:var(--offwhite);color:var(--text-body);overflow-x:hidden}
 a{text-decoration:none}
 
@@ -180,7 +194,7 @@ nav{
 .ornament-diamond{width:6px;height:6px;background:var(--red);transform:rotate(45deg);opacity:0.4}
 
 /* ─── TEAM ─────────────────────────────────────── */
-#team{background:var(--charcoal);padding:7.5rem 0;position:relative}
+#team{background:var(--charcoal);padding:7.5rem 0;position:relative;overflow:hidden}
 #team::before{
   content:'';position:absolute;inset:0;
   background:radial-gradient(ellipse 70% 40% at 50% 0%,rgba(139,26,26,0.14) 0%,transparent 55%);
@@ -204,7 +218,7 @@ nav{
 .team-headshot{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 .team-initials{font-family:'Bebas Neue',sans-serif;font-size:3rem;font-weight:400;color:var(--silver);opacity:0.35;letter-spacing:0.1em}
 .photo-hint{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.12)}
-.team-info{padding:2rem 2.2rem}
+.team-info{padding:2rem 2.2rem;min-width:0}
 .team-name{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;font-weight:400;color:var(--white);margin-bottom:0.18rem;letter-spacing:0.05em}
 .team-role{font-size:0.68rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver);margin-bottom:0.22rem}
 .team-school{font-size:0.77rem;color:rgba(255,255,255,0.28);font-style:italic;margin-bottom:0.95rem}
