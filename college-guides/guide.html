@@ -113,6 +113,45 @@
 
   const body = document.getElementById('guide-body');
 
+  // Names where taking just the first word of the full official name
+  // gives the wrong (or just weird) result, e.g. "Massachusetts Institute
+  // of Technology".split(' ')[0] === "Massachusetts". This maps those
+  // full names to the name people actually use in conversation.
+  const SHORT_NAME_OVERRIDES = {
+    'Massachusetts Institute of Technology': 'MIT',
+    'University of Pennsylvania': 'Penn',
+    'California Institute of Technology': 'Caltech',
+    'University of Chicago': 'UChicago',
+    'UC Berkeley': 'UC Berkeley',
+    'Johns Hopkins University': 'Johns Hopkins',
+    'Washington University in St. Louis': 'WashU',
+    'University of Southern California': 'USC',
+    'Carnegie Mellon University': 'Carnegie Mellon',
+    'University of Notre Dame': 'Notre Dame',
+    'University of Michigan': 'Michigan',
+    'University of California, Los Angeles': 'UCLA',
+    'New York University': 'NYU',
+    'University of Virginia': 'UVA',
+    'University of Texas at Austin': 'UT Austin',
+    'University of North Carolina at Chapel Hill': 'UNC Chapel Hill',
+    'Georgia Institute of Technology': 'Georgia Tech',
+    'University of California, San Diego': 'UC San Diego',
+    'University of Illinois Urbana-Champaign': 'UIUC',
+    'Harvey Mudd College': 'Harvey Mudd',
+    'Claremont McKenna College': 'Claremont McKenna',
+    'Wake Forest University': 'Wake Forest',
+    'Washington and Lee University': 'Washington and Lee',
+    'William & Mary': 'William & Mary',
+    'University of Florida': 'Florida',
+    'University of Washington': 'UW',
+    'University of Miami': 'Miami',
+    'Boston University': 'BU',
+    'Boston College': 'Boston College'
+  };
+  function shortDisplayName(fullName) {
+    return SHORT_NAME_OVERRIDES[fullName] || fullName.split(' ')[0];
+  }
+
   function buildSection(label, s, schoolName) {
     const overviewHtml = s.overview.map(p => `<p>${p}</p>`).join('');
     const lookingForHtml = s.lookingFor.map(li => `<li>${li}</li>`).join('');
@@ -128,7 +167,7 @@
       <h2>Overview</h2>
       ${overviewHtml}
 
-      <h2>What ${schoolName.split(' ')[0]} Looks For</h2>
+      <h2>What ${shortDisplayName(schoolName)} Looks For</h2>
       <ul>${lookingForHtml}</ul>
 
       <h2>Requirements &amp; Deadlines</h2>
@@ -160,7 +199,7 @@
     document.getElementById('guide-eyebrow').textContent = school.eyebrow;
     document.getElementById('guide-title').innerHTML = school.name + ' <em>Admissions Guide</em>';
 
-     const firstName = school.name.split(' ')[0];
+     const firstName = shortDisplayName(school.name);
     const whySection = (school.why && school.why.length) ? `
       <div class="section-label guide-section-heading">Why Consider ${firstName}</div>
       ${school.why.map(p => `<p>${p}</p>`).join('')}
@@ -178,7 +217,7 @@
       ${buildSection('Transfer', school.transfer, school.name)}
     `;
 
-    document.getElementById('cta-title').innerHTML = `Targeting <em>${school.name.split(' ')[0]}?</em>`;
+    document.getElementById('cta-title').innerHTML = `Targeting <em>${shortDisplayName(school.name)}?</em>`;
 
     body.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
 
