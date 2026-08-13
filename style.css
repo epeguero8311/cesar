@@ -128,9 +128,8 @@ nav{
 .btn-outline:hover{border-color:var(--white);color:var(--white);background:rgba(255,255,255,0.08)}
 
 /* ─── STATS RIBBON ─────────────────────────────── */
-/* blended: fades from hero red into charcoal instead of a hard cut */
 .stats-ribbon{
-  background:linear-gradient(180deg, var(--red) 0%, var(--charcoal) 140px, var(--charcoal) 100%);
+  background:var(--charcoal);
   padding:1.28rem 4rem;
   display:flex;align-items:center;justify-content:center;
   gap:3.5rem;flex-wrap:wrap;
@@ -156,11 +155,7 @@ nav{
 .section-title.on-dark{color:var(--white)}
 
 /* ─── MISSION ──────────────────────────────────── */
-/* blended: fades from stats-ribbon charcoal into white instead of a hard cut */
-#mission{
-  background:linear-gradient(180deg, var(--charcoal) 0%, var(--white) 140px, var(--white) 100%);
-  padding:7.5rem 0;
-}
+#mission{background:var(--white);padding:7.5rem 0}
 .mission-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:5.5rem;align-items:start;margin-top:3.8rem}
 .mission-statement{font-family:'Poppins',sans-serif;font-size:1rem;line-height:1.9;color:var(--charcoal);margin-top:1.4rem}
 .beta-badge{
@@ -185,11 +180,7 @@ nav{
 .ornament-diamond{width:6px;height:6px;background:var(--red);transform:rotate(45deg);opacity:0.4}
 
 /* ─── TEAM ─────────────────────────────────────── */
-/* blended: fades from mission white into charcoal instead of a hard cut */
-#team{
-  background:linear-gradient(180deg, var(--white) 0%, var(--charcoal) 140px, var(--charcoal) 100%);
-  padding:7.5rem 0;position:relative;
-}
+#team{background:var(--charcoal);padding:7.5rem 0;position:relative}
 #team::before{
   content:'';position:absolute;inset:0;
   background:radial-gradient(ellipse 70% 40% at 50% 0%,rgba(139,26,26,0.14) 0%,transparent 55%);
@@ -222,11 +213,7 @@ nav{
 .team-bio:last-child{margin-bottom:0}
 
 /* ─── PRICING ──────────────────────────────────── */
-/* blended: fades from team charcoal into offwhite instead of a hard cut */
-#pricing{
-  background:linear-gradient(180deg, var(--charcoal) 0%, var(--offwhite) 140px, var(--offwhite) 100%);
-  padding:7.5rem 0;
-}
+#pricing{background:var(--offwhite);padding:7.5rem 0}
 .pricing-hd{max-width:660px}
 .pricing-beta-block{
   margin-top:1.3rem;padding:1.05rem 1.4rem;
@@ -314,11 +301,7 @@ nav{
 .addon strong{color:var(--charcoal);font-weight:600}
 
 /* ─── APPLY ────────────────────────────────────── */
-/* blended: fades from pricing offwhite into red instead of a hard cut */
-#apply{
-  background:linear-gradient(180deg, var(--offwhite) 0%, var(--red) 140px, var(--red) 100%);
-  padding:7.5rem 0;position:relative;overflow:hidden;
-}
+#apply{background:var(--red);padding:7.5rem 0;position:relative;overflow:hidden}
 #apply::before{
   content:'';position:absolute;inset:0;
   background:
@@ -368,10 +351,8 @@ nav{
 .apply-fine{font-size:0.72rem;color:rgba(255,255,255,0.25)}
 
 /* ─── FOOTER ───────────────────────────────────── */
-/* blended: fades from apply red into the deeper footer red instead of a hard cut */
 footer{
-  background:linear-gradient(180deg, var(--red) 0%, var(--red-deep) 140px, var(--red-deep) 100%);
-  padding:2.8rem 4rem;
+  background:var(--red-deep);padding:2.8rem 4rem;
   display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;
   border-top:1px solid rgba(0,0,0,0.2);
 }
