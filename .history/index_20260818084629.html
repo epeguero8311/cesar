@@ -11,13 +11,17 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <div class="nav-brand">
     <img src="IMG_4736-removebg-preview.png" alt="Full Axis" class="nav-logo-img" />
   </div>
-  <ul class="nav-links">
+  <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+ 
+  <ul class="nav-links" id="navLinks">
     <li><a href="#mission">About</a></li>
     <li><a href="#team">Team</a></li>
     <li><a href="#pricing">Packages</a></li>
@@ -27,7 +31,8 @@
     <li><a href="#apply" class="nav-cta">Apply Now</a></li>
   </ul>
 </nav>
-
+<div class="nav-overlay" id="navOverlay"></div>
+ 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-inner">
@@ -41,7 +46,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- STATS RIBBON -->
 <div class="stats-ribbon">
   <div class="stat"><strong>Tier 1</strong>&nbsp;Target Schools</div>
@@ -52,7 +57,7 @@
   <div class="stat-sep"></div>
   <div class="stat"><strong>Free</strong>&nbsp;First Consultation</div>
 </div>
-
+ 
 <!-- MISSION -->
 <section id="mission">
   <div class="section-inner">
@@ -80,7 +85,7 @@
     <div class="ornament"><div class="ornament-diamond"></div></div>
   </div>
 </section>
-
+ 
 <!-- TEAM -->
 <section id="team">
   <div class="section-inner">
@@ -112,85 +117,124 @@
         </div>
         <div class="team-info">
           <div class="team-name">Andrew Wei</div>
-          <div class="team-role">Co-Founder &amp; Transfer Advisor (Finance)</div>
+          <div class="team-role">Co-Founder &amp; Advisor (Finance)</div>
           <div class="team-school">Cornell University — Nolan School of Hotel Administration</div>
           <p class="team-bio">Andrew is a transfer student from Tulane University to Cornell's Nolan School of Hotel Administration, where he is now a sophomore pursuing a career in consulting. After navigating the transfer process himself, he co-founded Full Axis to help others do the same. He will guide students through every step of the process, from school selection to crafting the final components of their applications. Andrew's strengths lie in business and finance, as well as his ability to help students build a clear, strategic path to success. He focuses on helping students craft narratives that reflect not only technical ambition, but also a deeper commitment to entrepreneurship and innovation.</p>
         </div>
       </div>
-      <!-- Kellen -->
+      <!-- Shaunya -->
       <div class="team-card reveal d2">
+        <div class="team-photo">
+          <img src="headshots/Shaunya Kumar.png" alt="Shaunya" class="team-headshot" />
+        </div>
+        <div class="team-info">
+          <div class="team-name">Shaunya Kumar</div>
+          <div class="team-role">Head of Marketing & Advisor (Social Sciences)</div>
+          <div class="team-school">Princeton University — Public and International Affairs, Near Eastern Studies</div>
+          <p class="team-bio">Shaunya is a first-year student at Princeton University studying Public and International Affairs, with a focus on Near Eastern Studies. In high school she worked extensively with nonprofits on literacy access in South Asia, achieved national recognition for original historical research, and held roles in government and campaign work — experiences that shaped her college application and became the foundation of her essays. She holds acceptances to Princeton, Georgetown, UPenn, Northwestern, and other top-tier schools, and received competitive merit scholarships including the Coca-Cola Scholars Program, the University of Maryland's Banneker/Key full-ride scholarship, and WashU-St. Louis's John B. Ervin Scholarship.</p>
+          <p class="team-bio">With Full Axis, Shaunya helps students craft and execute ambitious extracurricular, academic, and essay strategies for both college and scholarship applications.</p>
+        </div>
+      </div>
+      <!-- Kellen -->
+      <div class="team-card reveal d3">
         <div class="team-photo">
           <img src="headshots/IMG_4220.jpeg" alt="Kellen" class="team-headshot" />
         </div>
         <div class="team-info">
           <div class="team-name">Kellen Bell</div>
-          <div class="team-role">Senior Transfer Advisor (Natural Sciences)</div>
+          <div class="team-role">Senior Advisor (Natural Sciences)</div>
           <div class="team-school">Cornell University — HBHS &amp; Health Care Policy</div>
           <p class="team-bio">Kellen is a pre-med transfer student from Tulane to Cornell University, where he is currently majoring in Human Biology, Health & Society with a minor in Health Care Policy. As a co-founder, he will help students refine their applications and reach new heights at any institution. What truly sets Kellen apart is his firsthand experience navigating both the transfer process and the path toward medical school. This experience makes him an invaluable resource for aspiring pre-med students and those pursuing careers in science, allowing him to offer thoughtful, experience-driven guidance. With his unique perspective, he helps students interested in STEM research and medicine better understand the journey ahead and approach it with clarity and confidence.</p>
         </div>
       </div>
       <!-- Azmain -->
-      <div class="team-card reveal d3">
+      <div class="team-card reveal d4">
         <div class="team-photo">
           <img src="headshots/IMG_4873.jpeg" alt="Azmain" class="team-headshot" />
         </div>
         <div class="team-info">
           <div class="team-name">Azmain Harun</div>
-          <div class="team-role">Senior Transfer Advisor (Engineering)</div>
+          <div class="team-role">Senior Advisor (Engineering & UC Admissions)</div>
           <div class="team-school">Vanderbilt University — Electrical Engineering &amp; HOD</div>
           <p class="team-bio">Azmain brings a nontraditional but highly strategic perspective to Full Axis, with deep experience navigating elite admissions and rigorous academic pathways. He earned a full ride offer to Vanderbilt and was also admitted to Columbia, Virginia Tech, URochester, UC Santa Barbara, and UC San Diego, alongside waitlists at Stanford and UC Berkeley. He is pursuing Electrical Engineering and Human & Organizational Development (HOD), with academic strengths spanning engineering, computer science, physics, applied mathematics, and the UC admissions process. Azmain helps students build balanced, realistic, and ambitious application strategies, whether targeting highly selective private universities or competitive public university systems.</p>
         </div>
       </div>
       <!-- Sarah-->
-<div class="team-card reveal d4">
+<div class="team-card reveal d5">
   <div class="team-photo">
     <img src="headshots/Sarah Li_JPEG.jpeg" alt="Sara" class="team-headshot" />
   </div>
   <div class="team-info">
     <div class="team-name">Sarah Li </div>
-    <div class="team-role">Transfer Advisor (Finance &amp; International Admissions)</div>
+    <div class="team-role">Advisor (Finance &amp; International Admissions)</div>
     <div class="team-school">Cornell University — Information Science & Environmental Studies</div>
     <p class="team-bio">Sarah is a Cornell junior pursuing a double major, who transferred from Middlebury College, navigating the shift from a liberal arts college to a research university firsthand as an international student. Sarah has four years of tutoring experience and currently serves as a New Member Educator at one of Cornell's prestigious business clubs, giving her a proven track record of working with students. Her advising strengths span the range of student experiences: adjusting to a new academic culture, studying abroad, switching majors, and finding the right career path. Sarah has experience in both tech and finance, and will be joining Goldman Sachs as an summer analyst soon. She can offer grounded, practical guidance on recruiting, pivots, and how your choice of major or institution shapes your professional trajectory.</p>
   </div>
 </div>
-<!-- Alex -->
-<div class="team-card reveal d5">
+<!-- Emiliano -->
+<div class="team-card reveal d6">
   <div class="team-photo">
-    <img src="headshots/Alec Sarkiss_JPEG.jpeg" alt="Alex" class="team-headshot" />
+    <img src="headshots/EmilianoHernandez.jpeg" alt="Emiliano" class="team-headshot" />
   </div>
   <div class="team-info">
-    <div class="team-name">Alec Sarkissian</div>
-    <div class="team-role">Transfer Advisor (Social Sciences &amp; UC Admissions)</div>
-    <div class="team-school">University of California, Berkeley — Political Science</div>
-    <p class="team-bio">Alec is a transfer student from Sacramento City College to the UC Berkeley College of Letters and Science, where he will major in Political Science and minor in Public Policy. He was admitted to every University of California campus, as well as Duke University. Over the past three years, Alec has built extensive experience in government affairs, working with some of California’s leading lobbying firms and associations while also serving in multiple statewide student government roles. In addition, he has mentored friends and classmates through the California community college transfer process, developing strong knowledge of the Transfer Admission Guarantee (TAG) program and the UCLA/UC Berkeley Transfer Alliance Program (TAP). His expertise also extends to course planning, extracurricular development, and crafting strategic, compelling admissions essays.</p>
+    <div class="team-name">Emiliano Hernandez</div>
+    <div class="team-role">Advisor (Social Sciences)</div>
+    <div class="team-school">University of Notre Dame — Political Science, Constitutional Studies minor</div>
+    <p class="team-bio">Emiliano is a rising sophomore at the University of Notre Dame pursuing a Bachelor of Arts in Political Science with a minor in Constitutional Studies. His academic interests center on American government, constitutional law, political institutions, and public policy. In Fall 2026 he is participating in the Notre Dame Washington Program, deepening his exposure to law, public service, and the policymaking process in the nation's capital. Before Notre Dame, he earned an Associate of Arts in Multidisciplinary Studies from El Paso Community College. Originally from El Paso, Texas, his background in the U.S.–Mexico border region has shaped his interest in government, immigration, economic opportunity, and community development.</p>
+    <p class="team-bio">He has been involved in pre-law programming and gained professional exposure to the legal system through experience in private property law and a district attorney's office. Emiliano intends to pursue a career in law and public service, and is recognized for his work ethic, intellectual curiosity, and commitment to leadership as service.</p>
   </div>
 </div>
 <!-- Arturo -->
-<div class="team-card reveal d6">
+<div class="team-card reveal d7">
   <div class="team-photo">
-    <img src="headshots/Arturo Lemus.jpeg" alt="Arturo" class="team-headshot" />
+    <img src="headshots/ArturoLemus.jpeg" alt="Arturo" class="team-headshot" />
   </div>
   <div class="team-info">
     <div class="team-name">Arturo Lemus</div>
-    <div class="team-role">Advisor (STEM &amp; International Admissions)</div>
+    <div class="team-role">Advisor (Engineering)</div>
     <div class="team-school">Purdue University — Biomedical Engineering, Class of 2029</div>
     <p class="team-bio">Arturo Lemus is a second-year student at Purdue University, where he is currently studying biomedical engineering. Originally from Mexico, he later moved to the United States to pursue his education, bringing a diverse international perspective to his academic and professional work. His experience in programming and mathematics has helped him develop clear, analytical problem-solving skills that he uses to support students from different backgrounds as they build strong academic resumes and prepare for competitive opportunities.</p>
     <p class="team-bio">Arturo takes a practical, student-focused approach to college consulting, offering guidance on course planning, skill development, and long-term academic strategy. He is committed to helping learners make informed decisions, gain confidence, and navigate higher education with clarity and purpose.</p>
   </div>
 </div>
+<!-- Alex -->
+<div class="team-card reveal d8">
+  <div class="team-photo">
+    <img src="headshots/Alec Sarkiss_JPEG.jpeg" alt="Alex" class="team-headshot" />
+  </div>
+  <div class="team-info">
+    <div class="team-name">Alec Sarkissian</div>
+    <div class="team-role">Advisor (Social Sciences &amp; UC Admissions)</div>
+    <div class="team-school">University of California, Berkeley — Political Science</div>
+    <p class="team-bio">Alec is a transfer student from Sacramento City College to the UC Berkeley College of Letters and Science, where he will major in Political Science and minor in Public Policy. He was admitted to every University of California campus, as well as Duke University. Over the past three years, Alec has built extensive experience in government affairs, working with some of California's leading lobbying firms and associations while also serving in multiple statewide student government roles. In addition, he has mentored friends and classmates through the California community college transfer process, developing strong knowledge of the Transfer Admission Guarantee (TAG) program and the UCLA/UC Berkeley Transfer Alliance Program (TAP). His expertise also extends to course planning, extracurricular development, and crafting strategic, compelling admissions essays.</p>
+  </div>
+</div>
+<!-- Zahra -->
+<div class="team-card reveal d9">
+  <div class="team-photo">
+    <img src="headshots/ZahraRounizi.jpg" alt="Zahra" class="team-headshot" />
+  </div>
+  <div class="team-info">
+    <div class="team-name">Zahra Rounizi</div>
+    <div class="team-role">Advisor (STEM & Health Sciences)</div>
+    <div class="team-school">Harvard University — Neurobiology, Global Health &amp; Health Policy minor</div>
+    <p class="team-bio">Zahra is a junior at Harvard University majoring in Neurobiology with a minor in Global Health and Health Policy. Throughout her high school and undergraduate career, she has interned at NASA, conducted cancer research and clinical volunteering across three Harvard-affiliated hospitals, and served as the Student Advisor to the School Board of the third largest school district in the nation. On campus, she serves as president of two student organizations and trains with the Harvard Karate Club. Having attended a large public high school in one of Miami's underserved communities, Zahra persevered in pursuing her academic ambitions, becoming the first student in her school's history to be accepted to Harvard.</p>
+    <p class="team-bio">At Full Axis, Zahra offers over six years of experience in student mentorship and tutoring, providing experience-based guidance on course selection, building an extracurricular portfolio, and essay writing. She is especially excited to mentor students pursuing opportunities and research experiences in STEM.</p>
+  </div>
+</div>
     </div>
   </div>
 </section>
-
+ 
 <!-- PRICING -->
 <section id="pricing">
   <div class="section-inner">
     <div class="pricing-hd reveal">
       <div class="section-label">Fee Structure</div>
       <h2 class="section-title">Transparent pricing.<br />Unmatched access.</h2>
-      <div class="pricing-beta-block">Full Axis is currently in its beta cycle for the 2026–2027 school year. As we onboard our inaugural cohort, we strongly recommend getting started with us as soon as possible; this allows us to fully maximize your potential as an applicant. We operate on a rolling application system, with an application deadline in late September.</div>
+      <div class="pricing-beta-block">Full Axis is currently in its beta cycle for the 2026–2027 school year. As we onboard our inaugural cohort, we strongly recommend getting started as soon as possible to maximize your potential as an applicant. We review applications on a rolling basis, with applications closing in late September. We also plan to launch a dedicated 1:1 mentorship program for high school students, similar to Transfer Axis, in our next admissions cycle.</div>
     </div>
-
+ 
     <h3 class="axis-heading">Transfer Axis</h3>
     <p class="axis-desc">The Transfer Axis is an intensive, mentor-led program for students targeting highly selective transfer admissions. We go beyond application polish, helping you build a cohesive academic and extracurricular direction aligned with top-tier expectations—and a clear blueprint for long-term success.</p>
     <div class="pkg-grid reveal">
@@ -200,6 +244,16 @@
         <ul class="pkg-feats">
           <li class="pkg-feat">Paired mentor throughout application process</li>
           <li class="pkg-feat">Guaranteed monthly meetings</li>
+          <li class="pkg-feat">
+            Help with EC development
+            <ul class="pkg-subfeats">
+              <li class="pkg-subfeat">Personalized guidance tailored to your profile</li>
+              <li class="pkg-subfeat">Research outreach &amp; cold emailing help</li>
+              <li class="pkg-subfeat">Internship discovery strategy</li>
+              <li class="pkg-subfeat">Independent projects aligned with your interests</li>
+              <li class="pkg-subfeat">School-specific materials (e.g. Brown's Video Essay)</li>
+            </ul>
+          </li>
           <li class="pkg-feat">Essay review for up to 3 schools</li>
         </ul>
         <div class="consult-note">✦ Free initial consultation included</div>
@@ -211,8 +265,17 @@
         <ul class="pkg-feats">
           <li class="pkg-feat">Paired mentor throughout application process</li>
           <li class="pkg-feat">Guaranteed monthly meetings</li>
+          <li class="pkg-feat">
+            Help with EC development
+            <ul class="pkg-subfeats">
+              <li class="pkg-subfeat">Personalized guidance tailored to your profile</li>
+              <li class="pkg-subfeat">Research outreach &amp; cold emailing help</li>
+              <li class="pkg-subfeat">Internship discovery strategy</li>
+              <li class="pkg-subfeat">Independent projects aligned with your interests</li>
+              <li class="pkg-subfeat">School-specific materials (e.g. Brown's Video Essay)</li>
+            </ul>
+          </li>
           <li class="pkg-feat">Essay review for up to 5 schools</li>
-          <li class="pkg-feat">Tailored roadmap built to your individual profile</li>
         </ul>
         <div class="consult-note">✦ Free initial consultation included</div>
       </div>
@@ -222,8 +285,17 @@
         <ul class="pkg-feats">
           <li class="pkg-feat">Paired mentor throughout application process</li>
           <li class="pkg-feat">Guaranteed monthly meetings</li>
+          <li class="pkg-feat">
+            Help with EC development
+            <ul class="pkg-subfeats">
+              <li class="pkg-subfeat">Personalized guidance tailored to your profile</li>
+              <li class="pkg-subfeat">Research outreach &amp; cold emailing help</li>
+              <li class="pkg-subfeat">Internship discovery strategy</li>
+              <li class="pkg-subfeat">Independent projects aligned with your interests</li>
+              <li class="pkg-subfeat">School-specific materials (e.g. Brown's Video Essay)</li>
+            </ul>
+          </li>
           <li class="pkg-feat">Essay review for up to 7 schools</li>
-          <li class="pkg-feat">Tailored roadmap built to your individual profile</li>
         </ul>
         <div class="consult-note">✦ Free initial consultation included</div>
       </div>
@@ -233,30 +305,43 @@
         <ul class="pkg-feats">
           <li class="pkg-feat">Paired mentor throughout application process</li>
           <li class="pkg-feat">Guaranteed monthly meetings</li>
+          <li class="pkg-feat">
+            Help with EC development
+            <ul class="pkg-subfeats">
+              <li class="pkg-subfeat">Personalized guidance tailored to your profile</li>
+              <li class="pkg-subfeat">Research outreach &amp; cold emailing help</li>
+              <li class="pkg-subfeat">Internship discovery strategy</li>
+              <li class="pkg-subfeat">Independent projects aligned with your interests</li>
+              <li class="pkg-subfeat">School-specific materials (e.g. Brown's Video Essay)</li>
+            </ul>
+          </li>
           <li class="pkg-feat">Essay review for up to 12 schools</li>
-          <li class="pkg-feat">Tailored roadmap built to your individual profile</li>
         </ul>
         <div class="consult-note">✦ Free initial consultation included</div>
       </div>
     </div>
-
+ 
     <h3 class="axis-heading" style="margin-top:4.5rem">Review Axis</h3>
-    <p class="axis-desc">The Review Axis is a focused essay review service for students who have completed their drafts and want expert-level refinement before submission. This tier is ideal for applicants seeking precise feedback to ensure their narrative is clear, compelling, and free of structural or strategic weaknesses.</p>
+    <p class="axis-desc">The Review Axis is a focused essay review service for students who want expert guidance on the writing portion of their application before submission. This tier combines in-depth essay feedback with strategic last-minute guidance on both your writing and realistic opportunities to strengthen your overall application before deadlines.</p>
     <div class="rev-grid reveal">
       <div class="rev-card">
         <div class="rev-card-title">High Schoolers — Essay Only</div>
         <div class="rev-price">$125</div>
         <ul class="rev-feats">
-          <li class="rev-feat">Personal statement review + one-time editing &amp; recommendations</li>
+          <li class="rev-feat">Personal statement + editing &amp; recommendations</li>
           <li class="rev-or">— or —</li>
-          <li class="rev-feat">Two supplemental essay reviews + one-time editing &amp; recommendations</li>
+          <li class="rev-feat">Two supplemental essays + editing &amp; recommendations</li>
         </ul>
+        <div class="rev-addons">
+          <div class="addon"><strong>+ $50</strong>&nbsp;each additional supplemental essay</div>
+          <div class="addon"><strong>+ $25</strong>&nbsp;essays under 100 words</div>
+        </div>
       </div>
       <div class="rev-card">
         <div class="rev-card-title">Transfers — Essay Only</div>
         <div class="rev-price">$75</div>
         <ul class="rev-feats">
-          <li class="rev-feat">Single supplemental essay + one-time editing &amp; recommendation</li>
+          <li class="rev-feat">Single supplemental essay + editing &amp; recommendations</li>
         </ul>
         <div class="rev-addons">
           <div class="addon"><strong>+ $50</strong>&nbsp;each additional supplemental essay</div>
@@ -266,7 +351,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- APPLY -->
 <section id="apply">
   <div class="section-inner">
@@ -293,7 +378,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div class="ft-logo"> <span></span></div>
@@ -318,12 +403,12 @@
     <div class="ft-copy">© 2026 Full Axis</div>
   </div>
 </footer>
-
+ 
 <style>
 .ft-right{display:flex;flex-direction:column;align-items:flex-end;gap:0.75rem}
 @media(max-width:580px){.ft-right{align-items:center}}
 </style>
-
+ 
 <script src="main.js"></script>
 </body>
 </html>
