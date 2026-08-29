@@ -613,7 +613,6 @@ footer{
   }
   .nav-overlay.active{display:block}
   .mission-grid{grid-template-columns:1fr;gap:2.8rem}
-  .rev-grid{grid-template-columns:1fr}
   .apply-grid{grid-template-columns:1fr;gap:3rem}
   .stats-ribbon{gap:2rem;padding:1.2rem 2rem}
   .team-card{grid-template-columns:200px 1fr}
@@ -623,6 +622,7 @@ footer{
 }
 @media(max-width:580px){
   .pkg-grid{grid-template-columns:1fr}
+  .rev-grid{grid-template-columns:1fr}
   footer{flex-direction:column;text-align:center;padding:2rem 1.5rem;align-items:center}
   .ft-note{text-align:center}
   .section-inner{padding:0 1.5rem}
