@@ -242,33 +242,13 @@ nav{
 .axis-heading::after{content:'';flex:1;height:1px;background:var(--bdr-red)}
 .axis-desc{font-size:0.9rem;color:var(--text-muted);line-height:1.75;max-width:560px;margin-bottom:1.8rem}
 .pkg-grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:1.4rem}
-
-/* Card glow — a soft red spotlight that follows the cursor.
-   --mx/--my are set by main.js on mousemove (px offset within the card);
-   --glow-alpha is toggled 0 → visible on mouseenter/mouseleave.
-   Kept as background-image (not a ::before) so it always paints
-   behind the card's real content — no z-index juggling needed. */
-.pkg,.rev-card{
-  --mx:50%;
-  --my:50%;
-  --glow-alpha:0;
-  --glow-color:139,26,26;
-  background-repeat:no-repeat;
-  background-image:radial-gradient(320px circle at var(--mx) var(--my), rgba(var(--glow-color),var(--glow-alpha)), transparent 70%);
-}
-
 .pkg{
-  background-color:var(--white);
-  border:1px solid var(--bdr-stone);
+  background:var(--white);border:1px solid var(--bdr-stone);
   border-radius:3px;padding:2rem 1.8rem;position:relative;
   transition:border-color 0.22s,box-shadow 0.22s,transform 0.22s;
 }
 .pkg:hover{border-color:var(--red);box-shadow:0 8px 30px rgba(139,26,26,0.08);transform:translateY(-3px)}
-.pkg.featured{
-  border-color:var(--red);
-  background-color:var(--charcoal);
-  --glow-color:192,192,192;
-}
+.pkg.featured{border-color:var(--red);background:var(--charcoal)}
 .pkg-badge{
   position:absolute;top:-1px;right:1.4rem;
   background:var(--red);color:var(--white);
@@ -326,7 +306,7 @@ nav{
 .pkg.featured .consult-note{background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.35);border-color:rgba(192,192,192,0.3)}
 .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
 .rev-card{
-  background-color:var(--white);
+  background:var(--white);
   border:1px solid var(--bdr-stone);border-radius:3px;padding:2rem 2rem 2.2rem;
   position:relative;
   transition:border-color 0.22s,box-shadow 0.22s,transform 0.22s;
