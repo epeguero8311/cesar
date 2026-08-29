@@ -26,28 +26,3 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   links.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 })();
-
-// ─── CARD GLOW (mouse-follow spotlight) ────────────
-// Applies to pricing cards (.pkg) and the Review Axis /
-// Standardized Testing cards (.rev-card). Sets --mx/--my to the
-// cursor's position inside the card, and toggles --glow-alpha so
-// the spotlight only shows while hovering. See style.css for the
-// actual radial-gradient rule these variables feed.
-(function () {
-  const cards = document.querySelectorAll('.pkg, .rev-card');
-  cards.forEach(card => {
-    card.addEventListener('mousemove', e => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      card.style.setProperty('--mx', `${x}px`);
-      card.style.setProperty('--my', `${y}px`);
-    });
-    card.addEventListener('mouseenter', () => {
-      card.style.setProperty('--glow-alpha', '0.16');
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.setProperty('--glow-alpha', '0');
-    });
-  });
-})();
