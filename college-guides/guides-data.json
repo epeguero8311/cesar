@@ -248,11 +248,11 @@
     },
     "transfer": {
       "rate": "~1.7%",
-      "deadline": "Mar 15",
-      "decisionsReleased": "April 3",
-      "terms": "Fall Only",
+      "deadline": "March 1 (Fall)/ Oct 15 (Spring)",
+      "decisionsReleased": "April 2 (Fall)/ Nov 15(Spring)",
+      "terms": "Fall & Spring",
       "overview": [
-        "MIT receives well over 500 transfer applications annually and typically enrolls only around 20 to 35 students. Admission rates generally remain between 1% and 2%.",
+        "MIT receives well over 500 transfer applications annually and typically enrolls only around 20 to 35 students. Admission rates generally remain between 1% and 2%. Spring transfers face a ridculous circle of some years producing 0% acceptance rate as rarely any spots are avaliable by spring semester",
         "Applicants are evaluated primarily on outstanding academic preparation in mathematics, science, and engineering, along with evidence that MIT offers opportunities unavailable at their current institution."
       ],
       "lookingFor": [
@@ -263,7 +263,7 @@
         "A compelling academic rationale for transferring to MIT"
       ],
       "requirements": [
-        "MIT Transfer Application due March 15",
+        "MIT Transfer Application due March 1",
         "Official college and high school transcripts",
         "College instructor evaluations",
         "Required coursework in mathematics and science appropriate to intended major",
