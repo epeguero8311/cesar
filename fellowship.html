@@ -17,7 +17,10 @@
   <div class="nav-brand">
     <a href="index.html"><img src="IMG_4736-removebg-preview.png" alt="Full Axis" class="nav-logo-img" /></a>
   </div>
-  <ul class="nav-links">
+  <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
     <li><a href="index.html#mission">About</a></li>
     <li><a href="index.html#team">Team</a></li>
     <li><a href="index.html#pricing">Packages</a></li>
@@ -25,60 +28,43 @@
     <li><a href="college-guides/index.html">College Guides</a></li>
     <li><a href="kill-board/index.html">Axis Board</a></li>
     <li><a href="#fellowship">FGLI</a></li>
-    <li><a href="#apply-fellowship" class="nav-cta">Apply Now</a></li>
+    <li><a href="#apply" class="nav-cta">Apply Now</a></li>
   </ul>
 </nav>
+<div class="nav-overlay" id="navOverlay"></div>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-inner">
+<!-- SUB HERO -->
+<section class="sub-hero">
+  <div class="sub-hero-inner">
     <div class="hero-eyebrow">Access &amp; Opportunity</div>
-    <h1 class="hero-title">Full Axis<br /><em>Fellowship</em></h1>
+    <h1 class="sub-hero-title">Full Axis Fellowship</h1>
     <div class="hero-rule"></div>
-    <p class="hero-sub">First-Gen · Low-Income · Full Access</p>
-    <div class="hero-actions">
-      <a href="#apply-fellowship" class="btn-primary">Apply to the Fellowship</a>
-      <a href="#access" class="btn-outline">See Access Rates</a>
-    </div>
+    <p class="sub-hero-sub">First-generation and low-income students deserve the same caliber of mentorship as any applicant. Every verified FGLI applicant is guaranteed a place in our program — as a Fellow, or on our Access Rate.</p>
   </div>
 </section>
 
-<!-- STATS RIBBON -->
-<div class="stats-ribbon">
-  <div class="stat"><strong>$300</strong>&nbsp;Fellowship Flat Fee</div>
-  <div class="stat-sep"></div>
-  <div class="stat"><strong>Up to 1/3 Off</strong>&nbsp;Access Rate Pricing</div>
-  <div class="stat-sep"></div>
-  <div class="stat"><strong>Limited</strong>&nbsp;Fellowship Spots</div>
-  <div class="stat-sep"></div>
-  <div class="stat"><strong>Free</strong>&nbsp;First Consultation</div>
-</div>
-
-<!-- MISSION / WHAT THIS IS -->
-<section id="fellowship">
+<!-- WHO THIS IS FOR -->
+<section class="tb-section" id="fellowship">
   <div class="section-inner">
     <div class="section-label">Who This Is For</div>
     <h2 class="section-title">Built for students<br />the system underestimates.</h2>
-    <div class="mission-grid">
-      <div class="reveal">
-        <p class="mission-statement">The Full Axis Fellowship exists for first-generation and low-income (FGLI) students who bring the same drive and potential as any applicant we work with, but not always the same resources. Every applicant who verifies as FGLI is guaranteed a place in our program — either as a Fellow or through our Access Rate.</p>
-        <div class="beta-badge">
-          <span class="beta-dot"></span>
-          2026–2027 Cycle &nbsp;·&nbsp; Applications Reviewed on a Rolling Basis
-        </div>
+    <p class="tb-lede">The Full Axis Fellowship exists for first-generation and low-income (FGLI) students who bring the same drive and potential as any applicant we work with, but not always the same resources. Every applicant who verifies as FGLI is guaranteed a place in our program — either as a Fellow or through our Access Rate.</p>
+
+    <div class="tb-grid reveal">
+      <div class="tb-card">
+        <h3>How It Works</h3>
+        <p>Every FGLI-verified applicant is considered for the Fellowship first. Students not selected as Fellows are automatically placed on our Access Rate — a reduced-cost tier across our full mentorship program. No verified applicant is turned away.</p>
       </div>
-      <div class="mission-right reveal d2">
-        <div class="pillar">
-          <h3>How It Works</h3>
-          <p>Every FGLI-verified applicant is considered for the Fellowship first. Students not selected as Fellows are automatically placed on our Access Rate — a reduced-cost tier across our full mentorship program. No verified applicant is turned away.</p>
-        </div>
-        <div class="pillar">
-          <h3>Our Philosophy</h3>
-          <p>Financial background shouldn't determine access to strategy and mentorship. We built the Fellowship so our most resource-constrained applicants get the same caliber of guidance as any student at Full Axis.</p>
-        </div>
+      <div class="tb-card d1">
+        <h3>Our Philosophy</h3>
+        <p>Financial background shouldn't determine access to strategy and mentorship. We built the Fellowship so our most resource-constrained applicants get the same caliber of guidance as any student at Full Axis.</p>
       </div>
     </div>
-    <div class="ornament"><div class="ornament-diamond"></div></div>
+
+    <div class="beta-badge" style="margin-top:2.5rem">
+      <span class="beta-dot"></span>
+      2026–2027 Cycle &nbsp;·&nbsp; Applications Reviewed on a Rolling Basis
+    </div>
   </div>
 </section>
 
@@ -91,7 +77,7 @@
       <div class="pricing-beta-block">A limited number of Fellowship spots are available each cycle. Selected Fellows pay a single flat intro fee and are matched into our Founders package — with standout applicants occasionally placed into Premium at no added cost. Selection is based on need and fit, not first-come-first-served.</div>
     </div>
 
-    <div class="pkg-grid reveal">
+    <div class="pkg-grid reveal" style="max-width:380px; margin-left:auto; margin-right:auto; grid-template-columns:1fr;">
       <div class="pkg featured">
         <div class="pkg-badge">Fellowship</div>
         <div class="pkg-name">Full Axis Fellow</div>
@@ -146,7 +132,7 @@
     <div class="rev-grid reveal">
       <div class="rev-card">
         <div class="rev-card-title">SAT Prep Tutoring</div>
-        <div class="rev-price">~$33/hr</div>
+        <div class="rev-price">~$33<span class="price-unit">/hr</span></div>
         <ul class="rev-feats">
           <li class="rev-feat">Standard rate: $50/hr — Access Rate: two-thirds, ~$33/hr</li>
           <li class="rev-feat">1:1 sessions with a top-scoring mentor</li>
@@ -156,7 +142,7 @@
       </div>
       <div class="rev-card">
         <div class="rev-card-title">ACT Prep Tutoring</div>
-        <div class="rev-price">~$33/hr</div>
+        <div class="rev-price">~$33<span class="price-unit">/hr</span></div>
         <ul class="rev-feats">
           <li class="rev-feat">Standard rate: $50/hr — Access Rate: two-thirds, ~$33/hr</li>
           <li class="rev-feat">1:1 sessions with a top-scoring mentor</li>
@@ -173,8 +159,8 @@
   </div>
 </section>
 
-<!-- APPLY -->
-<section id="apply-fellowship">
+<!-- CTA -->
+<section id="apply">
   <div class="section-inner">
     <div class="apply-grid reveal">
       <div>
