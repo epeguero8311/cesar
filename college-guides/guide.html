@@ -28,6 +28,7 @@
     <li><a href="../transfer-blueprint/index.html">Mission</a></li>
     <li><a href="../college-guides/index.html">College Guides</a></li>
     <li><a href="../kill-board/index.html">Axis Board</a></li>
+    <li><a href="../fellowship.html">FGLI</a></li>
     <li><a href="../index.html#apply" class="nav-cta">Apply Now</a></li>
   </ul>
 </nav>
@@ -113,10 +114,6 @@
 
   const body = document.getElementById('guide-body');
 
-  // Names where taking just the first word of the full official name
-  // gives the wrong (or just weird) result, e.g. "Massachusetts Institute
-  // of Technology".split(' ')[0] === "Massachusetts". This maps those
-  // full names to the name people actually use in conversation.
   const SHORT_NAME_OVERRIDES = {
     'Massachusetts Institute of Technology': 'MIT',
     'University of Pennsylvania': 'Penn',
@@ -193,7 +190,6 @@
       return;
     }
 
-    // Title / meta
     document.title = school.name + ' First-Year & Transfer Acceptance Rate | Full Axis';
     document.getElementById('page-title').textContent = document.title;
     document.getElementById('guide-eyebrow').textContent = school.eyebrow;
