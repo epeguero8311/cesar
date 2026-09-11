@@ -28,6 +28,7 @@
 <li><a href="../transfer-blueprint/index.html">Mission</a></li>  
    <li><a href="../college-guides/index.html">College Guides</a></li>
   <li><a href="../kill-board/index.html">Axis Board</a></li>
+  <li><a href="../fellowship.html">FGLI</a></li>
   <li><a href="../index.html#apply" class="nav-cta">Apply Now</a></li>
 </ul>
 </nav>
@@ -114,20 +115,6 @@
 
 <script src="../main.js"></script>
 <script>
-/*
-  KILL BOARD DATA
-  ----------------------------------------------------------------
-  Edit this array to update the board. Each entry:
-    initials  → text shown in the crest badge (2-4 letters)
-    name      → full school name shown under the crest
-    admitted  → number of students admitted so far this cycle (0 = locked/gray)
-    avgGpa    → average GPA of admits at this school (string, e.g. "3.7")
-    avgTest   → average SAT/ACT of admits (string, e.g. "1420 SAT")
-    transfers → number of the admits who were transfer applicants specifically
-  When "admitted" is 0, the tile stays gray and shows no tooltip.
-  This is a static front-end demo — wiring it to live data (e.g. a small
-  JSON file updated each time a decision comes in) is a quick follow-up.
-*/
 const KB_SCHOOLS = [
   { initials:"HARV",  name:"Harvard College",        admitted:0, avgGpa:"", avgTest:"", transfers:0 },
   { initials:"STAN",  name:"Stanford University",     admitted:0, avgGpa:"", avgTest:"", transfers:0 },
