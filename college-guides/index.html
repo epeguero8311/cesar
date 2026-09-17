@@ -129,7 +129,7 @@
     const data = await res.json();
 
     const cardsHtml = Object.values(data).map(school => `
-      <a href="guide.html?school=${encodeURIComponent(school.slug)}" class="guide-card">
+      <a href="${encodeURIComponent(school.slug)}.html" class="guide-card">
         <div class="guide-crest">${school.crest}</div>
         <h3>${school.name}</h3>
         <div class="guide-stat-row">

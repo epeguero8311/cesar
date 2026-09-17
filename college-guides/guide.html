@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/png" href="../Untitled_design__1_-removebg-preview.png" />
 <title id="page-title">College Admissions Guide | Full Axis College Consulting</title>
+<link rel="canonical" href="https://fullaxiscc.com/college-guides/index.html" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -108,118 +109,33 @@
 
 <script src="../main.js"></script>
 <script>
+// Each school now has its own static page (college-guides/<slug>.html). This
+// file stays in place only to redirect old ?school=<slug> links to the right one.
 (async function () {
   const params = new URLSearchParams(window.location.search);
   const slug = params.get('school');
-
   const body = document.getElementById('guide-body');
 
-  const SHORT_NAME_OVERRIDES = {
-    'Massachusetts Institute of Technology': 'MIT',
-    'University of Pennsylvania': 'Penn',
-    'California Institute of Technology': 'Caltech',
-    'University of Chicago': 'UChicago',
-    'UC Berkeley': 'UC Berkeley',
-    'Johns Hopkins University': 'Johns Hopkins',
-    'Washington University in St. Louis': 'WashU',
-    'University of Southern California': 'USC',
-    'Carnegie Mellon University': 'Carnegie Mellon',
-    'University of Notre Dame': 'Notre Dame',
-    'University of Michigan': 'Michigan',
-    'University of California, Los Angeles': 'UCLA',
-    'New York University': 'NYU',
-    'University of Virginia': 'UVA',
-    'University of Texas at Austin': 'UT Austin',
-    'University of North Carolina at Chapel Hill': 'UNC Chapel Hill',
-    'Georgia Institute of Technology': 'Georgia Tech',
-    'University of California, San Diego': 'UC San Diego',
-    'University of Illinois Urbana-Champaign': 'UIUC',
-    'Harvey Mudd College': 'Harvey Mudd',
-    'Claremont McKenna College': 'Claremont McKenna',
-    'Wake Forest University': 'Wake Forest',
-    'Washington and Lee University': 'Washington and Lee',
-    'William & Mary': 'William & Mary',
-    'University of Florida': 'Florida',
-    'University of Washington': 'UW',
-    'University of Miami': 'Miami',
-    'Boston University': 'BU',
-    'Boston College': 'Boston College'
-  };
-  function shortDisplayName(fullName) {
-    return SHORT_NAME_OVERRIDES[fullName] || fullName.split(' ')[0];
-  }
-
-  function buildSection(label, s, schoolName) {
-    const overviewHtml = s.overview.map(p => `<p>${p}</p>`).join('');
-    const lookingForHtml = s.lookingFor.map(li => `<li>${li}</li>`).join('');
-    const requirementsHtml = s.requirements.map(li => `<li>${li}</li>`).join('');
-    return `
-      <div class="guide-stat-bar reveal">
-        <div class="guide-stat-tile"><div class="label">${label} Acceptance Rate</div><div class="value">${s.rate}</div></div>
-        <div class="guide-stat-tile"><div class="label">Application Deadline</div><div class="value">${s.deadline}</div></div>
-        <div class="guide-stat-tile"><div class="label">Decisions Released</div><div class="value">${s.decisionsReleased}</div></div>
-        <div class="guide-stat-tile"><div class="label">Terms Offered</div><div class="value">${s.terms}</div></div>
-      </div>
-
-      <h2>Overview</h2>
-      ${overviewHtml}
-
-      <h2>What ${shortDisplayName(schoolName)} Looks For</h2>
-      <ul>${lookingForHtml}</ul>
-
-      <h2>Requirements &amp; Deadlines</h2>
-      <ul>${requirementsHtml}</ul>
-
-      <div class="mentor-tie-in">
-  <p><strong>Disclaimer:</strong> ${s.mentor.text}</p>
-</div>
-
-      <p class="data-note">${s.dataNote}</p>
-    `;
+  if (!slug) {
+    window.location.replace('index.html');
+    return;
   }
 
   try {
     const res = await fetch('guides-data.json');
     const data = await res.json();
-    const school = slug ? data[slug] : null;
 
-    if (!school) {
-      document.getElementById('guide-title').textContent = 'Guide Not Found';
-      document.getElementById('guide-eyebrow').textContent = '';
-      body.innerHTML = '<div class="guide-not-found"><p>We couldn\'t find a guide for that school. <a href="index.html">Browse all college guides →</a></p></div>';
+    if (data[slug]) {
+      window.location.replace(slug + '.html');
       return;
     }
 
-    document.title = school.name + ' First-Year & Transfer Acceptance Rate | Full Axis';
-    document.getElementById('page-title').textContent = document.title;
-    document.getElementById('guide-eyebrow').textContent = school.eyebrow;
-    document.getElementById('guide-title').innerHTML = school.name + ' <em>Admissions Guide</em>';
-
-     const firstName = shortDisplayName(school.name);
-    const whySection = (school.why && school.why.length) ? `
-      <div class="section-label guide-section-heading">Why Consider ${firstName}</div>
-      ${school.why.map(p => `<p>${p}</p>`).join('')}
-      <hr class="guide-section-divider" />
-    ` : '';
-
-    body.innerHTML = `
-      ${whySection}
-      <div class="section-label guide-section-heading">First-Year Admissions</div>
-      ${buildSection('First-Year', school.firstYear, school.name)}
-
-      <hr class="guide-section-divider" />
-
-      <div class="section-label guide-section-heading">Transfer Admissions</div>
-      ${buildSection('Transfer', school.transfer, school.name)}
-    `;
-
-    document.getElementById('cta-title').innerHTML = `Targeting <em>${shortDisplayName(school.name)}?</em>`;
-
-    body.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
-
+    document.getElementById('guide-title').textContent = 'Guide Not Found';
+    document.getElementById('guide-eyebrow').textContent = '';
+    body.innerHTML = '<div class="guide-not-found"><p>We couldn\'t find a guide for that school. <a href="index.html">Browse all college guides →</a></p></div>';
   } catch (err) {
-    console.error('Failed to load guide data:', err);
-    body.innerHTML = '<p>Something went wrong loading this guide. Please try again shortly.</p>';
+    console.error('Failed to resolve guide redirect:', err);
+    window.location.replace('index.html');
   }
 })();
 </script>
