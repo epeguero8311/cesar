@@ -153,7 +153,7 @@
     "eyebrow": "New Haven, Connecticut",
     "blurb": "Yale enrolls a small transfer class each fall through one of the nation's most selective transfer admissions processes.",
     "firstYear": {
-      "rate": "~3.7%",
+      "rate": "4.24%",
       "deadline": "Jan 2 (RD) / Nov 1 (REA)",
       "decisionsReleased": "Early April",
       "terms": "Fall Only",
@@ -218,7 +218,7 @@
     "eyebrow": "Cambridge, Massachusetts",
     "blurb": "MIT admits only a very small number of transfer students, with an emphasis on exceptional STEM achievement.",
     "firstYear": {
-      "rate": "~4.5%",
+      "rate": "4.6%",
       "deadline": "Jan 1 (RD)",
       "decisionsReleased": "March 14",
       "terms": "Fall Only",
@@ -283,7 +283,7 @@
     "eyebrow": "Princeton, New Jersey",
     "blurb": "Princeton's transfer program was reinstated in recent years and remains among the nation's most selective.",
     "firstYear": {
-      "rate": "~3.8%",
+      "rate": "4%",
       "deadline": "Jan 1 (RD) / Nov 1 (REA)",
       "decisionsReleased": "Late March",
       "terms": "Fall Only",
@@ -348,7 +348,7 @@
     "eyebrow": "Philadelphia, Pennsylvania",
     "blurb": "Penn enrolls a modest transfer class each year with admission standards that vary by undergraduate school.",
     "firstYear": {
-      "rate": "~5.4%",
+      "rate": "5.8%",
       "deadline": "Jan 5 (RD) / Nov 1 (ED)",
       "decisionsReleased": "Mid March (RD) / Mid Dec (ED)",
       "terms": "Fall Only",
@@ -413,7 +413,7 @@
     "eyebrow": "New York, New York",
     "blurb": "Columbia maintains one of the Ivy League's more established transfer programs while remaining highly selective.",
     "firstYear": {
-      "rate": "~3.9%",
+      "rate": "4.23%",
       "deadline": "Jan 1 (RD) / Nov 1 (ED)",
       "decisionsReleased": "Mid March (RD) / Mid Dec (ED)",
       "terms": "Fall Only",
@@ -478,7 +478,7 @@
     "eyebrow": "Providence, Rhode Island",
     "blurb": "Brown's highly selective transfer process emphasizes academic excellence and fit with its Open Curriculum.",
     "firstYear": {
-      "rate": "~5%",
+      "rate": "5.35%",
       "deadline": "Jan 5 (RD) / Nov 1 (ED)",
       "decisionsReleased": "End March (RD) / Mid Dec (ED)",
       "terms": "Fall Only",
@@ -543,7 +543,7 @@
     "eyebrow": "Durham, North Carolina",
     "blurb": "Duke enrolls a small but consistent transfer class through a highly competitive admissions process.",
     "firstYear": {
-      "rate": "~6%",
+      "rate": "4.7%",
       "deadline": "Jan 3 (RD) / Nov 1 (ED)",
       "decisionsReleased": "Early April (RD) / Mid Dec (ED)",
       "terms": "Fall Only",
@@ -1060,7 +1060,7 @@
     "eyebrow": "Hanover, New Hampshire",
     "blurb": "The most volatile transfer rate in the Ivy League — anywhere from under 1% to nearly 30% depending on the year.",
     "firstYear": {
-      "rate": "~5.4%",
+      "rate": "5.8%",
       "deadline": "Jan 3 (RD) / Nov 1 (ED)",
       "decisionsReleased": "End March (RD) / Mid Dec (ED)",
       "terms": "Fall Only",
@@ -1125,7 +1125,7 @@
     "eyebrow": "Houston, Texas",
     "blurb": "One of the few selective private universities offering both fall and spring transfer entry.",
     "firstYear": {
-      "rate": "~7.7%",
+      "rate": "7.7%",
       "deadline": "Jan 4 (RD) / Nov 1 (ED)",
       "decisionsReleased": "End March (RD) / Mid Dec (ED)",
       "terms": "Fall Only",
@@ -1190,7 +1190,7 @@
     "eyebrow": "St. Louis, Missouri",
     "blurb": "A transfer-friendly research university admitting into four distinct undergraduate schools, each with its own bar.",
     "firstYear": {
-      "rate": "~11%",
+      "rate": "12.2%",
       "deadline": "Jan 2 (RD/ED2) / Nov 1 (ED1)",
       "decisionsReleased": "End March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -1255,7 +1255,7 @@
     "eyebrow": "Washington, D.C.",
     "blurb": "A holistic, non-Common-App transfer process with acceptance rates that have swung widely year to year.",
     "firstYear": {
-      "rate": "~11.6%",
+      "rate": "13%",
       "deadline": "Jan 10 (RD) / Nov 1 (REA)",
       "decisionsReleased": "End March (RD) / Mid Dec (REA)",
       "terms": "Fall Only",
@@ -1450,7 +1450,7 @@
     "eyebrow": "Notre Dame, Indiana",
     "blurb": "A transfer rate historically two to three times higher than Notre Dame's ultra-selective freshman admit rate.",
     "firstYear": {
-      "rate": "~12.5%",
+      "rate": "9%",
       "deadline": "Jan 1 (RD) / Nov 1 (REA)",
       "decisionsReleased": "Mid March (RD) / Mid Dec (REA)",
       "terms": "Fall Only",
@@ -1645,7 +1645,7 @@
     "eyebrow": "Boston, Massachusetts",
     "blurb": "One of the most transfer-friendly major research universities, with two intake cycles per year.",
     "firstYear": {
-      "rate": "~10.7%",
+      "rate": "14.8%",
       "deadline": "Jan 4 (RD) / Nov 1 (ED1) / Jan 1 (ED2)",
       "decisionsReleased": "End March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -1709,7 +1709,7 @@
     "eyebrow": "Atlanta, Georgia",
     "blurb": "One of the more transfer-friendly elite private universities, though Oxford College does not accept transfer applicants.",
     "firstYear": {
-      "rate": "~11%",
+      "rate": "12.3%",
       "deadline": "Jan 1 (RD) / Nov 1 (ED1) / Jan 1 (ED2)",
       "decisionsReleased": "End March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -1969,7 +1969,7 @@
     "eyebrow": "Medford, Massachusetts",
     "blurb": "Tufts has joined the ranks of single-digit-acceptance schools, and its transfer rate has followed suit in recent cycles.",
     "firstYear": {
-      "rate": "~10%",
+      "rate": "10%",
       "deadline": "Jan 1 (RD) / Nov 1 (ED1) / Jan 1 (ED2)",
       "decisionsReleased": "Mid March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -2099,7 +2099,7 @@
     "eyebrow": "Atlanta, Georgia",
     "blurb": "A STEM powerhouse where transfer rates run roughly double the freshman rate, especially through dedicated Pathway Programs.",
     "firstYear": {
-      "rate": "~15%",
+      "rate": "12.8%",
       "deadline": "Jan 4 (RD) / Oct 19 (EA)",
       "decisionsReleased": "Late March (RD) / Late Jan (EA)",
       "terms": "Fall (primary)",
@@ -2164,7 +2164,7 @@
     "eyebrow": "Chestnut Hill, Massachusetts",
     "blurb": "A Jesuit university whose transfer rate has swung widely, with the most selective slots in Management and Nursing.",
     "firstYear": {
-      "rate": "~15.5%",
+      "rate": "12.7%",
       "deadline": "Jan 1 (RD) / Nov 1 (ED1) / Jan 1 (ED2)",
       "decisionsReleased": "End March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -2489,7 +2489,7 @@
     "eyebrow": "Williamstown, Massachusetts",
     "blurb": "One of the very hardest transfer admits in the country — a tiny handful of seats each year.",
     "firstYear": {
-      "rate": "~8%",
+      "rate": "7.4%",
       "deadline": "Jan 4 (RD) / Nov 15 (ED1) / Jan 4 (ED2)",
       "decisionsReleased": "Late March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -2554,7 +2554,7 @@
     "eyebrow": "Amherst, Massachusetts",
     "blurb": "A highly selective Open Curriculum college that has recently admitted a bit more generously than in past cycles.",
     "firstYear": {
-      "rate": "~7%",
+      "rate": "6.78%",
       "deadline": "Jan 10 (RD) / Nov 1 (ED)",
       "decisionsReleased": "Late March (RD) / Mid Dec (ED)",
       "terms": "Fall Only",
@@ -2684,7 +2684,7 @@
     "eyebrow": "Swarthmore, Pennsylvania",
     "blurb": "A relatively more accessible Ivy-caliber liberal arts transfer program, admitting a meaningful share of applicants.",
     "firstYear": {
-      "rate": "~7%",
+      "rate": "7.4%",
       "deadline": "Jan 4 (RD/ED2) / Nov 15 (ED1)",
       "decisionsReleased": "Late March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -2814,7 +2814,7 @@
     "eyebrow": "Brunswick, Maine",
     "blurb": "An extremely small transfer program where admission depends heavily on how much space opens up each year.",
     "firstYear": {
-      "rate": "~8%",
+      "rate": "6.5%",
       "deadline": "Jan 15 (RD) / Nov 15 (ED1) / Jan 1 (ED2)",
       "decisionsReleased": "Early April (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -2944,7 +2944,7 @@
     "eyebrow": "Middlebury, Vermont",
     "blurb": "A well-regarded liberal arts college with a transfer rate that runs meaningfully above its freshman acceptance rate.",
     "firstYear": {
-      "rate": "~12%",
+      "rate": "18%",
       "deadline": "Jan 1 (RD/ED2) / Nov 1 (ED1)",
       "decisionsReleased": "Mid March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -3074,7 +3074,7 @@
     "eyebrow": "Middletown, Connecticut",
     "blurb": "A NESCAC university whose transfer acceptance rate runs well above its increasingly selective freshman rate.",
     "firstYear": {
-      "rate": "~16%",
+      "rate": "15.8%",
       "deadline": "Jan 1 (RD/ED2) / Nov 1 (ED1)",
       "decisionsReleased": "Early April (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -3204,7 +3204,7 @@
     "eyebrow": "Winston-Salem, North Carolina",
     "blurb": "A Southern research university whose transfer rate runs notably higher than its increasingly selective freshman rate.",
     "firstYear": {
-      "rate": "~22%",
+      "rate": "18%",
       "deadline": "Jan 1 (RD) / Nov 15 (ED1) / Jan 1 (ED2)",
       "decisionsReleased": "Late March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -3269,7 +3269,7 @@
     "eyebrow": "Davidson, North Carolina",
     "blurb": "A top Southern liberal arts college whose transfer rate runs meaningfully above its increasingly selective freshman rate.",
     "firstYear": {
-      "rate": "~13%",
+      "rate": "14.2%",
       "deadline": "Jan 4 (RD) / Nov 15 (ED1) / Jan 4 (ED2)",
       "decisionsReleased": "Early April (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -3399,7 +3399,7 @@
     "eyebrow": "Williamsburg, Virginia",
     "blurb": "A top public university that's genuinely transfer-friendly, admitting about half of all applicants most years.",
     "firstYear": {
-      "rate": "~30%",
+      "rate": "34%",
       "deadline": "Jan 1 (RD) / Nov 1 (ED)",
       "decisionsReleased": "Early April (RD) / Early Feb (ED)",
       "terms": "Fall Only",
@@ -3464,7 +3464,7 @@
     "eyebrow": "Grinnell, Iowa",
     "blurb": "A highly selective Midwestern liberal arts college with an extremely small, individually-advised transfer program.",
     "firstYear": {
-      "rate": "~9%",
+      "rate": "14%",
       "deadline": "Jan 15 (RD) / Nov 15 (ED1) / Jan 15 (ED2)",
       "decisionsReleased": "Mid March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -3594,7 +3594,7 @@
     "eyebrow": "Waterville, Maine",
     "blurb": "A highly selective Maine liberal arts college admitting only a very small transfer class each year.",
     "firstYear": {
-      "rate": "~8%",
+      "rate": "8%",
       "deadline": "Jan 15 (RD) / Nov 15 (ED1) / Jan 1 (ED2)",
       "decisionsReleased": "Late March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -3919,7 +3919,7 @@
     "eyebrow": "New Orleans, Louisiana",
     "blurb": "A private research university that has become dramatically more transfer-friendly in the most recent cycle.",
     "firstYear": {
-      "rate": "~13%",
+      "rate": "15%",
       "deadline": "Jan 15 (RD) / Nov 1 (ED1) / Jan 1 (ED2)",
       "decisionsReleased": "Late March (RD) / Mid Dec (ED1)",
       "terms": "Fall Only",
@@ -3984,7 +3984,7 @@
     "eyebrow": "Coral Gables, Florida",
     "blurb": "A private research university where the transfer rate runs more than double its increasingly selective freshman rate.",
     "firstYear": {
-      "rate": "~19%",
+      "rate": "22%",
       "deadline": "Jan 15 (RD) / Nov 1 (ED)",
       "decisionsReleased": "Late March (RD) / Mid Dec (ED)",
       "terms": "Fall Only",
