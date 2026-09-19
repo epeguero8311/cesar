@@ -1,0 +1,49 @@
+name: Admissions source watch
+
+# Weekly check of the exact URLs recorded in college-guides/official-sources.json.
+# It only ever fetches those recorded URLs (never searches the web or guesses one),
+# and it never edits guides-data.json or official-sources.json — it only opens a
+# GitHub Issue when a recorded source page's content changes, for a human to review
+# and apply manually. See scripts/source_watch.py for the full logic and constraints.
+
+on:
+  schedule:
+    # 13:00 UTC every Monday. Adjust if a different day/time is preferred.
+    - cron: "0 13 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements-source-watch.txt
+
+      - name: Run source watch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/source_watch.py
+
+      - name: Commit updated snapshot state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- scripts/source-watch-state.json; then
+            echo "No snapshot changes to commit"
+          else
+            git add scripts/source-watch-state.json
+            git commit -m "chore: update source-watch snapshots [skip ci]"
+            git push
+          fi
