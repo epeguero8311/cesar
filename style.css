@@ -598,6 +598,16 @@ footer{
 .kb-stat strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:1.9rem;color:var(--silver-light);letter-spacing:0.03em;margin-top:0.2rem}
 
 /* ─── RESPONSIVE ───────────────────────────────── */
+/* Desktop-only mission-section tweaks (mirrors the 1180px stacking
+   breakpoint below): align the intro paragraph with the pillar cards,
+   and let the video bleed partway into the column gap so it fills more
+   of the width left by the shorter left column, while still leaving
+   breathing room before the pillar cards. Never applies once the grid
+   stacks to a single column on mobile. */
+@media(min-width:1181px){
+  #mission .mission-statement{margin-top:0}
+  .mission-video{width:calc(100% + 4rem)}
+}
 @media(max-width:1180px){
   nav{padding:0 1.5rem}
   .nav-burger{display:flex}
