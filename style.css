@@ -172,6 +172,15 @@ nav{
 #mission{background:var(--white);padding:7.5rem 0}
 .mission-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:5.5rem;align-items:start;margin-top:3.8rem}
 .mission-statement{font-family:'Poppins',sans-serif;font-size:1rem;line-height:1.9;color:var(--charcoal);margin-top:1.4rem}
+/* Full-width intro above the two-column area: readable measure, 32px to the grid.
+   The intro carries the old grid top spacing; the first left-column item starts
+   flush with the top of the "Our Approach" card. */
+.mission-intro{margin-top:3.8rem;max-width:720px}
+#mission .mission-intro .mission-statement{margin-top:0}
+#mission .mission-intro .mission-statement a{color:var(--red);text-decoration:underline;text-underline-offset:3px;transition:color 0.2s}
+#mission .mission-intro .mission-statement a:hover{color:var(--red-deep)}
+#mission .mission-grid{margin-top:2rem}
+#mission .mission-video{margin-top:0}
 .beta-badge{
   margin-top:2rem;display:inline-flex;align-items:center;gap:0.75rem;
   background:rgba(139,26,26,0.05);border:1px solid rgba(139,26,26,0.18);
@@ -601,14 +610,12 @@ footer{
 .kb-stat strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:1.9rem;color:var(--silver-light);letter-spacing:0.03em;margin-top:0.2rem}
 
 /* ─── RESPONSIVE ───────────────────────────────── */
-/* Desktop-only mission-section tweaks (mirrors the 1180px stacking
-   breakpoint below): align the intro paragraph with the pillar cards,
-   and let the video bleed partway into the column gap so it fills more
+/* Desktop-only mission-section tweak (mirrors the 1180px stacking
+   breakpoint below): let the video bleed partway into the column gap so it fills more
    of the width left by the shorter left column, while still leaving
    breathing room before the pillar cards. Never applies once the grid
    stacks to a single column on mobile. */
 @media(min-width:1181px){
-  #mission .mission-statement{margin-top:0}
   .mission-video{width:calc(100% + 4rem)}
 }
 @media(max-width:1180px){
