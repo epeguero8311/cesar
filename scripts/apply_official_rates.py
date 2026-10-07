@@ -25,11 +25,15 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GUIDES_DATA_PATH = os.path.join(REPO_ROOT, "college-guides", "guides-data.json")
 
 
-def fmt_rate(rate):
-    """30 -> '30%', 4.6 -> '4.6%', 4.0 -> '4%' (confirmed = exact, no '~')."""
+def fmt_rate(rate, rate_type=None):
+    """30 -> '30%', 4.6 -> '4.6%', 4.0 -> '4%'.
+
+    Only rates the source marks rate_type "full" are shown as exact. Anything
+    else (approximate, via a student paper, partial disclosure) keeps the "~".
+    """
     if isinstance(rate, float) and rate.is_integer():
         rate = int(rate)
-    return f"{rate}%"
+    return f"{rate}%" if rate_type == "full" else f"~{rate}%"
 
 
 def main():
@@ -57,7 +61,7 @@ def main():
             continue
 
         old_rate = guides[slug]["firstYear"]["rate"]
-        new_rate = fmt_rate(source["rate"])
+        new_rate = fmt_rate(source["rate"], source.get("rate_type"))
         if old_rate == new_rate:
             continue
 
