@@ -22,9 +22,8 @@ HARD CONSTRAINTS (do not weaken these):
   * Sources that can't be fetched are reported, never worked around: they
     are collected into ONE open GitHub Issue ("sources that couldn't be
     checked") that is updated each run and closed once everything loads.
-    The fetch sends the ordinary headers a browser sends but still
-    identifies itself honestly; it makes no attempt to defeat anti-bot
-    challenges. A site that still refuses just lands on that list.
+    The fetch identifies itself honestly and makes no attempt to defeat
+    anti-bot challenges. A site that refuses just lands on that list.
 
 For status "none" / "preliminary" schools: any content change at the
 recorded URL is worth a human look (there's no confirmed rate yet, so any
@@ -61,18 +60,14 @@ SOURCES_PATH = os.path.join(REPO_ROOT, "college-guides", "official-sources.json"
 GUIDES_DATA_PATH = os.path.join(REPO_ROOT, "college-guides", "guides-data.json")
 STATE_PATH = os.path.join(REPO_ROOT, "scripts", "source-watch-state.json")
 
-# "Mozilla/5.0 (compatible; ...)" is the conventional shape for an honest crawler
-# (same as Googlebot's): firewalls that reject unfamiliar bare agents accept it,
-# and we still say exactly who we are and how to reach us.
+# Keep this request plain. A dry run showed that a browser-style User-Agent and
+# Accept header made things worse (Cornell started returning 403 and Rice 406)
+# without unblocking any site that was already refusing us.
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; FullAxisSourceWatch/1.0; +https://fullaxiscc.com; "
+    "FullAxisSourceWatch/1.0 (+https://fullaxiscc.com; "
     "weekly admissions-data change watcher; contact: cesar@fullaxiscc.com)"
 )
-REQUEST_HEADERS = {
-    "User-Agent": USER_AGENT,
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/pdf;q=0.8,*/*;q=0.7",
-    "Accept-Language": "en-US,en;q=0.9",
-}
+REQUEST_HEADERS = {"User-Agent": USER_AGENT}
 REQUEST_TIMEOUT = 25
 REQUEST_PAUSE_SECONDS = 1  # be polite: one request per second across ~60 sites
 FAILURES_LABEL = "source-watch-failures"
