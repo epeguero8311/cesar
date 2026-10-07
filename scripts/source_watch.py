@@ -19,6 +19,12 @@ HARD CONSTRAINTS (do not weaken these):
   * When a change is detected, the only action taken is opening a GitHub
     Issue for a human to review. No page, and no repo file that a human
     maintains by hand, is ever edited automatically.
+  * Sources that can't be fetched are reported, never worked around: they
+    are collected into ONE open GitHub Issue ("sources that couldn't be
+    checked") that is updated each run and closed once everything loads.
+    The fetch sends the ordinary headers a browser sends but still
+    identifies itself honestly; it makes no attempt to defeat anti-bot
+    challenges. A site that still refuses just lands on that list.
 
 For status "none" / "preliminary" schools: any content change at the
 recorded URL is worth a human look (there's no confirmed rate yet, so any
@@ -46,6 +52,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 
 import requests
 
@@ -54,11 +61,22 @@ SOURCES_PATH = os.path.join(REPO_ROOT, "college-guides", "official-sources.json"
 GUIDES_DATA_PATH = os.path.join(REPO_ROOT, "college-guides", "guides-data.json")
 STATE_PATH = os.path.join(REPO_ROOT, "scripts", "source-watch-state.json")
 
+# "Mozilla/5.0 (compatible; ...)" is the conventional shape for an honest crawler
+# (same as Googlebot's): firewalls that reject unfamiliar bare agents accept it,
+# and we still say exactly who we are and how to reach us.
 USER_AGENT = (
-    "FullAxisSourceWatch/1.0 (+https://fullaxiscc.com; "
+    "Mozilla/5.0 (compatible; FullAxisSourceWatch/1.0; +https://fullaxiscc.com; "
     "weekly admissions-data change watcher; contact: cesar@fullaxiscc.com)"
 )
+REQUEST_HEADERS = {
+    "User-Agent": USER_AGENT,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/pdf;q=0.8,*/*;q=0.7",
+    "Accept-Language": "en-US,en;q=0.9",
+}
 REQUEST_TIMEOUT = 25
+REQUEST_PAUSE_SECONDS = 1  # be polite: one request per second across ~60 sites
+FAILURES_LABEL = "source-watch-failures"
+FAILURES_TITLE = "[Source Watch] Sources that couldn't be checked"
 MAX_STORED_CHARS = 20000  # bound on how much normalized text we keep for diffing
 
 TAG_STRIP_PATTERNS = [
@@ -109,8 +127,23 @@ def normalize_pdf(raw_bytes):
 
 
 def fetch_normalized(url):
-    resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=REQUEST_TIMEOUT)
-    resp.raise_for_status()
+    # One retry, only for failures that can be transient (5xx, connection, timeout).
+    # A 403/404 is a definite answer from the site, so it is not retried.
+    for attempt in (1, 2):
+        try:
+            resp = requests.get(url, headers=REQUEST_HEADERS, timeout=REQUEST_TIMEOUT)
+            resp.raise_for_status()
+            break
+        except requests.HTTPError as e:
+            if attempt == 1 and e.response is not None and e.response.status_code >= 500:
+                time.sleep(3)
+                continue
+            raise
+        except (requests.ConnectionError, requests.Timeout):
+            if attempt == 1:
+                time.sleep(3)
+                continue
+            raise
     ctype = resp.headers.get("Content-Type", "")
     if "pdf" in ctype.lower() or url.lower().endswith(".pdf"):
         return normalize_pdf(resp.content)
@@ -249,6 +282,121 @@ def open_issue(slug, name, status, url, on_file, page_candidates, old_snip, new_
         print(f"  opened issue for {slug}: {result.stdout.strip()}")
 
 
+def classify_failure(exc):
+    """Return (category, plain-English explanation) for a failed fetch."""
+    if isinstance(exc, requests.HTTPError) and exc.response is not None:
+        code = exc.response.status_code
+        if code in (401, 403, 405, 429):
+            return "blocked", (
+                f"HTTP {code}: the site refused an automated request. Open the link in a "
+                "browser; if it loads, the page is fine but can't be watched automatically."
+            )
+        if code in (404, 410):
+            return "dead_link", (
+                f"HTTP {code}: page not found. The URL in official-sources.json is "
+                "probably wrong or has moved."
+            )
+        if code >= 500:
+            return "server_error", f"HTTP {code}: the school's server errored (may clear up on its own)."
+        return "other", f"HTTP {code}"
+    msg = str(exc)
+    if isinstance(exc, requests.ConnectionError):
+        if "NameResolutionError" in msg or "getaddrinfo" in msg or "Name or service not known" in msg:
+            return "dns", "The hostname doesn't resolve. The domain in official-sources.json is probably wrong."
+        return "connection", "Couldn't connect to the site."
+    if isinstance(exc, requests.Timeout):
+        return "timeout", "The site didn't respond in time."
+    return "other", msg[:150]
+
+
+FAILURE_HEADINGS = [
+    ("dead_link", "Dead links (need a corrected URL)"),
+    ("dns", "Hostname doesn't resolve (need a corrected URL)"),
+    ("blocked", "Site refuses automated requests"),
+    ("server_error", "Server errors (often temporary)"),
+    ("timeout", "Timeouts (often temporary)"),
+    ("connection", "Connection problems"),
+    ("other", "Other"),
+]
+
+
+def build_failures_body(failures, no_url, total_with_url):
+    lines = [
+        f"Of **{total_with_url}** sources with a URL on file, **{len(failures)}** couldn't be read "
+        "this week. **These schools are not being watched** until the problem is fixed.",
+        "",
+    ]
+    for category, heading in FAILURE_HEADINGS:
+        rows = [f for f in failures if f["category"] == category]
+        if not rows:
+            continue
+        lines += [f"### {heading} ({len(rows)})", "", "| School | Status on file | Problem | Link |", "|---|---|---|---|"]
+        for f in rows:
+            lines.append(f"| {f['name']} (`{f['slug']}`) | `{f['status']}` | {f['reason']} | {f['url']} |")
+        lines.append("")
+    if no_url:
+        names = ", ".join(f"{n} (`{s}`)" for s, n in no_url)
+        lines += [
+            f"### No URL recorded ({len(no_url)})",
+            "",
+            f"Nothing to watch yet for: {names}.",
+            "",
+        ]
+    lines += [
+        "---",
+        "Maintained automatically by the weekly source-watch workflow: updated every run and "
+        "closed once every source loads. It never edits `official-sources.json`, so fixing a link "
+        "is a manual edit, and the watcher only ever checks URLs already listed there.",
+    ]
+    return "\n".join(lines)
+
+
+def find_open_failures_issue():
+    result = gh("issue", "list", "--state", "open", "--label", FAILURES_LABEL, "--json", "number")
+    if result.returncode != 0:
+        print(f"  warning: gh issue list failed for failures issue: {result.stderr.strip()}", file=sys.stderr)
+        return None
+    try:
+        items = json.loads(result.stdout)
+    except json.JSONDecodeError:
+        return None
+    return items[0]["number"] if items else None
+
+
+def sync_failures_issue(failures, no_url, total_with_url, dry_run):
+    body = build_failures_body(failures, no_url, total_with_url) if failures else None
+
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_path and body:
+        with open(summary_path, "a", encoding="utf-8") as f:
+            f.write(f"## {FAILURES_TITLE}\n\n{body}\n")
+
+    if dry_run:
+        if body:
+            print(f"\n--- DRY RUN: would create/update issue '{FAILURES_TITLE}' ---")
+            print(body)
+            print("--- end ---\n")
+        else:
+            print("\nDRY RUN: every source loaded; would close any open failures issue")
+        return
+
+    existing = find_open_failures_issue()
+    if failures:
+        ensure_label(FAILURES_LABEL, "d93f0b", "Sources the weekly watcher couldn't fetch")
+        if existing:
+            result = gh("issue", "edit", str(existing), "--body", body)
+            print(f"  updated failures issue #{existing}" if result.returncode == 0
+                  else f"  ERROR updating failures issue: {result.stderr.strip()}")
+        else:
+            result = gh("issue", "create", "--title", FAILURES_TITLE, "--body", body, "--label", FAILURES_LABEL)
+            print(f"  opened failures issue: {result.stdout.strip()}" if result.returncode == 0
+                  else f"  ERROR creating failures issue: {result.stderr.strip()}")
+    elif existing:
+        gh("issue", "comment", str(existing), "--body", "Every source loaded this week, so closing.")
+        gh("issue", "close", str(existing))
+        print(f"  all sources loaded; closed failures issue #{existing}")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
@@ -260,6 +408,9 @@ def main():
 
     now = datetime.datetime.now(datetime.timezone.utc).isoformat()
     any_state_change = False
+    failures = []   # sources we tried to read but couldn't
+    no_url = []     # sources with nothing recorded to watch
+    total_with_url = 0
 
     for slug, entry in sources.items():
         if slug.startswith("_"):
@@ -269,15 +420,22 @@ def main():
             continue
 
         url = entry.get("url")
+        name = guides.get(slug, {}).get("name", slug)
         if not url:
             print(f"{slug}: no URL on file, skipping")
+            no_url.append((slug, name))
             continue
 
+        total_with_url += 1
         print(f"{slug}: checking {url}")
+        time.sleep(REQUEST_PAUSE_SECONDS)
         try:
             full_text = fetch_normalized(url)
-        except Exception as e:  # network/parse errors: skip, don't flag as a change
+        except Exception as e:  # network/parse errors: report it, don't flag as a change
             print(f"  fetch failed: {e}", file=sys.stderr)
+            category, reason = classify_failure(e)
+            failures.append({"slug": slug, "name": name, "status": status, "url": url,
+                             "category": category, "reason": reason})
             continue
 
         new_hash = sha256(full_text)
@@ -307,7 +465,6 @@ def main():
         print("  CHANGE DETECTED")
         old_snip, new_snip = diff_snippet(prev.get("excerpt", ""), excerpt)
         page_candidates = extract_rate_candidates(full_text)
-        name = guides.get(slug, {}).get("name", slug)
         on_file = {k: v for k, v in entry.items() if k != "url"}
 
         if not args.dry_run and issue_already_open(slug):
@@ -317,6 +474,8 @@ def main():
 
         state[slug] = {"hash": new_hash, "excerpt": excerpt, "url": url, "last_checked": now}
         any_state_change = True
+
+    sync_failures_issue(failures, no_url, total_with_url, args.dry_run)
 
     if args.dry_run:
         print("\nDRY RUN: not writing state file")

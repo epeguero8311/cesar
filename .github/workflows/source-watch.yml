@@ -4,13 +4,20 @@ name: Admissions source watch
 # It only ever fetches those recorded URLs (never searches the web or guesses one),
 # and it never edits guides-data.json or official-sources.json — it only opens a
 # GitHub Issue when a recorded source page's content changes, for a human to review
-# and apply manually. See scripts/source_watch.py for the full logic and constraints.
+# and apply manually, plus one running Issue listing sources it couldn't fetch.
+# Run it by hand with "dry_run" ticked to test without opening or changing any Issue.
+# See scripts/source_watch.py for the full logic and constraints.
 
 on:
   schedule:
     # 13:00 UTC every Monday. Adjust if a different day/time is preferred.
     - cron: "0 13 * * 1"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run: fetch and report only. No Issues are opened or changed and no snapshot is committed."
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,7 +41,7 @@ jobs:
       - name: Run source watch
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/source_watch.py
+        run: python scripts/source_watch.py ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Commit updated snapshot state
         run: |
