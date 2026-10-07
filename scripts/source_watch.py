@@ -19,9 +19,12 @@ HARD CONSTRAINTS (do not weaken these):
   * When a change is detected, the only action taken is opening a GitHub
     Issue for a human to review. No page, and no repo file that a human
     maintains by hand, is ever edited automatically.
-  * Sources that can't be fetched are reported, never worked around: they
-    are collected into ONE open GitHub Issue ("sources that couldn't be
-    checked") that is updated each run and closed once everything loads.
+  * Sources that can't be fetched are reported, never worked around: once a
+    source has failed FAILURE_WEEKS_BEFORE_REPORT runs in a row it is listed
+    in ONE open GitHub Issue ("sources that couldn't be checked") that is
+    updated each run and closed once nothing qualifies. One-off blocks (a
+    site refusing a single run) are not reported, because they usually
+    clear up by the next run.
     The fetch identifies itself honestly and makes no attempt to defeat
     anti-bot challenges. A site that refuses just lands on that list.
 
@@ -72,6 +75,7 @@ REQUEST_TIMEOUT = 25
 REQUEST_PAUSE_SECONDS = 1  # be polite: one request per second across ~60 sites
 FAILURES_LABEL = "source-watch-failures"
 FAILURES_TITLE = "[Source Watch] Sources that couldn't be checked"
+FAILURE_WEEKS_BEFORE_REPORT = 2  # consecutive failed runs before a source is listed
 MAX_STORED_CHARS = 20000  # bound on how much normalized text we keep for diffing
 
 TAG_STRIP_PATTERNS = [
@@ -315,19 +319,26 @@ FAILURE_HEADINGS = [
 ]
 
 
-def build_failures_body(failures, no_url, total_with_url):
+def build_failures_body(failures, no_url, total_with_url, pending=0):
     lines = [
-        f"Of **{total_with_url}** sources with a URL on file, **{len(failures)}** couldn't be read "
-        "this week. **These schools are not being watched** until the problem is fixed.",
+        f"Of **{total_with_url}** sources with a URL on file, **{len(failures)}** have failed to load "
+        f"for {FAILURE_WEEKS_BEFORE_REPORT}+ weeks in a row. **These schools are not being watched** "
+        "until the problem is fixed.",
         "",
     ]
+    if pending:
+        lines += [
+            f"_{pending} more source{'s' if pending != 1 else ''} failed this week for the first time "
+            "and will be listed here if they fail again next week._",
+            "",
+        ]
     for category, heading in FAILURE_HEADINGS:
         rows = [f for f in failures if f["category"] == category]
         if not rows:
             continue
-        lines += [f"### {heading} ({len(rows)})", "", "| School | Status on file | Problem | Link |", "|---|---|---|---|"]
+        lines += [f"### {heading} ({len(rows)})", "", "| School | Status on file | Weeks failing | Problem | Link |", "|---|---|---|---|---|"]
         for f in rows:
-            lines.append(f"| {f['name']} (`{f['slug']}`) | `{f['status']}` | {f['reason']} | {f['url']} |")
+            lines.append(f"| {f['name']} (`{f['slug']}`) | `{f['status']}` | {f['weeks']} | {f['reason']} | {f['url']} |")
         lines.append("")
     if no_url:
         names = ", ".join(f"{n} (`{s}`)" for s, n in no_url)
@@ -358,8 +369,8 @@ def find_open_failures_issue():
     return items[0]["number"] if items else None
 
 
-def sync_failures_issue(failures, no_url, total_with_url, dry_run):
-    body = build_failures_body(failures, no_url, total_with_url) if failures else None
+def sync_failures_issue(failures, no_url, total_with_url, pending, dry_run):
+    body = build_failures_body(failures, no_url, total_with_url, pending) if failures else None
 
     summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary_path and body:
@@ -372,7 +383,8 @@ def sync_failures_issue(failures, no_url, total_with_url, dry_run):
             print(body)
             print("--- end ---\n")
         else:
-            print("\nDRY RUN: every source loaded; would close any open failures issue")
+            print(f"\nDRY RUN: no source has failed {FAILURE_WEEKS_BEFORE_REPORT}+ weeks in a row "
+                  f"({pending} failed once); would close any open failures issue")
         return
 
     existing = find_open_failures_issue()
@@ -387,9 +399,10 @@ def sync_failures_issue(failures, no_url, total_with_url, dry_run):
             print(f"  opened failures issue: {result.stdout.strip()}" if result.returncode == 0
                   else f"  ERROR creating failures issue: {result.stderr.strip()}")
     elif existing:
-        gh("issue", "comment", str(existing), "--body", "Every source loaded this week, so closing.")
+        gh("issue", "comment", str(existing), "--body",
+           f"No source has failed {FAILURE_WEEKS_BEFORE_REPORT}+ weeks in a row, so closing.")
         gh("issue", "close", str(existing))
-        print(f"  all sources loaded; closed failures issue #{existing}")
+        print(f"  nothing qualifies this week; closed failures issue #{existing}")
 
 
 def main():
@@ -403,7 +416,9 @@ def main():
 
     now = datetime.datetime.now(datetime.timezone.utc).isoformat()
     any_state_change = False
-    failures = []   # sources we tried to read but couldn't
+    failures = []   # sources we tried to read but couldn't (this run)
+    prior_fail_counts = state.get("_failures", {})  # consecutive failed runs per slug, from last run
+    fail_counts = {}
     no_url = []     # sources with nothing recorded to watch
     total_with_url = 0
 
@@ -429,8 +444,10 @@ def main():
         except Exception as e:  # network/parse errors: report it, don't flag as a change
             print(f"  fetch failed: {e}", file=sys.stderr)
             category, reason = classify_failure(e)
+            weeks = prior_fail_counts.get(slug, 0) + 1
+            fail_counts[slug] = weeks
             failures.append({"slug": slug, "name": name, "status": status, "url": url,
-                             "category": category, "reason": reason})
+                             "category": category, "reason": reason, "weeks": weeks})
             continue
 
         new_hash = sha256(full_text)
@@ -470,7 +487,11 @@ def main():
         state[slug] = {"hash": new_hash, "excerpt": excerpt, "url": url, "last_checked": now}
         any_state_change = True
 
-    sync_failures_issue(failures, no_url, total_with_url, args.dry_run)
+    reportable = [f for f in failures if f["weeks"] >= FAILURE_WEEKS_BEFORE_REPORT]
+    if fail_counts != prior_fail_counts:
+        state["_failures"] = fail_counts
+        any_state_change = True
+    sync_failures_issue(reportable, no_url, total_with_url, len(failures) - len(reportable), args.dry_run)
 
     if args.dry_run:
         print("\nDRY RUN: not writing state file")
