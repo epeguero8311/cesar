@@ -177,13 +177,13 @@ nav{
 .mission-intro{margin-top:1.5rem}
 #mission .mission-intro .mission-statement{margin-top:0}
 .mission-lead{max-width:640px}
-.mission-points{display:grid;grid-template-columns:1.08fr 1fr;gap:5.5rem;margin-top:1.875rem}
+.mission-points{display:grid;grid-template-columns:1.08fr 1fr;gap:5.5rem;margin-top:2.75rem}
 .mission-point-label{font-size:0.66rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--red);margin-bottom:0.875rem}
 .mission-point p{font-size:0.9rem;line-height:1.78;color:var(--text-body)}
-.mission-closing{max-width:640px;margin-top:1.75rem;font-size:0.9rem;line-height:1.78;color:var(--text-muted)}
+.mission-closing{max-width:640px;margin-top:2.5rem;font-size:0.9rem;line-height:1.78;color:var(--text-muted)}
 .mission-closing a{color:var(--red);text-decoration:underline;text-underline-offset:3px;transition:color 0.2s}
 .mission-closing a:hover{color:var(--red-deep)}
-#mission .mission-grid{margin-top:2rem}
+#mission .mission-grid{margin-top:3rem}
 #mission .mission-video{margin-top:0}
 .beta-badge{
   margin-top:2rem;display:inline-flex;align-items:center;gap:0.75rem;
