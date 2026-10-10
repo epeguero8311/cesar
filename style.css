@@ -442,7 +442,7 @@ footer{
   font-weight:400;color:var(--white);line-height:1.05;letter-spacing:0.03em;margin-top:0.4rem;
 }
 .sub-hero-title em{font-style:italic;color:var(--silver-light)}
-.sub-hero-sub{margin-top:1.6rem;font-size:1rem;font-weight:300;color:rgba(255,255,255,0.6);line-height:1.85;max-width:600px;margin-left:auto;margin-right:auto}
+.sub-hero-sub{margin-top:1.6rem;font-size:1rem;font-weight:300;color:rgba(255,255,255,0.6);line-height:1.85;max-width:600px;margin-left:auto;margin-right:auto;text-wrap:pretty}
 .breadcrumb{
   position:relative;z-index:1;margin-bottom:1rem;
   font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;
